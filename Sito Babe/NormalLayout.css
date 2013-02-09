@@ -16,12 +16,16 @@ body
 {
 	width:80%;
      height:80%;
+     background:url("img/legno3.jpg");
      margin:0 auto;
      padding:2px;
 	border-radius:1em;
+
+	border-style:solid;
+	background-size:cover;
 }
 
-.headerTitle
+.header
 {
 	background:
 		url("img/babe_img.png") 10px 10px no-repeat,
@@ -29,14 +33,37 @@ body
 	background-size: 100px, 800px;
 	background-position: bottom left;
 	background-color: #c98542;
-	font-size: 2em;
+	font-size: 0.8em;
 	margin: 0px;
-	padding: 30px;
+	/*padding: 20px;
 	padding-left: 90px;
-	border-radius:0.8em;
+	padding-bottom:5px;*/
+	padding-top:20px;
+	padding-bottom:0px;
+	border-radius:1em;
 	border-color:#330000;
-	border-width:3px;
+	border-width:0px;
 	border-style:solid;
+}
+
+.pathText
+{
+	font-size: 1em;
+	background:url("img/legno_strano.jpg") repeat;
+	background-size:contain;
+	/*border-top-width:0px;
+	border-style:solid;*/
+	/*border-radius:0.8em;*/
+	padding:5px;
+	margin:0px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	text-align:center;
+}
+
+.headerTitle
+{
+	padding-left:100px;	
 }
 
 .footerText
@@ -49,17 +76,15 @@ body
 
 #content
 {
-	height:400px;
+	height:350px;
 	margin:10px;
+	padding:10px;
 	/*background: url("img/TextureLegno.jpg")repeat-x;*/
-	background-color: #FFCCCC;
+	background-color: rgba(255,255,255,0.3);
 	background-attachment:fixed;
 	background-position:center;
-	background-size:contain;
-	border-radius:0.5em;
-	border-color:#330000;
-	border-width:3px;
-	border-style:solid;
+	border-radius:0.8em;
+
 }
 
 #foot
@@ -70,7 +95,7 @@ body
 	background-size:contain;
 	border-radius:0.8em;
 	border-color:#330000;
-	border-width:3px;
+	border-width:2px;
 	border-style:solid;
 	padding:2%;
 	text-align:center;
