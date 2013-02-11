@@ -8,7 +8,8 @@ body
 	/*background: center repeat-x contain fixed url("img/sky.jpg");*/
 	background:
 		url("img/erba2.png") 100% 100% repeat-x fixed, 
-		bottom url("img/sky.jpg") repeat-x fixed;
+		/*bottom url("img/sky.jpg") repeat-x fixed;*/
+		bottom url("img/cielo_2.jpg") repeat-x fixed;
 	background-color: #1d60a6;
 }
 
@@ -18,11 +19,23 @@ body
      height:80%;
      background:url("img/legno3.jpg");
      margin:0 auto;
-     padding:2px;
+     padding:0.3%;
 	border-radius:1em;
 
 	border-style:solid;
 	background-size:cover;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+   /*zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 
 .header
@@ -76,19 +89,57 @@ body
 
 #content
 {
+	float:right;
 	height:350px;
-	margin:10px;
+	width:68.255%;
+	margin:1%;
 	padding:10px;
-	/*background: url("img/TextureLegno.jpg")repeat-x;*/
-	background-color: rgba(255,255,255,0.3);
-	background-attachment:fixed;
-	background-position:center;
+	background-color:rgba(255,255,255,0.3);
 	border-radius:0.8em;
+}
 
+#menuArea
+{
+	float:left;
+	height:350px;
+	width:25%;
+	margin:1%;
+	margin-right:0px;
+}
+
+#menuArea h2
+{
+	border-width:2px;
+	border-bottom-style:solid;
+}
+
+#nav
+{
+	
+	height:250px;
+	padding:10px;
+	padding-right:0px;
+	background-color: rgba(255,255,255,0.3);
+	border-top-left-radius:0.8em;
+	border-right-width: 2px;
+	border-right-style: solid;
+}
+
+#rss
+{
+	height:70px;
+	margin-top:10px;
+	padding:10px;
+	padding-right:0px;
+	background-color: rgba(255,255,255,0.3);
+	border-bottom-left-radius:0.8em;
+	border-right-width: 2px;
+	border-right-style: solid;
 }
 
 #foot
 {
+	clear: both;
 	background: 
 		url("img/topini2.png") 100% 100% no-repeat,
 		url("img/TextureLegno.jpg") repeat fixed;
@@ -99,4 +150,9 @@ body
 	border-style:solid;
 	padding:2%;
 	text-align:center;
+}
+
+#foot p
+{
+	display:inline;
 }
