@@ -1,15 +1,9 @@
 body
 {
 	font-family:Verdana, Helvetica, sans-serif;
-	/*background:url("img/sky.jpg") repeat-x;
-	background-attachment:fixed;
-	background-position:center;
-	background-size:contain;*/
-	/*background: center repeat-x contain fixed url("img/sky.jpg");*/
 	background:
 		url("img/erba2.png") 100% 100% repeat-x fixed, 
-		/*bottom url("img/sky.jpg") repeat-x fixed;*/
-		bottom url("img/cielo_2.jpg") repeat-x fixed;
+		bottom url("img/cielo_2.jpg") fixed;
 	background-color: #1d60a6;
 }
 
@@ -21,9 +15,9 @@ body
      margin:0 auto;
      padding:0.3%;
 	border-radius:1em;
-
 	border-style:solid;
 	background-size:cover;
+	box-shadow: 10px 20px 0px rgba(10,10,10,0.3);
 }
 
 .group:before,
@@ -38,7 +32,7 @@ body
    /*zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 
-.header
+#header
 {
 	background:
 		url("img/babe_img.png") 10px 10px no-repeat,
@@ -59,14 +53,11 @@ body
 	border-style:solid;
 }
 
-.pathText
+#header p
 {
-	font-size: 1em;
+	font-size:1.5em;
 	background:url("img/legno_strano.jpg") repeat;
 	background-size:contain;
-	/*border-top-width:0px;
-	border-style:solid;*/
-	/*border-radius:0.8em;*/
 	padding:5px;
 	margin:0px;
 	border-top-width: 2px;
@@ -74,67 +65,51 @@ body
 	text-align:center;
 }
 
-.headerTitle
+#header h1
 {
 	padding-left:100px;	
 }
 
-.footerText
-{
-	font-size: 1em;
-	margin: 0px;
-	padding: 10px;
-	border-radius:0.8em;
-}
-
 #content
 {
-	float:right;
 	height:350px;
-	width:68.255%;
-	margin:1%;
+	width:50%;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
 	padding:10px;
 	background-color:rgba(255,255,255,0.3);
-	border-radius:0.8em;
-}
-
-#menuArea
-{
-	float:left;
-	height:350px;
-	width:25%;
-	margin:1%;
-	margin-right:0px;
-}
-
-#menuArea h2
-{
-	border-width:2px;
-	border-bottom-style:solid;
+	border-bottom-left-radius:0.8em;
+	border-bottom-right-radius:0.8em;
 }
 
 #nav
 {
-	
-	height:250px;
+	float:left;
+	width:20%;
 	padding:10px;
 	padding-right:0px;
-	background-color: rgba(255,255,255,0.3);
+	margin-top:10px;
+	margin-left:10px;
+	background-color:rgba(255,255,255,0.3);
 	border-top-left-radius:0.8em;
-	border-right-width: 2px;
-	border-right-style: solid;
+	border-right-width:2px;
+	border-right-style:solid;
 }
 
 #rss
 {
+	float:right;
+	width:20%;
 	height:70px;
 	margin-top:10px;
+	margin-right:10px;
 	padding:10px;
 	padding-right:0px;
-	background-color: rgba(255,255,255,0.3);
-	border-bottom-left-radius:0.8em;
-	border-right-width: 2px;
-	border-right-style: solid;
+	background-color:rgba(255,255,255,0.3);
+	border-top-right-radius:0.8em;
+	border-left-width:2px;
+	border-left-style:solid;
 }
 
 #foot
