@@ -135,3 +135,8 @@ body
 span.inglese {
   font-style: italic;
 }
+
+#personaggi {
+  list-style: none;
+  padding: 0;
+}
