@@ -131,3 +131,7 @@ body
 {
 	display:inline;
 }
+
+span.inglese {
+  font-style: italic;
+}
