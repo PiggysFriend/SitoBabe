@@ -140,3 +140,10 @@ span.inglese {
   list-style: none;
   padding: 0;
 }
+
+#personaggi img {
+  padding: 1em;
+  float: right;
+  width: 20%;
+}
+
