@@ -1,3 +1,4 @@
+# Estensioni che devono essere ignorate
 *.aux
 *.log
 *.out
@@ -5,3 +6,4 @@
 *.pdf
 *.synctex.gz
 *~
+*.fdb_latexmk
