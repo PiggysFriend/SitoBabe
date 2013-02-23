@@ -172,3 +172,8 @@ table.interpreti {;
 } tr.alt {
   background-color: rgba(204, 153, 51, 0.4);
 }
+
+a.skip {
+  font-size: .6em;
+  float: right;
+}
