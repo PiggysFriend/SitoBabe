@@ -155,3 +155,9 @@ span.inglese {
 	float:right;
 	width:20%;
 }
+
+.copertina {
+  float: right;
+  width: 30%;
+  padding: 1em;
+}
