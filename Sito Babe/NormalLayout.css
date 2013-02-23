@@ -148,9 +148,7 @@ span.inglese {
 #personaggi {
 	list-style:none;
 	padding:0;
-}
-
-#personaggi img {
+} img {
 	padding:1em;
 	float:right;
 	width:20%;
@@ -160,4 +158,17 @@ span.inglese {
   float: right;
   width: 30%;
   padding: 1em;
+}
+
+table.interpreti {;
+  font-size: .9em;
+} th {
+  background-color: #cc9966;
+} td {
+  padding-left: 1em;
+  padding-right: 1em;
+} tr {
+  background-color: rgba(204, 204, 102, 0.4);
+} tr.alt {
+  background-color: rgba(204, 153, 51, 0.4);
 }
