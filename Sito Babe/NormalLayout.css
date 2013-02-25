@@ -177,3 +177,232 @@ a.skip {
   font-size: .6em;
   float: right;
 }
+
+
+
+
+
+
+
+
+#impara{
+	font-size:1.5em;}
+#impara li{
+	padding-bottom:3%;
+}
+
+#numeri{
+	list-style:none;
+	padding:0;}
+		
+#numeri li{
+	padding-bottom:15%;
+	padding-left:5%;
+	padding-right:5%;}
+	
+#numeri p{
+	padding-top:5%;
+	padding-left:35%;
+	font-size:2.3em;
+	font-variant: small-caps;}
+
+.numeri{
+	float:left;
+	width:14%;
+}
+
+.mani{
+	float:right;
+	width:26%;}
+
+
+
+.babe{
+width:30%;}
+
+
+
+
+
+#colori{
+	list-style:none;
+	padding:0px;}
+
+#colori li{
+	padding-left:5%;
+	padding-right:5%;
+	padding-bottom:30px;}
+
+
+.title{
+	font-size:2em;
+	padding-left:2%;
+	font-variant: small-caps;
+	margin-bottom:0%;}
+
+.colori{
+	float:left;
+	width:18%;}
+	
+
+.img_color{
+	float:right;
+	width:25%;}
+
+.did{
+	padding-top:1%;
+	padding-left:25%;
+	font-size:1.3em;}
+
+
+	
+	
+#stagioni{
+	list-style:none;
+	padding:0;}
+
+#stagioni li{
+	padding-left:3%;
+	padding-right:3%;
+	padding-bottom:10%;}
+	
+.stagioni{
+	float:left;
+	width:42%;}
+
+.nome_stagione{
+	padding-top:2%;
+	font-size:1.8em;
+	padding-left:12%;}
+
+
+
+
+
+
+
+
+#mesi{
+	list-style:none;
+	padding:0;}
+
+#mesi li{
+	padding-left:3%;
+	padding-right:3%;
+	padding-bottom:3%;}
+	
+.mesi_did{
+	margin-left:43%;}
+
+.nome_mese{
+	font-size:1.5em;
+	padding-left:3%;
+	font-variant: small-caps;}
+
+.mesi{
+	float:left;
+	width:40%}
+
+
+
+
+
+#filastrocca{
+background-image: 
+		url("mesi/pergamena.png") ;
+		background-repeat: no-repeat;
+		background-position:40% 0%;
+		Background-attachment: scroll;
+
+		font-size:0.8em;
+		line-height:0.5em;
+
+		padding-left:30%;
+		padding-top:7%;
+		padding-bottom:7%;}
+		
+#filastrocca_giorni{
+		background-image: url("mesi/pergamena.png") ;
+		background-repeat: no-repeat;
+		background-position:55% 0%;
+		Background-attachment: scroll;
+
+		font-size:1em;
+		line-height:0.7em;
+
+		padding-left:30%;
+		padding-top:8%;
+		padding-bottom:10%;
+	
+
+}
+
+
+
+
+
+
+
+
+#alfabeto{
+	list-style:none;
+	padding-left:3px;
+	width:95%;}
+#alfabeto li{
+	padding-bottom:100px;
+}
+
+#alfabeto p{
+	padding-left:30%;
+	font-size:1.2em;
+	padding-top:5%;
+}
+
+.alfabeto{
+	float:left;
+	width:18%;}
+
+.img_alfa{
+	float:right;
+	width:27%;}
+
+	
+	
+	
+#giorni{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+	width:80%;}
+
+#giorni li{
+	padding-left:5%;
+	padding-right:3%;
+	padding-bottom:0px;
+	padding-top:15px;}
+
+.nome_giorno{
+	font-size:2em;
+	padding-left:55%;
+	font-variant:small-caps;
+	margin:0px;
+	}
+	
+
+.giorno{
+	margin:0px;
+	width:50%;
+	padding-left:0%;
+	padding-top:0px;
+	padding-bottom:0px;
+	}
+
+	
+	
+
+
+
+
+
+
+
