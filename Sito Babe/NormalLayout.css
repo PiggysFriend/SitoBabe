@@ -186,9 +186,20 @@ a.skip {
 
 
 #impara{
-	font-size:1.5em;}
+	font-size:1.5em;
+	}
 #impara li{
-	padding-bottom:3%;
+	width:90%;
+	padding-bottom:10%;
+}
+
+
+
+.impara{
+	float:left;
+	width:20%;
+	padding-top:0%;
+	padding-bottom:0%;
 }
 
 #numeri{
