@@ -76,13 +76,13 @@ body
 {
 	float:left;
 	width:20%;
+	height:460px;
 	padding:10px;
 	padding-right:0;
 	margin-top:10px;
 	margin-left:10px;
 	background-color:rgba(255,255,255,0.3);
 	border-top-left-radius:0.8em;
-	border-right:2px solid;
 }
 
 #nav ul
@@ -91,21 +91,23 @@ body
 	padding:0;
 	margin:10px;
 	margin-right:0;
+	margin-left:5px;
 }
 
 #nav li
 {
-	padding-bottom:2px;
+	background:url("img/Acorn256.png") 5px 8px no-repeat;
+	background-size:30px;
+	padding:10px; 
+	padding-left:40px;
 }
 
 #nav li:hover
 {
-	background:url("img/white_mouse.png") 5px 8px no-repeat;
-	background-size:30px;
 	background-color:rgba(255,255,255,0.3);
 	border-top-left-radius:0.8em;
 	border-bottom-left-radius:0.8em;
-	padding:14px; 
+	padding:10px; 
 	padding-left:40px;
 }
 
@@ -120,7 +122,6 @@ body
 	padding-right:0px;
 	background-color:rgba(255,255,255,0.3);
 	border-top-right-radius:0.8em;
-	border-left:2px solid;
 }
 
 #foot
@@ -148,7 +149,9 @@ span.inglese {
 #personaggi {
 	list-style:none;
 	padding:0;
-} img {
+} 
+
+#personaggi img {
 	padding:1em;
 	float:right;
 	width:20%;
@@ -348,17 +351,11 @@ background-image:
 
 }
 
-
-
-
-
-
-
-
 #alfabeto{
 	list-style:none;
 	padding-left:3px;
 	width:95%;}
+	
 #alfabeto li{
 	padding-bottom:100px;
 }
@@ -376,44 +373,31 @@ background-image:
 .img_alfa{
 	float:right;
 	width:27%;}
-
-	
-	
 	
 #giorni{
 	list-style:none;
-	padding:0px;
-	margin:0px;
+	padding:0;
+	margin:0;
 	width:80%;}
 
 #giorni li{
 	padding-left:5%;
 	padding-right:3%;
-	padding-bottom:0px;
+	padding-bottom:0;
 	padding-top:15px;}
 
 .nome_giorno{
 	font-size:2em;
 	padding-left:55%;
 	font-variant:small-caps;
-	margin:0px;
+	margin:0;
 	}
 	
 
 .giorno{
-	margin:0px;
+	margin:0;
 	width:50%;
-	padding-left:0%;
-	padding-top:0px;
-	padding-bottom:0px;
+	padding-left:0;
+	padding-top:0;
+	padding-bottom:0;
 	}
-
-	
-	
-
-
-
-
-
-
-
