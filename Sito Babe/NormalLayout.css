@@ -181,6 +181,12 @@ a.skip {
   float: right;
 }
 
+a.nascosto
+{
+	position:absolute;
+	margin-left:-999em;
+}
+
 
 
 
