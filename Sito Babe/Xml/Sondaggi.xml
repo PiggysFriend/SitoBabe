@@ -1,0 +1,46 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<sondaggi xmlns = "http://www.ilmondodibabe.it" xmlns:xsd = "http://www.w3.org/2001/XMLSchema-instance" xsd:schemaLocation = "http://www.ilmondodibabe.it/Xml/Schema/Sondaggi.xsd">
+	<sondaggio numero = "1">
+		<domanda numero = "1" etichetta = "Ti è piaciuto il primo film della serie">
+			<scelta numero = "1" etichetta = "molto poco">
+				<votanti>0</votanti>
+			</scelta>
+			<scelta numero = "2" etichetta = "poco">
+				<votanti>0</votanti>
+			</scelta>
+			<scelta numero = "3" etichetta = "abbastanza">
+				<votanti>0</votanti>
+			</scelta>
+			<scelta numero = "4" etichetta = "molto">
+				<votanti>0</votanti>
+			</scelta>
+		</domanda>
+		<domanda numero = "2" etichetta = "Ti è piaciuto il secondo film della serie">
+			<scelta numero = "1" etichetta = "molto poco">
+				<votanti>0</votanti>
+			</scelta>
+			<scelta numero = "2" etichetta = "poco">
+				<votanti>0</votanti>
+			</scelta>
+			<scelta numero = "3" etichetta = "abbastanza">
+				<votanti>0</votanti>
+			</scelta>
+			<scelta numero = "4" etichetta = "molto">
+				<votanti>0</votanti>
+			</scelta>
+		</domanda>
+		<domanda numero = "3" etichetta = "Desidereresti venisse prodotto un terzo film">
+			<scelta numero = "1" etichetta = "si">
+				<votanti>0</votanti>
+			</scelta>
+			<scelta numero = "2" etichetta = "no">
+				<votanti>0</votanti>
+			</scelta>
+		</domanda>
+		<commenti>
+			<commento numero = "1" utente = "Andrea Rizzi" mail = "rizzi@dominio.net" data = "10-01-2013">
+				Sono davvero entusiasta di questa serie di film non vedo l'ora producano un terzo capitolo.
+			</commento>
+		</commenti>
+	</sondaggio>
+</sondaggi>

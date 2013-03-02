@@ -1,0 +1,75 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xsd:schema xmlns:xsd = "http://www.w3.org/2001/XMLSchema" targetNamespace = "http://www.ilmondodibabe.it" xmlns = "http://www.ilmondodibabe.it" elementFormDefault = "qualified">
+	<xsd:element name = "sondaggi" type = "TSondaggi"/>
+	
+	<xsd:complexType name = "TSondaggi">
+		<xsd:sequence>
+			<xsd:element name = "sondaggio" type = "TSondaggio"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name = "TSondaggio">
+		<xsd:sequence>
+			<xsd:element name = "domanda" type = "TDomanda" minOccurs = "1" maxOccurs = "unbounded"/>
+			<xsd:element name = "commenti" type = "TCommenti" minOccurs = "1" maxOccurs = "1"/>
+		</xsd:sequence>
+		<xsd:attribute name = "numero" type = "TNumero" use = "required"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name = "TDomanda">
+		<xsd:sequence>
+			<xsd:element name = "scelta" type = "TScelta" minOccurs = "1" maxOccurs = "unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name = "numero" type = "TNumero" use = "required"/>
+		<xsd:attribute name = "etichetta" type = "xsd:string" use = "required"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name = "TScelta">
+		<xsd:sequence>
+			<xsd:element name = "votanti" type = "TVotanti" minOccurs = "1" maxOccurs = "1"/>
+		</xsd:sequence>
+		<xsd:attribute name = "numero" type = "TNumero" use = "required"/>
+		<xsd:attribute name = "etichetta" type = "xsd:string" use = "required"/>
+	</xsd:complexType>
+	
+	<xsd:simpleType name = "TVotanti">
+		<xsd:restriction base = "xsd:integer">
+			<xsd:minInclusive value = "0"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name = "TCommenti">
+		<xsd:sequence>
+			<xsd:element name = "commento" type = "TCommento" minOccurs = "0" maxOccurs = "unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name = "TCommento">
+		<xsd:simpleContent>
+			<xsd:extension base = "xsd:string">
+				<xsd:attribute name = "numero" type = "TNumero"/>
+				<xsd:attribute name = "utente" type = "xsd:string"/>
+				<xsd:attribute name = "mail" type = "TMail"/>
+				<xsd:attribute name = "data" type = "TData"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	
+	<xsd:simpleType name = "TNumero">
+		<xsd:restriction base = "xsd:integer">
+			<xsd:minInclusive value = "1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name = "TMail">
+		<xsd:restriction base = "xsd:string">
+			<xsd:pattern value = "[a-zA-Z0-9(\.,_)]+@[a-zA-Z0-9\-]+\.[a-z0-9\-\.]+"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name = "TData">	
+		<xsd:restriction base = "xsd:string">
+			<xsd:pattern value = "[0-9][0-9]?\-(0[1-9]|1[0-2])\-[1|2][0-9][0-9][0-9]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>
