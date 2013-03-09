@@ -15,7 +15,10 @@
    height="1052.3622"
    id="svg2"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="mappasito.svg">
+   sodipodi:docname="mappasito.svg"
+   inkscape:export-filename="/home/diego/SitoBabe/Sito Babe/mappasito.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -29,9 +32,9 @@
      inkscape:window-height="753"
      id="namedview71"
      showgrid="false"
-     inkscape:zoom="0.89702957"
-     inkscape:cx="415.35949"
-     inkscape:cy="892.43177"
+     inkscape:zoom="1.2685914"
+     inkscape:cx="396.88211"
+     inkscape:cy="900.72785"
      inkscape:window-x="0"
      inkscape:window-y="20"
      inkscape:window-maximized="1"
@@ -66,7 +69,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -142,24 +145,16 @@
        width="187.85715"
        height="45.714287"
        ry="16.428572"
-       x="243.86732"
-       y="833.17682"
-       id="rect2985-5-0"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-    <rect
-       width="187.85715"
-       height="45.714287"
-       ry="16.428572"
-       x="243.90756"
-       y="891.14258"
+       x="244.50456"
+       y="837.30609"
        id="rect2985-4-1"
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <rect
        width="187.85715"
        height="45.714287"
        ry="16.428572"
-       x="245.03812"
-       y="944.11786"
+       x="245.63512"
+       y="890.28137"
        id="rect2985-4-1-8"
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <text
@@ -223,34 +218,24 @@
          y="802.25488"
          id="tspan3124">Suggerimenti</tspan></text>
     <text
-       x="287.84137"
-       y="917.97937"
+       x="288.43839"
+       y="864.14288"
        id="text3126"
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
        sodipodi:linespacing="125%"><tspan
-         x="287.84137"
-         y="917.97937"
+         x="288.43839"
+         y="864.14288"
          id="tspan3128">Riconoscimenti</tspan></text>
     <text
-       x="262.73465"
-       y="860.10028"
-       id="text3130"
-       xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
-       sodipodi:linespacing="125%"><tspan
-         x="262.73465"
-         y="860.10028"
-         id="tspan3132">Le ricette della nonna</tspan></text>
-    <text
-       x="308.98471"
-       y="972.68927"
+       x="309.58173"
+       y="918.85278"
        id="text3134"
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
        sodipodi:linespacing="125%"><tspan
-         x="308.98471"
-         y="972.68927"
+         x="309.58173"
+         y="918.85278"
          id="tspan3136">Link utili</tspan></text>
     <rect
        width="187.85715"
@@ -330,12 +315,12 @@
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:connector-curvature="0" />
     <path
-       d="m 223.0864,914.07057 20.54782,0"
+       d="m 223.0864,861.25609 20.54782,0"
        id="path3365-1"
        style="fill:none;stroke:#000000;stroke-width:0.97268045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:connector-curvature="0" />
     <path
-       d="m 223.18381,968.02121 21.71828,0"
+       d="m 223.18381,915.20673 21.71828,0"
        id="path3365-6"
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:connector-curvature="0" />
@@ -353,11 +338,6 @@
        d="m 222.99174,257.83039 22.16908,0"
        id="path3365-47"
        style="fill:none;stroke:#000000;stroke-width:1.01032519px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:connector-curvature="0" />
-    <path
-       d="m 222.76363,855.24764 20.56189,0"
-       id="path3365-9"
-       style="fill:none;stroke:#000000;stroke-width:0.94675499px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:connector-curvature="0" />
     <path
        d="m 222.83676,799.18416 19.98369,0"
@@ -441,8 +421,8 @@
        id="path3088"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 222.65863,94.212842 0,874.197958"
+       style="fill:none;stroke:#000000;stroke-width:0.96933985px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 222.65863,94.212842 0,821.413648"
        id="path3090"
        inkscape:connector-curvature="0" />
   </g>
