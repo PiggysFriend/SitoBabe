@@ -5,7 +5,7 @@
 \usepackage{lmodern}
 \usepackage{listings}
 \usepackage{textcomp}
-\usepackage[italian]{babel}
+\usepackage[english,italian]{babel}
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{graphicx}
@@ -27,7 +27,6 @@
 	\put(-475,0){\sffamily\large\leftmark}
 \end{picture}
 }
-
 
 \cfoot{}
 
@@ -80,6 +79,12 @@
   morekeywords={*,...},              % if you want to add more keywords to the set
   deletekeywords={...}              % if you want to delete keywords from the given language
 }
+
+% **************************************************
+% Macro
+% **************************************************
+\newcommand{\sitepage}[1]{\textsf{``#1''}}
+\newcommand{\inglese}[1]{\foreignlanguage{english}{\itshape{}#1}}
 
 \begin{document}
 %----------------------------------------------------------
@@ -140,11 +145,22 @@ booo\\
 % quale schema organizzativo e' stato scelto, come sono state organizzate le informazioni
 
 \section{Mappa del sito}
-% immagine della gerarchia delle informazioni
+\begin{figure}[tb]
+\centering
+\includegraphics[width=.8\textwidth]{mappasito.png}
+\caption{Organizzazione delle pagine del sito}
+\end{figure}
 
 \clearpage
 
 \section{Accessibilità}
+
+\subsection{Tabelle}
+Le tabelle che compaiono nella sezione \sitepage{Interpreti} sono state progettate per essere fruibili anche in forma non visuale, mediante l'utilizzo dell'attributo \texttt{scope} rispettivamente con il valore \texttt{col} per le intestazioni delle colonne e con il valore \texttt{row} per la testata di ogni riga, ovvero il personaggio di cui si elencano gli attori della versione originale e i doppiatori della versione italiana.
+
+La disposizione delle informazioni nella tabella è resa ancor più chiara dall'attributo \texttt{summary}, in cui oltre a giustificare l'organizzazione in righe e colonne è illustrato brevemente il contenuto della tabella, in modo tale che chi accede al contenuto tramite uno \inglese{screen reader} possa saltare il contenuto qualora non interessato.
+
+Al fine di utilizzare un \inglese{markup} quanto più semantico possibile, inoltre, in ognuna delle due tabelle si è fatto ricorso a un elemento \texttt{<thead>} per creare le intestazioni delle tre colonne, in cui sono stati inseriti come figli di secondo livello degli elementi \texttt{<th>}. L'utilizzo di un \inglese{footer} non è invece stato ritenuto necessario, dal momento che il numero di righe è piuttosto ridotto (otto nella tabella degli interpreti e dieci in quella delle voci degli animali). Infine, come ultimo accorgimento per agevolare la lettura, si è scelto di alternare i colori delle righe adiacenti.
 
 \section{Note su particolari pagine}
 
