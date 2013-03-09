@@ -83,7 +83,7 @@
 % **************************************************
 % Macro
 % **************************************************
-\newcommand{\sitepage}[1]{\textsf{``#1''}}
+\newcommand{\sitepage}[1]{\textsf{#1}}
 \newcommand{\inglese}[1]{\foreignlanguage{english}{\itshape{}#1}}
 
 \begin{document}
@@ -133,11 +133,7 @@ booo\\
 
 \begin{abstract}
 Questo progetto consiste nella realizzazione di un sito che ha come protagonista il simpatico maialino Babe, personaggio principale del film ``Babe maialino coraggioso''.
-Si tratta di un sito didattico che ha lo scopo di sensibilizzare i bambini sul tema degli animali facendoli immergere nel mondo di Babe, nella sua storia ed imparando con lui i primi rudimenti come i numeri e l'alfabeto, affinchè possano amare fin da subito gli animali ed imparare il rispetto per questi ultimi.
-
- 
- 
-
+Si tratta di un sito didattico che ha lo scopo di sensibilizzare i bambini sul tema degli animali facendoli immergere nel mondo di Babe, nella sua storia ed imparando con lui i primi rudimenti come i numeri e l'alfabeto, affinché possano amare fin da subito gli animali ed imparare il rispetto per questi ultimi.
 \end{abstract}
 
 \clearpage
@@ -161,61 +157,50 @@ Si tratta di un sito didattico che ha lo scopo di sensibilizzare i bambini sul t
 \section{Accessibilità}
 \subsection{Il testo}
 Per quanto riguarda il testo si è cercato di fare particolare attenzione alla dimensione e ai font utilizzati. Infatti, essendo un sito per bambini è bene avere un testo facilmente leggibile sia in relazione alla dimensione che ai font utilizzati.
-Non si sono infatti impiegati font particolari e le dimensioni del testo sono assegnate con il parametro em che permette l'adattamento del testo in base alle caratteristiche desiderate dall'utente.  
 
-Si è inoltre cercato di utilizzare un linguaggio il più chiaro possibile visto che il pubblico a cui ci si rivolge sono i bambini è ancor più importante essere chiari e semplici.
+Non si sono infatti impiegati font particolari e le dimensioni del testo sono assegnate con il parametro \texttt{em} che permette l'adattamento del testo in base alle caratteristiche desiderate dall'utente.  
+
+Si è inoltre cercato di utilizzare un linguaggio il più chiaro possibile visto che il pubblico a cui ci si rivolge sono i bambini è ancor più importante essere chiari e semplici. Laddove possibile, si è fatto uso di strutture enumerative (liste ordinate o non ordinate) per presentare le informazioni in forma schematica e più facilmente accessibile.
+
 \subsection{I link}
 Per quanto riguarda i link si è deciso di non rompere le convenzioni esterne evitando di personalizzarne l'aspetto all'interno del sito.
 In questo modo l'utente non è in alcun modo indotto in errore. Considerando che il nostro target può essere potenzialmente un utente con poca esperienza si è preferito mantenere la convenzione standard sui link.
 
-In particolare nella pagina ImparaConBabe.html sono usate delle immagini per anticipare all'utente il contenuto della pagina di destinazione del link.
+In particolare nella pagina \sitepage{ImparaConBabe.html} sono usate delle immagini per anticipare all'utente il contenuto della pagina di destinazione del link.
 Le immagini costituiscono un link insieme al testo  e perciò la zona su cui è necessario cliccare per accedere alle pagine è sufficientemente ampia da poter essere accessibile anche dalle persone che hanno difficoltà nel muovere il mouse.
 
-All'interno del sito sono presenti dei link esterni, in questo caso si è segnalato tramite l'immagine di un mondo che il link porta all'esterno del sito.
-(Stagioni.html)
+All'interno del sito sono presenti dei link esterni, in questo caso si è segnalato esplicitamente tramite l'immagine di un mondo che il link porta all'esterno del sito (ad esempio \sitepage{Stagioni.html}). Tale convenzione interna è stata mantenuta per tutte le pagine in cui comparivano dei collegamenti esterni.
+
+Le pagine di dimensione verticale maggiore, ad esempio \sitepage{Alfabeto.html}, \sitepage{Mesi.html} o \sitepage{Trama.html} contengono inoltre dei collegamenti interni per tornare in cima alla pagina durante la navigazione. La pagina dei \sitepage{Personaggi.html}, oltre a questo tipo di collegamenti, permette di spostarsi da un personaggio all'altro durante la lettura.
+
+Per rendere più rapida la navigazione si è scelto di offrire la possibilità di saltare gli elementi che esulano dal contenuto in senso stretto, quali il menu di navigazione o la lista dei \inglese{feed RSS} che si ripetono uguali in ogni pagina e che dunque non necessitano di essere letti ogni volta. A tal fine, sono stati inseriti dei collegamenti nascosti (impostando una posizione assoluta che ecceda il margine sinistro), che però risultano accessibili se si legge il solo contenuto testuale della pagina.
+
+Si è inoltre prestata particolare attenzione a evitare la presenza di link circolari, a rendere il testo delle ancore facilmente individuabile e, soprattutto, sufficientemente autoesplicativo riguardo alla posizione di destinazione (evitando accuratamente di utilizzare parole ``vuote'' o deittici come testo dei link).
+
 \subsection{Le immagini}
 Nel sito le immagini sono molto numerose, essendo infatti un sito per bambini molte cose sono spiegate con l'aiuto di immagini.
 
-Per ogni immagine è stata valutata la necessità di inserire del testo nell'attributo alt per permettere allo screen-reader di descrivere l'immagine o di poter visualizzare il testo alternativo qualora l'immagine non si potesse vedere.
+Per ogni immagine è stata valutata la necessità di inserire del testo nell'attributo alt per permettere allo \inglese{screen reader} di descrivere l'immagine o di poter visualizzare il testo alternativo qualora l'immagine non si potesse vedere.
 
-Nella pagina ImparaConBabe.html le immagini servono solo per dare all'utente un'idea del contenuto della pagina che andranno ad aprire, perciò si è deciso di non mettere il testo alternativo. 
-Nella pagina Alfabeto.html si è deciso di non commentare gli alt in quanto il testo presente è sufficientemente descrittivo e la presenza di testo nell'attributo alt risulterebbe superflua.
+Nella pagina \sitepage{ImparaConBabe.html} le immagini servono solo per dare all'utente un'idea del contenuto della pagina che andranno ad aprire, perciò si è deciso di non mettere il testo alternativo. 
+Nella pagina \sitepage{Alfabeto.html} si è deciso di non commentare gli \texttt{alt} in quanto il testo presente è sufficientemente descrittivo e la presenza di testo nell'attributo alt risulterebbe superflua.
 Si è fatta una scelta analoga per la pagina dei colori, dove si è ritenuto il contenuto testuale sufficiente anche senza la presenza del testo alternativo.
 
 Anche per la pagina dei giorni si è scelto di non inserire il testo alternativo visto che le immagini sono la rappresentazione della filastrocca e quindi descriverle sarebbe inutile.
 Qualora le immagini per qualche motivo non fossero visualizzabili questo non inciderebbe in alcun modo sul contenuto della pagina.
 
-
 Per la pagina dei numeri invece si è scelto di descrivere le immagini.
 La ragione principale risiede nel fatto che, qualora le immagini non fossero visualizzabili il testo non sarebbe sufficiente a garantire la consistenza del contenuto in quanto si potrebbero leggere solo i numeri in lettere ma non in cifre.
 
-Per la pagina Stagioni.html si è scelto di inserire del testo nell'attributo alt. Le immagini scelte, infatti,  rappresentano simbolicamente le stagioni perciò si è ritenuto giusto riportare un testo alternativo.
+Per la pagina \sitepage{Stagioni.html} si è scelto di inserire del testo nell'attributo alt. Le immagini scelte, infatti,  rappresentano simbolicamente le stagioni perciò si è ritenuto giusto riportare un testo alternativo.
 Una scelta analoga si è fatta per la pagina dei mesi, in quanto ogni immagine riportata rappresenta simbolicamente un mese.
 
- 
-
-
-
-
-
-\subsection{Le tabelle}
 \subsection{Il colore}
+
 \subsection{I form}
 
-
-
-\subsubsection{Collegamenti}
-Per rendere più rapida la navigazione si è scelto di offrire la possibilità di saltare gli elementi che esulano dal contenuto in senso stretto, quali il menu di navigazione o la lista dei \inglese{feed RSS} che si ripetono uguali in ogni pagina e che dunque non necessitano di essere letti ogni volta. A tal fine, sono stati inseriti dei collegamenti nascosti (impostando una posizione assoluta che ecceda il margine sinistro), che però risultano accessibili se si legge il solo contenuto testuale della pagina.
-
-Si è inoltre prestata particolare attenzione a evitare la presenza di link circolari, a rendere il testo delle ancore facilmente individuabile e, soprattutto, sufficientemente autoesplicativo riguardo alla posizione di destinazione (evitando accuratamente di utilizzare parole ``vuote'' o deittici come testo dei link).
-
-Le pagine di dimensione verticale maggiore, ad esempio \sitepage{Alfabeto}, \sitepage{Mesi} o \sitepage{Trama} contengono inoltre dei collegamenti interni per tornare in cima alla pagina durante la navigazione. La pagina dei \sitepage{Personaggi}, oltre a questo tipo di collegamenti, permette di spostarsi da un personaggio all'altro durante la lettura.
-
-La presenza di link esterni al sito, infine, è stata resa evidente mediante l'utilizzo di una simbologia esplicita e tale convenzione interna è stata mantenuta per tutte le pagine.
-%TODO specificare dove esattamente sono stati riportati i link esterni
-
-\subsection{Tabelle}
-Le tabelle che compaiono nella sezione \sitepage{Interpreti} sono state progettate per essere fruibili anche in forma non visuale, mediante l'utilizzo dell'attributo \texttt{scope} rispettivamente con il valore \texttt{col} per le intestazioni delle colonne e con il valore \texttt{row} per la testata di ogni riga, ovvero il personaggio di cui si elencano gli attori della versione originale e i doppiatori della versione italiana.
+\subsection{Le tabelle}
+Le tabelle che compaiono nella sezione \sitepage{Interpreti.html} sono state progettate per essere fruibili anche in forma non visuale, mediante l'utilizzo dell'attributo \texttt{scope} rispettivamente con il valore \texttt{col} per le intestazioni delle colonne e con il valore \texttt{row} per la testata di ogni riga, ovvero il personaggio di cui si elencano gli attori della versione originale e i doppiatori della versione italiana.
 
 La disposizione delle informazioni nella tabella è resa ancor più chiara dall'attributo \texttt{summary}, in cui oltre a giustificare l'organizzazione in righe e colonne è illustrato brevemente il contenuto della tabella, in modo tale che chi accede al contenuto tramite uno \inglese{screen reader} possa saltare il contenuto qualora non interessato.
 
