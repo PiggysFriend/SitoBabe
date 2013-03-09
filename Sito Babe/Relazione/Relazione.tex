@@ -155,6 +155,16 @@ booo\\
 
 \section{Accessibilità}
 
+\subsubsection{Collegamenti}
+Per rendere più rapida la navigazione si è scelto di offrire la possibilità di saltare gli elementi che esulano dal contenuto in senso stretto, quali il menu di navigazione o la lista dei \inglese{feed RSS} che si ripetono uguali in ogni pagina e che dunque non necessitano di essere letti ogni volta. A tal fine, sono stati inseriti dei collegamenti nascosti (impostando una posizione assoluta che ecceda il margine sinistro), che però risultano accessibili se si legge il solo contenuto testuale della pagina.
+
+Si è inoltre prestata particolare attenzione a evitare la presenza di link circolari, a rendere il testo delle ancore facilmente individuabile e, soprattutto, sufficientemente autoesplicativo riguardo alla posizione di destinazione (evitando accuratamente di utilizzare parole ``vuote'' o deittici come testo dei link).
+
+Le pagine di dimensione verticale maggiore, ad esempio \sitepage{Alfabeto}, \sitepage{Mesi} o \sitepage{Trama} contengono inoltre dei collegamenti interni per tornare in cima alla pagina durante la navigazione. La pagina dei \sitepage{Personaggi}, oltre a questo tipo di collegamenti, permette di spostarsi da un personaggio all'altro durante la lettura.
+
+La presenza di link esterni al sito, infine, è stata resa evidente mediante l'utilizzo di una simbologia esplicita e tale convenzione interna è stata mantenuta per tutte le pagine.
+%TODO specificare dove esattamente sono stati riportati i link esterni
+
 \subsection{Tabelle}
 Le tabelle che compaiono nella sezione \sitepage{Interpreti} sono state progettate per essere fruibili anche in forma non visuale, mediante l'utilizzo dell'attributo \texttt{scope} rispettivamente con il valore \texttt{col} per le intestazioni delle colonne e con il valore \texttt{row} per la testata di ogni riga, ovvero il personaggio di cui si elencano gli attori della versione originale e i doppiatori della versione italiana.
 
