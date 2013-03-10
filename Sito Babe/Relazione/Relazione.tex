@@ -117,7 +117,7 @@ Elena Zecchinato
 \emph{Matricola:} \\
 610762\\
 610761\\
-booo\\
+1007584\\
 booo\\
 \end{flushright}
 \end{minipage}
@@ -228,6 +228,10 @@ Per quanto riguarda il \inglese{design} delle pagine, la scelta per il dimension
 Inoltre, come specificato nella sezione \ref{sec:testoaccessibile} per le parti testuali si è deciso di adottare una misura relativa espressa in \texttt{em} in modo da rispettare per quanto possibile le preferenze impostate dall'utente e ottenere quindi un certo grado di elasticità nel \inglese{layout} delle pagine.
 
 \section{Note su particolari pagine}
+\subsection{pagina Mesi.html}
+Il contenuto della pagina viene presentato servendosi di una filastrocca. La struttura della filastrocca richiede che ogni verso occupi una riga differente. Per fornire questa struttura si è inserito ogni verso in un tag \texttt{<p>}.
+Si è scelto di non usare il tag \texttt{<pre>} in quanto pur garantendo la conservazione di spazi e ritorni a capo, tale tag rende più complessa la manipolazione per il ridimensionamento della pagina.
+Infatti usando il tag \texttt{<pre>} viene disabilitato il ritorno a capo automatico e perciò se la pagina diventa troppo piccola il testo esce della pergamena posta come sfondo. Purtroppo modificare questa proprietà tramite il CSS è possibile ma questo rende il CSS non valido, perciò si è preferito usare il tag \texttt{<p>} che garantisce invece il \inglese{wrapping}.
 
 \section{Pagine dinamiche}
 
