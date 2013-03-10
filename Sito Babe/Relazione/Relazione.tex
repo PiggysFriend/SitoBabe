@@ -210,6 +210,13 @@ La disposizione delle informazioni nella tabella è resa ancor più chiara dall'
 
 Al fine di utilizzare un \inglese{markup} quanto più semantico possibile, inoltre, in ognuna delle due tabelle si è fatto ricorso a un elemento \texttt{<thead>} per creare le intestazioni delle tre colonne, in cui sono stati inseriti come figli di secondo livello degli elementi \texttt{<th>}. L'utilizzo di un \inglese{footer} non è invece stato ritenuto necessario, dal momento che il numero di righe è piuttosto ridotto (otto nella tabella degli interpreti e dieci in quella delle voci degli animali). Infine, come ultimo accorgimento per agevolare la lettura, si è scelto di alternare i colori delle righe adiacenti.
 
+\subsection{Accorgimenti di markup}
+In tutte le pagine, le parole che comparivano in lingue diverse da quella principale sono state inserite all'interno di un elemento in cui è specificato l'attributo \texttt{xml:lang}, eventualmente aggiungendo uno \texttt{<span>} qualora la porzione di testo interessata non fosse già racchiusa in un elemento superiore.
+
+In tal modo gli \inglese{screen reader} saranno in grado di adottare la pronuncia corretta, in special modo per i numerosi nomi dei personaggi che hanno mantenuto il nome originale anche nella versione doppiata dei film.
+
+Inoltre, ancora una volta allo scopo di facilitare la fruizione del contenuto a chi accede al sito tramite tecnologie di sintesi vocale, le eventuali sigle o abbreviazioni, ad esempio ``RSS'' sono stati inseriti all'interno di un elemento \texttt{<abbr>} in cui tramite l'attributo \texttt{title} si fornisce la dicitura per esteso.
+
 \section{Note su particolari pagine}
 
 \section{Pagine dinamiche}
