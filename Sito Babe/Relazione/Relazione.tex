@@ -160,7 +160,9 @@ Per quanto riguarda il testo si è cercato di fare particolare attenzione alla d
 
 Non si sono infatti impiegati font particolari e le dimensioni del testo sono assegnate con il parametro \texttt{em} che permette l'adattamento del testo in base alle caratteristiche desiderate dall'utente.  
 
-Si è inoltre cercato di utilizzare un linguaggio il più chiaro possibile visto che il pubblico a cui ci si rivolge sono i bambini è ancor più importante essere chiari e semplici. Laddove possibile, si è fatto uso di strutture enumerative (liste ordinate o non ordinate) per presentare le informazioni in forma schematica e più facilmente accessibile.
+Si è inoltre cercato di utilizzare un linguaggio il più chiaro possibile visto che il pubblico a cui ci si rivolge sono i bambini è ancor più importante essere chiari e semplici.
+
+Infine, laddove possibile, si è fatto uso di strutture enumerative (liste ordinate o non ordinate) per presentare le informazioni in forma schematica e più facilmente accessibile in quanto già strutturata e non ``appiattita'' in forma testuale.
 
 \subsection{I link}
 Per quanto riguarda i link si è deciso di non rompere le convenzioni esterne evitando di personalizzarne l'aspetto all'interno del sito.
@@ -206,11 +208,13 @@ In generale, la tavolozza dei colori adottata per la realizzazione delle pagine 
 \subsection{Le tabelle}
 Le tabelle che compaiono nella sezione \sitepage{Interpreti.html} sono state progettate per essere fruibili anche in forma non visuale, mediante l'utilizzo dell'attributo \texttt{scope} rispettivamente con il valore \texttt{col} per le intestazioni delle colonne e con il valore \texttt{row} per la testata di ogni riga, ovvero il personaggio di cui si elencano gli attori della versione originale e i doppiatori della versione italiana.
 
-La disposizione delle informazioni nella tabella è resa ancor più chiara dall'attributo \texttt{summary}, in cui oltre a giustificare l'organizzazione in righe e colonne è illustrato brevemente il contenuto della tabella, in modo tale che chi accede al contenuto tramite uno \inglese{screen reader} possa saltare il contenuto qualora non interessato.
+Tramite un simile accorgimento, chi accede al contenuto del sito mediante un sintetizzatore vocale potrà sentire prima del contenuto di ogni cella l'indicazione del personaggio a cui si riferisce l'informazione (che corrisponde all'indice di riga) e il ruolo che viene presentato (che corrisponde alla colonna) anche in assenza delle informazioni che normalmente vengono veicolate dalla disposizione spaziale del testo.
+
+L'organizzazione delle informazioni nella tabella è resa ancor più chiara dall'attributo \texttt{summary}, in cui oltre a giustificare la suddivisione in righe e colonne è illustrato brevemente il contenuto della tabella, in modo tale che chi accede al contenuto tramite uno \inglese{screen reader} possa saltare il contenuto qualora non interessato.
 
 Al fine di utilizzare un \inglese{markup} quanto più semantico possibile, inoltre, in ognuna delle due tabelle si è fatto ricorso a un elemento \texttt{<thead>} per creare le intestazioni delle tre colonne, in cui sono stati inseriti come figli di secondo livello degli elementi \texttt{<th>}. L'utilizzo di un \inglese{footer} non è invece stato ritenuto necessario, dal momento che il numero di righe è piuttosto ridotto (otto nella tabella degli interpreti e dieci in quella delle voci degli animali). Infine, come ultimo accorgimento per agevolare la lettura, si è scelto di alternare i colori delle righe adiacenti.
 
-\subsection{Accorgimenti di markup}
+\subsection{Accorgimenti per gli screen reader}
 In tutte le pagine, le parole che comparivano in lingue diverse da quella principale sono state inserite all'interno di un elemento in cui è specificato l'attributo \texttt{xml:lang}, eventualmente aggiungendo uno \texttt{<span>} qualora la porzione di testo interessata non fosse già racchiusa in un elemento superiore.
 
 In tal modo gli \inglese{screen reader} saranno in grado di adottare la pronuncia corretta, in special modo per i numerosi nomi dei personaggi che hanno mantenuto il nome originale anche nella versione doppiata dei film.
