@@ -186,9 +186,11 @@ Per rendere più rapida la navigazione si è scelto di offrire la possibilità d
 Si è inoltre prestata particolare attenzione a evitare la presenza di link circolari, a rendere il testo delle ancore facilmente individuabile e, soprattutto, sufficientemente autoesplicativo riguardo alla posizione di destinazione (evitando accuratamente di utilizzare parole ``vuote'' o deittici come testo dei link).
 
 \subsection{Le immagini}
-Nel sito le immagini sono molto numerose, essendo infatti un sito per bambini molte cose sono spiegate con l'aiuto di immagini.
+Nel sito le immagini sono molto numerose, essendo infatti un sito per bambini molte cose sono spiegate con l'aiuto di immagini. La dimensione delle immagini è stata mantenuta sotto controllo e, ove necessario, sono state ridimensionate per consentire una migliore visualizzazione senza appesantire eccessivamente il caricamento della pagina.
 
-Per ogni immagine è stata valutata la necessità di inserire del testo nell'attributo alt per permettere allo \inglese{screen reader} di descrivere l'immagine o di poter visualizzare il testo alternativo qualora l'immagine non si potesse vedere.
+Per ogni immagine è stata valutata la necessità di inserire del testo nell'attributo \texttt{alt} per permettere allo \inglese{screen reader} di descrivere l'immagine o di poter visualizzare il testo alternativo qualora l'immagine non si potesse vedere. Le descrizioni inserite sono sufficientemente esplicative ma di breve lunghezza, in modo che la loro lettura non richieda un tempo eccessivo.\footnote{%
+    L'uso dell'attributo \texttt{longdesk} per inserire descrizioni più lunghe è stato giudicato inopportuno dato il suo scarso supporto da parte dei browser.
+}
 
 Nella pagina \sitepage{ImparaConBabe.html} le immagini servono solo per dare all'utente un'idea del contenuto della pagina che andranno ad aprire, perciò si è deciso di non mettere il testo alternativo. 
 Nella pagina \sitepage{Alfabeto.html} si è deciso di non commentare gli \texttt{alt} in quanto il testo presente è sufficientemente descrittivo e la presenza di testo nell'attributo \texttt{alt} risulterebbe superflua.
