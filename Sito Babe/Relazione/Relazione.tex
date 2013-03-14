@@ -12,7 +12,6 @@
 \usepackage[font=small,labelfont=bf,labelsep=period,tableposition=top]{caption}
 \usepackage{tabularx}
 \usepackage{multirow}
-\usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{fancyhdr}
 \usepackage{lastpage}    
@@ -83,8 +82,9 @@
 % **************************************************
 % Macro
 % **************************************************
-\newcommand{\sitepage}[1]{\textsf{#1}}
+\newcommand{\sitepage}[1]{\textcolor{cyan}{\textsf{#1}}}
 \newcommand{\inglese}[1]{\foreignlanguage{english}{\itshape{}#1}}
+\newcommand{\progname}[1]{\textcolor{blue}{\textsf{#1}}}
 
 \begin{document}
 %----------------------------------------------------------
@@ -161,6 +161,7 @@ Si tratta di un sito didattico che ha lo scopo di sensibilizzare i bambini sul t
 \clearpage
 
 \section{Accessibilità}
+
 \subsection{Il testo}\label{sec:testoaccessibile}
 Per quanto riguarda il testo si è cercato di fare particolare attenzione alla dimensione e ai font utilizzati. Infatti, essendo un sito per bambini è bene avere un testo facilmente leggibile sia in relazione alla dimensione che ai font utilizzati.
 
@@ -169,21 +170,6 @@ Non si sono infatti impiegati font particolari e le dimensioni del testo sono as
 Si è inoltre cercato di utilizzare un linguaggio il più chiaro possibile visto che il pubblico a cui ci si rivolge sono i bambini è ancor più importante essere chiari e semplici.
 
 Infine, laddove possibile, si è fatto uso di strutture enumerative (liste ordinate o non ordinate) per presentare le informazioni in forma schematica e più facilmente accessibile in quanto già strutturata e non ``appiattita'' in forma testuale.
-
-\subsection{I colori}
-La scelta dei colori è stata guidata dal duplice scopo di ottenere una serie di pagine esteticamente gradevoli a un pubblico di bambini ma anche, al tempo stesso, di garantire un adeguato contrasto dei colori per gli utenti affetti da patologie che alterano la percezione cromatica.
-
-Lo strumento \textsf{Color Oracle} è stato utilizzato al fine di simulare la visione di un utente affetto da difetti della percezione visiva, in particolare:
-%TODO terminare questa sezione
-\begin{description}
-  \item{deuteranopia}
-  \item{protanopia}
-  \item{tritanopia}
-\end{description}
-
-%TODO spiegare che è stato utilizzato TotalValidator
-
-%TODO manca la barra dell'accessibilità di IE
 
 \subsection{I link}
 Per quanto riguarda i link si è deciso di non rompere le convenzioni esterne evitando di personalizzarne l'aspetto all'interno del sito.
@@ -204,7 +190,7 @@ Si è inoltre prestata particolare attenzione a evitare la presenza di link circ
 Nel sito le immagini sono molto numerose, essendo infatti un sito per bambini molte cose sono spiegate con l'aiuto di immagini. La dimensione delle immagini è stata mantenuta sotto controllo e, ove necessario, sono state ridimensionate per consentire una migliore visualizzazione senza appesantire eccessivamente il caricamento della pagina.
 
 Per ogni immagine è stata valutata la necessità di inserire del testo nell'attributo \texttt{alt} per permettere allo \inglese{screen reader} di descrivere l'immagine o di poter visualizzare il testo alternativo qualora l'immagine non si potesse vedere. Le descrizioni inserite sono sufficientemente esplicative ma di breve lunghezza, in modo che la loro lettura non richieda un tempo eccessivo.\footnote{%
-    L'uso dell'attributo \texttt{longdesk} per inserire descrizioni più lunghe è stato giudicato inopportuno dato il suo scarso supporto da parte dei browser.
+    L'uso dell'attributo \texttt{longdesc} per inserire descrizioni più lunghe è stato giudicato inopportuno dato il suo scarso supporto da parte dei browser.
 }
 
 Nella pagina \sitepage{ImparaConBabe.html} le immagini servono solo per dare all'utente un'idea del contenuto della pagina che andranno ad aprire, perciò si è deciso di non mettere il testo alternativo. 
@@ -223,7 +209,18 @@ Una scelta analoga si è fatta per la pagina \sitepage{Mesi.html}, in quanto ogn
 \subsection{Il colore}
 In generale, la tavolozza dei colori adottata per la realizzazione delle pagine è basata sui colori caldi (rosa, arancio, legno chiaro) e intende rimandare ai colori della fattoria e del mondo agreste da cui provengono i personaggi degli sceneggiati che hanno come protagonista Babe.
 
-%TODO da completare con analisi del contrasto dei colori
+La scelta dei colori è stata guidata dal duplice scopo di ottenere una serie di pagine esteticamente gradevoli anche in vista del pubblico di bambini ma anche, al tempo stesso, di garantire un adeguato contrasto dei colori per gli utenti affetti da patologie in grado di alterare la percezione cromatica.
+
+Lo strumento \progname{Color Oracle} è stato utilizzato al fine di simulare la visione di un utente affetto da dicromatismo, vale a dire un soggetto in cui solo due tra le tre normali discriminazioni visive (luce/buio, giallo/blu e rosso/verde) sono presenti, in particolare:
+%TODO terminare questa sezione
+\begin{description}
+  \item{\textbf{Deuteranopia}}, per cui il color rosso porpora è indistinguibile dal verde;
+  \item{\textbf{Protanopia}}, ossia l'incapacità di percepire il colore rosso;
+  \item{\textbf{Tritanopia}} ovvero la cecità per i colori blu e violetto.
+\end{description}
+
+
+
 
 \subsection{I form}
 %TODO da completare
@@ -255,6 +252,12 @@ Inoltre, come specificato nella sezione \ref{sec:testoaccessibile} per le parti 
 Il contenuto della pagina viene presentato servendosi di una filastrocca. La struttura della filastrocca richiede che ogni verso occupi una riga differente. Per fornire questa struttura si è inserito ogni verso in un tag \texttt{<p>}.
 Si è scelto di non usare il tag \texttt{<pre>} in quanto pur garantendo la conservazione di spazi e ritorni a capo, tale tag rende più complessa la manipolazione per il ridimensionamento della pagina.
 Infatti usando il tag \texttt{<pre>} viene disabilitato il ritorno a capo automatico e perciò se la pagina diventa troppo piccola il testo esce della pergamena posta come sfondo. Purtroppo modificare questa proprietà tramite il CSS è possibile ma questo rende il CSS non valido, perciò si è preferito usare il tag \texttt{<p>} che garantisce invece il \inglese{wrapping}.
+
+\subsection{Strumenti ultilizzati}
+
+Il programma \progname{Totalvalidator}, in versione gratuita, è stato utilizzato per verificare il rispetto delle linee guida WCAG 2.0, ottenendo la valutazione AA2.
+
+%TODO manca la barra dell'accessibilità di IE
 
 \section{Pagine dinamiche}
 
