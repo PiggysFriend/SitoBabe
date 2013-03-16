@@ -1,7 +1,8 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="FormCreator.xsl"?>
 <sondaggi xmlns = "http://www.ilmondodibabe.it" xmlns:xsd = "http://www.w3.org/2001/XMLSchema-instance" xsd:schemaLocation = "http://www.ilmondodibabe.it/Xml/Schema/Sondaggi.xsd">
 	<sondaggio numero = "1">
-		<domanda numero = "1" etichetta = "Ti è piaciuto il primo film della serie">
+		<domanda numero = "1" etichetta = "Ti è piaciuto il primo film della serie?">
 			<scelta numero = "1" etichetta = "molto poco">
 				<votanti>0</votanti>
 			</scelta>
@@ -15,7 +16,7 @@
 				<votanti>0</votanti>
 			</scelta>
 		</domanda>
-		<domanda numero = "2" etichetta = "Ti è piaciuto il secondo film della serie">
+		<domanda numero = "2" etichetta = "Ti è piaciuto il secondo film della serie?">
 			<scelta numero = "1" etichetta = "molto poco">
 				<votanti>0</votanti>
 			</scelta>
@@ -29,7 +30,7 @@
 				<votanti>0</votanti>
 			</scelta>
 		</domanda>
-		<domanda numero = "3" etichetta = "Desidereresti venisse prodotto un terzo film">
+		<domanda numero = "3" etichetta = "Desidereresti venisse prodotto un terzo film?">
 			<scelta numero = "1" etichetta = "si">
 				<votanti>0</votanti>
 			</scelta>

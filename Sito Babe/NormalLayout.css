@@ -3,7 +3,7 @@ body
 	font-family:Verdana, Helvetica, sans-serif;
 	background:
 		url("img/erba2.png") 100% 100% repeat-x fixed, 
-		bottom url("img/cielo_2.jpg") fixed;
+		url("img/cielo_2.jpg") 100% 100%  fixed;
 	background-color: #1d60a6;
 }
 
@@ -141,6 +141,12 @@ body
 #foot p
 {
 	display:inline;
+}
+
+.etichetta
+{
+	float:left;
+	width:6em;
 }
 
 span.inglese {
