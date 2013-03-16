@@ -4,7 +4,7 @@
 	
 	<xsd:complexType name = "TSondaggi">
 		<xsd:sequence>
-			<xsd:element name = "sondaggio" type = "TSondaggio"/>
+			<xsd:element name = "sondaggio" type = "TSondaggio" maxOccurs = "unbounded"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	
