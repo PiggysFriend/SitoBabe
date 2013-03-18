@@ -9,10 +9,10 @@
  
 <html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
 	<head>
-		<title>Home - Il mondo di Babe</title>
+		<title>Sondaggi - Il mondo di Babe</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<meta name="description" content="Portale dedicato alle avventure di Babe: tante schede didattiche e curiosità per imparare divertendosi in compagnia del maialino più coraggioso che ci sia." />
-		<meta name="keywords" content="Babe, film, impara, il mondo di Babe" />
+		<meta name="description" content="Sondaggi sui film di Babe. Dicci la tua e aiutaci a capire come costruire il seguito della saga!" />
+		<meta name="keywords" content="Babe, film, sondaggi, il mondo di Babe" />
 		<meta name="author" content="Andrea Meneghinello, Andrea Rizzi, Diego Beraldin, Elena Zecchinato" />
 		<meta name="language" content="italian it" />
 		<link href="../NormalLayout.css" rel="stylesheet" type="text/css" media="screen"/>
@@ -22,20 +22,18 @@
 		<div id="bodyWrap" class="group">
 			<div id="header">
 				<h1>Il mondo di <span xml:lang="en">Babe</span></h1>
-				<p>Ti trovi nella <span xml:lang="en">Home</span> del sito!</p>
+				<p>Ti trovi in <a href="../Home.html">Home</a> &gt; Sondaggi</p>
 			</div>
 			
 			<div id="nav">
 				<a href="#rss" class="nascosto">Salta menù</a>
 				<h2>Menù</h2>
 				<ul>
-					<li><a href="">Lo sapevi che...</a></li>
-					<li><a href="Trama.html"> Trama dei film</a></li>
-					<li><a href="Personaggi.html">Personaggi</a></li>
-					<li><a href="Interpreti.html">Interpreti</a></li>
-					<li><a href="">Parla con...</a></li>
-					<li><a href="ImparaConBabe.html">Impara con <span xml:lang="en">Babe</span></a></li>
-					<li><a href="">Suggerimenti</a></li>
+					<li><a href="../Trama.html"> Trama dei film</a></li>
+					<li><a href="../Personaggi.html">Personaggi</a></li>
+					<li><a href="../Interpreti.html">Interpreti</a></li>
+					<li><a href="../ImparaConBabe.html">Impara con <span xml:lang="en">Babe</span></a></li>
+					<li><a href="">Sondaggi</a></li>
 					<li><a href="">Riconoscimenti</a></li>
 					<li><a href=""><span xml:lang="en">Link</span> utili</a></li>
 				</ul>
