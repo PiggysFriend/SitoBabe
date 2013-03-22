@@ -78,7 +78,7 @@
 					</div>
 					<div>
 						<label class="etichetta" for="commento">commento</label>
-						<textarea rows="5" cols="40" id="commento"></textarea>
+						<textarea rows="5" cols="40" id="commento">inserisci qui il tuo commento...</textarea>
 					</div>
 					<div>
 						<input type="submit"></input>
