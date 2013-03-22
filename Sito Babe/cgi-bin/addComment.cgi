@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl 
 
 $page=new CGI;
 
@@ -27,26 +27,28 @@ $commento=$page->param('commento');
 	"email"=>"0",
 	"commento"=>"0");
 
+$error= "false";
+
 # Controllo dati immessi
-if ($domanda1 == "") 
+if ($domanda1 eq "") 
 {
 	$check{"domanda1"} = "1";
 	$error=true;
 }
 
-if ($domanda2 == "") 
+if ($domanda2 eq "") 
 {
 	$check{"domanda2"} = "1";
 	$error=true;
 }
 
-if ($domanda3 == "") 
+if ($domanda3 eq "") 
 {
 	$check{"domanda3"} = "1";
 	$error=true;
 }
 
-if ($name == "") 
+if ($name eq "") 
 {
 	$check{"name"} = "1";
 	$error=true;
@@ -58,14 +60,14 @@ if ($email !~ /^([\w\-\+\.]+)\@([\w\-\+\.]+)\.([\w\-\+\.]+)$/)
 	$error=true;
 }
 
-if ($commento == "") 
+if ($commento eq "") 
 {
 	$check{"commento"} = "1";
 	$error=true;
 }
 
 # Stampa della pagina errore o aggiunta al database
-if ($error) {
+if ($error eq "true") {
 	print $page->redirect(-uri=>'../public_html/Home.html');
 }
 else 
