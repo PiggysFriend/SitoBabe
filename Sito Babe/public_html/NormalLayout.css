@@ -170,7 +170,7 @@ span.inglese {
   padding: 1em;
 }
 
-table.interpreti {;
+table.interpreti {
   font-size: .9em;
 } th {
   background-color: #cc9966;
@@ -215,8 +215,8 @@ a.nascosto
 .impara{
 	float:left;
 	width:20%;
-	padding-top:0%;
-	padding-bottom:0%;
+	padding-top:0;
+	padding-bottom:0;
 }
 
 #numeri{
@@ -254,7 +254,7 @@ width:30%;}
 
 #colori{
 	list-style:none;
-	padding:0px;}
+	padding:0;}
 
 #colori li{
 	padding-left:5%;
@@ -266,7 +266,7 @@ width:30%;}
 	font-size:2em;
 	padding-left:2%;
 	font-variant: small-caps;
-	margin-bottom:0%;}
+	margin-bottom:0;}
 
 .colori{
 	float:left;
@@ -370,9 +370,6 @@ background-image:
 		padding-top:10%;
 		padding-bottom:12%;
 		padding-right:27%;
-		
-	
-
 }
 
 #alfabeto{
@@ -417,7 +414,6 @@ background-image:
 	margin:0;
 	}
 	
-
 .giorno{
 	margin:0;
 	width:50%;

@@ -1,5 +1,4 @@
-#path d'installazione di perl 
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
 $page=new CGI;
 
