@@ -22,7 +22,7 @@
 		<div id="bodyWrap" class="group">
 			<div id="header">
 				<h1>Il mondo di <span xml:lang="en">Babe</span></h1>
-				<p>Ti trovi in <a href="../Home.html">Home</a> &gt; Sondaggi</p>
+				<p>Ti trovi in <a href="../public_html/Home.html">Home</a> &gt; Sondaggi</p>
 			</div>
 			
 			<div id="nav">
