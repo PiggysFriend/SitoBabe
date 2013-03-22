@@ -45,7 +45,7 @@
 			</div>
 			
 			<div id="content" class="group">
-			<form action="" method="POST">
+			<form action="../cgi-bin/addComment.cgi" method="POST">
 				<fieldset>
 					<legend>Sondaggio</legend>
 					<xsl:for-each select="//a:sondaggio[@numero='1']/a:domanda">

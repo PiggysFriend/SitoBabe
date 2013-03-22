@@ -4,7 +4,6 @@ body
 	background:
 		url("img/erba2.png") 100% 100% repeat-x fixed, 
 		url("img/cielo_2.jpg") 100% 100%  fixed;
-	background-color: #1d60a6;
 }
 
 #bodyWrap
@@ -37,7 +36,6 @@ body
 		url("img/babe_img.png") bottom left no-repeat,
 		url("img/TextureLegno.jpg") repeat-x;
 	background-size: 100px, 800px;
-	background-color: #c98542;
 	font-size:0.8em;
 	padding-top:20px;
 	padding-bottom:0;
