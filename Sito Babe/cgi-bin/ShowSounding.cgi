@@ -24,7 +24,7 @@ my $xsltRule = $parser->parse_file($trasformed);
 my $stylesheet = $xslt->parse_stylesheet($xsltRule);
 
 #Applicazione della trasformata
-my $result = $stylesheet->trasform($data);
+my $result = $stylesheet->transform($data);
 
 #Serializzazione della trasformata
 my $page = $result->toString;
