@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" 
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:a="http://www.ilmondodibabe.it">
-	<xsl:output method="html" version="1.0" encoding="ISO-8859-1" indent="yes" />
+	<xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes" />
 
 
 <xsl:template match="/">
@@ -15,8 +15,8 @@
 		<meta name="keywords" content="Babe, film, sondaggi, il mondo di Babe" />
 		<meta name="author" content="Andrea Meneghinello, Andrea Rizzi, Diego Beraldin, Elena Zecchinato" />
 		<meta name="language" content="italian it" />
-		<link href="../NormalLayout.css" rel="stylesheet" type="text/css" media="screen"/>
-		<link href="../SmallLayout.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:850px), only screen and (max-device-width:480px)"/>
+		<link href="../public_html/NormalLayout.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link href="../public_html/SmallLayout.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:850px), only screen and (max-device-width:480px)"/>
 	</head>
 	<body>
 		<div id="bodyWrap" class="group">
