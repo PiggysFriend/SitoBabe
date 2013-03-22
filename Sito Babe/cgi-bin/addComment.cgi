@@ -67,9 +67,9 @@ if ($commento == "")
 
 # Stampa della pagina errore o aggiunta al database
 if ($error) {
-	print $page->redirect(-uri=>'../Home.html');
+	print $page->redirect(-uri=>'../public_html/Home.html');
 }
 else 
 {
-	print $page->redirect(-uri=>'../Colori.html');
+	print $page->redirect(-uri=>'../public_html/Colori.html');
 }

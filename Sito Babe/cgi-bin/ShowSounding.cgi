@@ -7,8 +7,8 @@ use CGI;
 use CGI::Carp qw(fatalsToBrowser);
 
 #Imposto i path del file dati e della trasformata
-my $fileData = "";
-my $trasformed = "";
+my $fileData = "../data/Sondaggi.xml";
+my $trasformed = "../data/FormCreator.xsl";
 
 #Creazione del parser
 my $parser = XML::LibXML->new();

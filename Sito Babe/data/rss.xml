@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<rss version = "2.0">
+<channel>
+	<title>Il mondo di babe</title>
+	<description>Notizie provenienti dal mondo di babe</description>
+	
+	<item>
+		<title>Impara l'alfabeto</title>
+		<link>tecnologie-web.studenti.math.unipd.it/tecweb/ameneghi/alfabeto.html</link>
+		<description>
+			Sezione dedicata all'insegnamento dell'alfabeto italiano
+			insegnato direttamente dal tuo amico babe
+		</description>
+	</item>
+</channel>

@@ -1,0 +1,46 @@
+body
+{
+	margin:0;
+}
+
+#bodyWrap
+{
+	width:100%;
+	border-radius:0;
+	border:none;
+	margin:0;
+	padding:0;
+}
+
+#content
+{
+	clear:both;
+	width:95%;
+	margin:0 auto;
+	margin-bottom:5px;
+}
+
+#nav
+{
+	clear:both;
+	float:none;
+	width:95%;
+	margin:0 auto;
+	padding-right:10px;
+	margin-top:5px;
+	margin-bottom:5px;
+	border-top-right-radius:0.8em;
+}
+
+#rss
+{
+	float:none;
+	clear:both;
+	width:95%;
+	padding:10px;
+	margin:0 auto;
+	margin-bottom:5px;
+	border-radius:0;
+}
+
+
