@@ -172,13 +172,27 @@ Nei livelli sottostanti della gerarchia si è invece adottata la struttura organ
 Pur essendo il sito orientato alla didattica, non si è ritenuta necessaria l'adozione di una struttura organizzativa sequenziale perché gli insegnamenti impartiti sono talmente basilari e scorrelati gli uni dagli altri da non necessitare l'imposizione di un percorso obbligato.
 
 \subsection{Layout delle pagine}
-%TODO chiaritemi questo dubbio: il nostro si adatta bene alle preferenze dell'utente? è quindi anche elastico o è solo fluido?
-Per quanto riguarda il \inglese{design} delle pagine, la scelta per il dimensionamento degli elementi è stata la creazione di un \inglese{layout} fluido, in grado di adattarsi alle dimensioni (in particolare sull'asse orizzontale) dello schermo. Ovunque fosse possibile le misure sono state espresse in unità relative, come le percentuali.
+Per quanto riguarda il \inglese{design} delle pagine, la scelta per il dimensionamento degli elementi è stata la creazione di un \inglese{layout} fluido, in grado di adattarsi alle dimensioni (in particolare sull'asse orizzontale) dello schermo. Ovunque fosse possibile le misure sono state espresse in unità relative, come le percentuali tanto per la dimensione dei contenitori di testo quanto per le immagini.
+
+% TODO spiegare come è stato ottenuto l'effetto dello sfondo a parallasse
 
 Inoltre, come specificato nella sezione \ref{sec:testoaccessibile} per le parti testuali si è deciso di adottare una misura relativa espressa in \texttt{em} in modo da rispettare per quanto possibile le preferenze impostate dall'utente e ottenere quindi un certo grado di elasticità nel \inglese{layout} delle pagine.
 
-%TODO fuffare sul fatto che il nuovo CSS entra in funzione con una dimensione della finestra in em
-% in modo che subentri anche in base alle preferenze sulla dimensione del test dell'utente
+In relazione al supporto ai caratteri, si è scelto di utilizzare nel foglio di stile la direttiva
+\begin{verbatim}
+  font-family: Verdana, Helvetica, sans-serif;
+\end{verbatim}
+in modo da assicurare una visualizzazione simile su ogni dispositivo indipendentemente dal sistema operativo e dai font tipografici supportati.
+
+Per assicurare un buon grado di uniformità nella visualizzazione dei colori si sono utilizzati esclusivamente colori \inglese{web-safe} vale a dire i colori che nella loro rappresentazione esadecimale contengono solo le cifre \verb+0+, \verb+3+, \verb+6+, \verb+9+, \verb+c+ e \verb+f+.
+
+Per garantire una trasformazione elegante del \inglese{layout} in tutte le circostanze e, in particolare:
+\begin{enumerate}[noitemsep,nolistsep,label=\emph{\alph*})]
+  \item\label{item1} in caso di ridimensionamento della finestra del browser;
+  \item\label{item2} in caso di visualizzazione su dispositivi con schermo di dimensioni ridotte;
+  \item\label{item3} nel caso in cui l'utente abbia impostato una dimensione dei caratteri molto grande;
+\end{enumerate}
+è stata impostata l'attivazione del CSS \texttt{SmallLayout.css} con una misura relativa in \texttt{em}. Utilizzando infatti nell'elemento \texttt{<link>} una misura dello schermo espressa in pixel si garantisce la trasformazione per tutti i browser per i soli casi \ref{item1} e \ref{item2} mentre l'attivazione del CSS alternativo nel caso \ref{item3} avviene solo in alcuni browser (es. Firefox).
 
 \section{Mappa del sito}
 \begin{figure}[tb]
