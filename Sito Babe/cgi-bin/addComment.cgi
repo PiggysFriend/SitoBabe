@@ -15,7 +15,7 @@ $domanda3=$page->param("3");
 
 #Recupero dati inerenti i commenti
 $utente=$page->param("name");
-$mail=$page->param("email");
+$mail=$page->param("e-mail");
 $data=((localtime)[3])."-".((localtime)[4])."-".(1900+(localtime)[5]);
 $commento=$page->param("commento");
 
