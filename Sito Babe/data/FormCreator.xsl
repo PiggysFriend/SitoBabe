@@ -70,18 +70,18 @@
 					</xsl:for-each>
 					<div>
 						<label class="etichetta" for="name">Nome utente</label>
-						<input type="text" id = "name"></input>
+						<input type="text" id = "name" name="name"></input>
 					</div>
 					<div>
 						<label class="etichetta" for="e-mail">e-mail</label>
-						<input type="text" id = "e-mail"></input>
+						<input type="text" id = "e-mail" name="e-mail"></input>
 					</div>
 					<div>
 						<label class="etichetta" for="commento">commento</label>
-						<textarea rows="5" cols="40" id="commento">inserisci qui il tuo commento...</textarea>
+						<textarea rows="5" cols="40" id="commento" name="commento">inserisci qui il tuo commento...</textarea>
 					</div>
 					<div>
-						<input type="submit"></input>
+						<input type="submit" name="invioDati"></input>
 						<input type="reset"></input>
 					</div>
 				</fieldset>
