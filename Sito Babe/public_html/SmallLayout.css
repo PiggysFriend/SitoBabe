@@ -16,8 +16,8 @@ body
 {
 	clear:both;
 	width:95%;
-	margin:0 auto;
-	margin-bottom:5px;
+	margin: 5px 1%;
+	padding-right: 1%;
 }
 
 #nav
@@ -25,22 +25,8 @@ body
 	clear:both;
 	float:none;
 	width:95%;
-	margin:0 auto;
-	padding-right:10px;
-	margin-top:5px;
-	margin-bottom:5px;
+	margin:5px 1%;
+	padding-right: 2%;
 	border-top-right-radius:0.8em;
 }
-
-#rss
-{
-	float:none;
-	clear:both;
-	width:95%;
-	padding:10px;
-	margin:0 auto;
-	margin-bottom:5px;
-	border-radius:0;
-}
-
 
