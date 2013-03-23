@@ -79,7 +79,7 @@ else
 	my $radice = $doc->getDocumentElement;
 	
 	#aggiorno domanda 1
-	my $risposta1 = $doc->findnodes("//domanda[\@numero='1']/scelta[\@etichetta='".$domanda1."']/votanti/text()");
+	my $risposta1 = $doc->findnodes("//domanda[\@numero='1']/scelta[\@etichetta='".$domanda1."']/votanti/text()")->get_node(1);
 	$value=$risposta1 + 1;
 	$risposta1->setData($value);
 	open (DATA, ">$file");
@@ -87,7 +87,7 @@ else
 	close(DATA);
 	
 	#aggiorno domanda 2
-	my $risposta2 = $doc->findnodes("//domanda[\@numero='2']/scelta[\@etichetta='".$domanda2."']/votanti/text()");
+	my $risposta2 = $doc->findnodes("//domanda[\@numero='2']/scelta[\@etichetta='".$domanda2."']/votanti/text()")->get_node(1);
 	$value=$risposta2 + 1;
 	$risposta2->setData($value);
 	open (DATA, ">$file");
@@ -95,7 +95,7 @@ else
 	close(DATA);
 	
 	#aggiorno domanda 3
-	my $risposta3 = $doc->findnodes("//domanda[\@numero='3']/scelta[\@etichetta='".$domanda3."']/votanti/text()");
+	my $risposta3 = $doc->findnodes("//domanda[\@numero='3']/scelta[\@etichetta='".$domanda3."']/votanti/text()")->get_node(1);
 	$value=$risposta3 + 1;
 	$risposta3->setData($value);
 	open (DATA, ">$file");
