@@ -263,8 +263,6 @@ Lo strumento \progname{Color Oracle} è stato utilizzato al fine di simulare la 
 \end{description}
 
 
-
-
 \subsection{I form}
 %TODO da completare
 
@@ -284,17 +282,20 @@ In tal modo gli \inglese{screen reader} saranno in grado di adottare la pronunci
 
 Inoltre, ancora una volta allo scopo di facilitare la fruizione del contenuto a chi accede al sito tramite tecnologie di sintesi vocale, le eventuali sigle o abbreviazioni, ad esempio ``RSS'' sono stati inseriti all'interno di un elemento \texttt{<abbr>} in cui tramite l'attributo \texttt{title} si fornisce la dicitura per esteso.
 
-\section{Note su particolari pagine}
-\subsection{pagina Mesi.html}
-Il contenuto della pagina viene presentato servendosi di una filastrocca. La struttura della filastrocca richiede che ogni verso occupi una riga differente. Per fornire questa struttura si è inserito ogni verso in un tag \texttt{<p>}.
-Si è scelto di non usare il tag \texttt{<pre>} in quanto pur garantendo la conservazione di spazi e ritorni a capo, tale tag rende più complessa la manipolazione per il ridimensionamento della pagina.
-Infatti usando il tag \texttt{<pre>} viene disabilitato il ritorno a capo automatico e perciò se la pagina diventa troppo piccola il testo esce della pergamena posta come sfondo. Purtroppo modificare questa proprietà tramite il CSS è possibile ma questo rende il CSS non valido, perciò si è preferito usare il tag \texttt{<p>} che garantisce invece il \inglese{wrapping}.
+\subsection{Attributi \texttt{tabindex} e \texttt{accesskey}}
+% TODO da completare e spiegare perché non abbiamo messo accesskey
 
-\subsection{Strumenti ultilizzati}
+\section{Note}
+\subsection{Note su particolari pagine}
+Il contenuto della pagina viene presentato servendosi di una filastrocca. La struttura della filastrocca richiede che ogni verso occupi una riga differente. Per fornire questa struttura si è inserito ogni verso in un tag \texttt{<p>}.
+
+Si è scelto di non usare il tag \texttt{<pre>} in quanto pur garantendo la conservazione di spazi e ritorni a capo, tale tag rende più complessa la manipolazione per il ridimensionamento della pagina.
+
+Infatti usando il tag \texttt{<pre>} viene disabilitato il ritorno a capo automatico e perciò se la pagina diventa troppo piccola il testo esce della pergamena posta come sfondo.
+
+\section{Strumenti ultilizzati}
 
 Il programma \progname{Totalvalidator}, in versione gratuita, è stato utilizzato per verificare il rispetto delle linee guida WCAG 2.0, ottenendo la valutazione AA2.
-
-%TODO manca la barra dell'accessibilità di IE
 
 \section{Pagine dinamiche}
 
@@ -309,6 +310,11 @@ Il programma \progname{Totalvalidator}, in versione gratuita, è stato utilizzat
 \subsection{Norme di sviluppo XML}
 
 \subsection{Norme di sviluppo CSS}
+
+\subsubsection{Versione CSS}
+Nello sviluppo del CSS si sono utilizzate alcune proprietà che esulano dalla versione 2.1 dello standard, in particolare \verb+border-radius+ e \verb+background-size+.
+
+La visualizzazione del sito è stata comunque testata con browser che non supportano le regole CSS3 (non ancora standard) e il risultato ottenuto, seppur non esteticamente gradevole come nei browser più recenti, conserva il contenuto.
 
 \clearpage
 
