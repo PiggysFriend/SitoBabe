@@ -110,5 +110,5 @@ else
 	print DATA $doc->toString;
 	close(DATA);
 
-	print $page->redirect(-uri=>'../public_html/Colori.html');
+	print $page->redirect(-uri=>'../public_html/Conferma.html');
 }
