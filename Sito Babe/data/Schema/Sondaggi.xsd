@@ -13,14 +13,14 @@
 			<xsd:element name = "domanda" type = "TDomanda" minOccurs = "1" maxOccurs = "unbounded"/>
 			<xsd:element name = "commenti" type = "TCommenti" minOccurs = "1" maxOccurs = "1"/>
 		</xsd:sequence>
-		<xsd:attribute name = "numero" type = "TNumero" use = "required"/>
+		<xsd:attribute name = "numero" type = "xsd:positiveInteger" use = "required"/>
 	</xsd:complexType>
 	
 	<xsd:complexType name = "TDomanda">
 		<xsd:sequence>
 			<xsd:element name = "scelta" type = "TScelta" minOccurs = "1" maxOccurs = "unbounded"/>
 		</xsd:sequence>
-		<xsd:attribute name = "numero" type = "TNumero" use = "required"/>
+		<xsd:attribute name = "numero" type = "xsd:positiveInteger" use = "required"/>
 		<xsd:attribute name = "etichetta" type = "xsd:string" use = "required"/>
 	</xsd:complexType>
 	
@@ -28,7 +28,7 @@
 		<xsd:sequence>
 			<xsd:element name = "votanti" type = "TVotanti" minOccurs = "1" maxOccurs = "1"/>
 		</xsd:sequence>
-		<xsd:attribute name = "numero" type = "TNumero" use = "required"/>
+		<xsd:attribute name = "numero" type = "xsd:positiveInteger" use = "required"/>
 		<xsd:attribute name = "etichetta" type = "xsd:string" use = "required"/>
 	</xsd:complexType>
 	
@@ -47,19 +47,12 @@
 	<xsd:complexType name = "TCommento">
 		<xsd:simpleContent>
 			<xsd:extension base = "xsd:string">
-				<xsd:attribute name = "numero" type = "TNumero"/>
 				<xsd:attribute name = "utente" type = "xsd:string"/>
 				<xsd:attribute name = "mail" type = "TMail"/>
 				<xsd:attribute name = "data" type = "TData"/>
 			</xsd:extension>
 		</xsd:simpleContent>
 	</xsd:complexType>
-	
-	<xsd:simpleType name = "TNumero">
-		<xsd:restriction base = "xsd:integer">
-			<xsd:minInclusive value = "1"/>
-		</xsd:restriction>
-	</xsd:simpleType>
 	
 	<xsd:simpleType name = "TMail">
 		<xsd:restriction base = "xsd:string">
