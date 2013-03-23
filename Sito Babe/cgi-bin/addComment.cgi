@@ -24,7 +24,7 @@ $commento=$page->param('commento');
 	"domanda2"=>"0",
 	"domanda3"=>"0",
 	"name"=>"0",
-	"email"=>"0",
+	"mail"=>"0",
 	"commento"=>"0");
 
 $error= "false";
@@ -54,9 +54,9 @@ if ($name eq "")
 	$error=true;
 }
 
-if ($email !~ /^([\w\-\+\.]+)\@([\w\-\+\.]+)\.([\w\-\+\.]+)$/) 
+if ($mail !~ /^([\w\-\+\.]+)\@([\w\-\+\.]+)\.([\w\-\+\.]+)$/) 
 {
-	$check{"email"} = "1";
+	$check{"mail"} = "1";
 	$error=true;
 }
 
