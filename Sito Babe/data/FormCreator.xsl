@@ -35,7 +35,7 @@
 					<li><a href="../Interpreti.html">Interpreti</a></li>
 					<li><a href="../ImparaConBabe.html">Impara con <span xml:lang="en">Babe</span></a></li>
 					<li><a href="">Sondaggi</a></li>
-					<li><a href="">Riconoscimenti</a></li>
+					<li><a href="Premi.html">Premi</a></li>
 					<li><a href=""><span xml:lang="en">Link</span> utili</a></li>
 				</ul>
 			</div>
