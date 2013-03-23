@@ -1,424 +1,416 @@
-body
-{
-	font-family:Verdana, Helvetica, sans-serif;
-	background:
-		url("img/erba2.png") 100% 100% repeat-x fixed, 
-		url("img/cielo_2.jpg") 100% 100%  fixed;
+body {
+	font-family: Verdana, Helvetica, sans-serif;
+	background: url("img/erba2.png") 100% 100% repeat-x fixed, url("img/cielo_2.jpg") 100% 100% fixed;
 }
 
-#bodyWrap
-{
-	width:80%;
-     /*background:url("img/legno3.jpg");*/
-     background:url("img/perline2.png");
-     margin:0 auto;
-     padding:0.3%;
-	border-radius:1em;
-	border-style:solid;
+#bodyWrap {
+	width: 80%;
+	/*background:url("img/legno3.jpg");*/
+	background: url("img/perline2.png");
+	margin: 0 auto;
+	padding: 0.3%;
+	border-radius: 1em;
+	border-style: solid;
 	/*background-size:contain;*/
 }
 
-.group:before,
+.group:before, .group:after {
+	content: "";
+	display: table;
+}
 .group:after {
-    content:"";
-    display:table;
-} 
-.group:after {
-    clear: both;
+	clear: both;
 }
 .group {
-   /*zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+	/*zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 
-#header
-{
-	background:
-		url("img/babe_img.png") bottom left no-repeat,
-		url("img/TextureLegno.jpg") repeat-x;
+#header {
+	background: url("img/babe_img.png") bottom left no-repeat, url("img/TextureLegno.jpg") repeat-x;
 	background-size: 100px, 800px;
-	font-size:0.8em;
-	padding-top:20px;
-	padding-bottom:0;
-	border-radius:1em;
+	font-size: 0.8em;
+	padding-top: 20px;
+	padding-bottom: 0;
+	border-radius: 1em;
 	border: 0 solid #330000;
 }
 
-#header p
-{
-	font-size:1.5em;
-	background:url("img/legno_strano.jpg") repeat ;
-	background-size:contain;
-	padding:5px;
-	margin:0;
+#header p {
+	font-size: 1.5em;
+	background: url("img/legno_strano.jpg") repeat;
+	background-size: contain;
+	padding: 5px;
+	margin: 0;
 	border-top: 2px solid;
-	text-align:center;
+	text-align: center;
 }
 
-#header h1
-{
-	padding-left:100px;	
+#header h1 {
+	padding-left: 100px;
 }
 
-#content
-{
-	width:70%;
-	margin-top:10px;
-	margin-bottom:10px;
-	margin-left:23%;
-	padding-bottom:10px;
-	padding-top:10px;
-	padding-left:2%;
-	padding-right:2%;
-	background-color:rgba(255,255,255,0.3);
-	border-bottom-left-radius:0.8em;
-	border-bottom-right-radius:0.8em;
+#content {
+	width: 70%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 23%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: rgba(255,255,255,0.3);
+	border-bottom-left-radius: 0.8em;
+	border-bottom-right-radius: 0.8em;
 }
 
-#nav
-{
-	float:left;
-	width:20%;
-	height:380px;
-	padding:1%;
-	margin-top:10px;
-	margin-left:1%;
-	padding-right:0;
-	background-color:rgba(255,255,255,0.3);
-	border-top-left-radius:0.8em;
+#nav {
+	float: left;
+	width: 20%;
+	height: 380px;
+	padding: 1%;
+	margin-top: 10px;
+	margin-left: 1%;
+	padding-right: 0;
+	background-color: rgba(255,255,255,0.3);
+	border-top-left-radius: 0.8em;
 }
 
-#nav ul
-{
+#nav ul {
 	list-style-type: none;
-	padding:0;
-	
+	padding: 0;
 }
 
-#nav li
-{
-	background:url("img/Acorn256.png") 5px 8px no-repeat;
-	background-size:30px;
-	padding-top:10px;
-	padding-bottom:10px;
-	padding-left:2.5em;
+#nav li {
+	background: url("img/Acorn256.png") 5px 8px no-repeat;
+	background-size: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 2.5em;
 }
 
-#nav li:hover
-{
-	background-color:rgba(255,255,255,0.3);
-	border-top-left-radius:0.8em;
-	border-bottom-left-radius:0.8em;
-	padding:10px; 
-	padding-left:2.5em;
+#nav li:hover {
+	background-color: rgba(255,255,255,0.3);
+	border-top-left-radius: 0.8em;
+	border-bottom-left-radius: 0.8em;
+	padding: 10px;
+	padding-left: 2.5em;
 }
 
 /*
-#rss
-{
-	float:right;
-	width:20%;
-	height:70px;
-	margin-top:10px;
-	margin-right:1%;
-	padding:1%;
-	padding-right:0px;
-	background-color:rgba(255,255,255,0.3);
-	border-top-right-radius:0.8em;
-}
-*/
+ #rss
+ {
+ float:right;
+ width:20%;
+ height:70px;
+ margin-top:10px;
+ margin-right:1%;
+ padding:1%;
+ padding-right:0px;
+ background-color:rgba(255,255,255,0.3);
+ border-top-right-radius:0.8em;
+ }
+ */
 
-#foot
-{
+#foot {
 	clear: both;
-	background: 
-		url("img/topini2.png") 100% 100% no-repeat,
-		url("img/TextureLegno.jpg") repeat fixed;
-	background-size:contain;
-	border-radius:0.8em;
-	border:2px solid #330000;
-	padding:2%;
-	text-align:center;
+	background: url("img/topini2.png") 100% 100% no-repeat, url("img/TextureLegno.jpg") repeat fixed;
+	background-size: contain;
+	border-radius: 0.8em;
+	border: 2px solid #330000;
+	padding: 2%;
+	text-align: center;
 }
 
-#foot p
-{
-	display:inline;
+#foot p {
+	display: inline;
 }
 
-.etichetta
-{
-	float:left;
-	width:6em;
+.etichetta {
+	float: left;
+	width: 6em;
 }
 
 span.inglese {
-	font-style:italic;
+	font-style: italic;
 }
 
 #personaggi {
-	list-style:none;
-	padding:0;
+	list-style: none;
+	padding: 0;
 	width: 90%;
-} 
+}
 
 #personaggi img {
-	padding:1em;
-	float:right;
-/*
-	width:25%;
-*/
+	padding: 1em;
+	float: right;
+	/*
+	 width:25%;
+	 */
 }
 
 .copertina {
-  float: right;
-  width: 30%;
-  padding: 1em;
+	float: right;
+	width: 30%;
+	padding: 1em;
 }
 
 table.interpreti {
-  font-size: .9em;
-} th {
-  background-color: rgba(255, 221, 136, 0.4);
-  border-width: 2px;
-  border-style: solid;
-  border-color: #000000;
-} td {
-  padding-left: 1em;
-  padding-right: 1em;
-} tr {
-  background-color: rgba(204, 204, 102, 0.4);
-} tr.alt {
-  background-color: rgba(255, 221, 136, 0.4);
+	margin-left: 5%;
+	font-size: .9em;
+}
+th {
+	background-color: rgba(255, 221, 136, 0.4);
+	border-width: 2px;
+	border-style: solid;
+	border-color: #000000;
+}
+td {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+tr {
+	background-color: rgba(204, 204, 102, 0.4);
+}
+tr.alt {
+	background-color: rgba(255, 221, 136, 0.4);
 }
 
 a.skip {
-  font-size: .6em;
-  float: right;
-}
-
-a.nascosto
-{
-	position:absolute;
-	margin-left:-999em;
-}
-
-#impara{
-	font-size:1.5em;
-	list-style-type:none;
-		padding-left: 2%;
-	}
-#impara li{
-	width:90%;
-	padding-bottom:10%;
-}
-
-.impara{
-	float:left;
-	width:20%;
-	padding-top:0;
-	padding-bottom:0;
-}
-
-#numeri{
-	list-style:none;
-	padding:0;}
-		
-#numeri li{
-	padding-bottom:15%;
-	padding-left:5%;
-	padding-right:5%;}
-	
-#numeri p{
-	padding-top:5%;
-	padding-left:35%;
-	font-size:2.3em;
-	font-variant: small-caps;}
-
-.numeri{
-	float:left;
-	width:14%;
-}
-
-.mani{
-	float:right;
-	width:26%;}
-
-
-
-.babe{
-width:30%;}
-
-#colori{
-	list-style:none;
-	padding:0;}
-
-#colori li{
-	padding-left:5%;
-	padding-right:5%;
-	padding-bottom:10%;}
-
-
-.title{
-	font-size:2em;
-	padding-left:2%;
-	font-variant: small-caps;
-	margin-bottom:0;}
-
-.colori{
-	float:left;
-	width:18%;}
-	
-
-.img_color{
-	float:right;
-	width:25%;}
-
-.did{
-	padding-top:1%;
-	padding-left:25%;
-	font-size:1.3em;}
-
-
-	
-	
-#stagioni{
-	list-style:none;
-	padding:0;}
-
-#stagioni li{
-	padding-left:0.5%;
-	padding-right:3%;
-	padding-bottom:5%;}
-	
-.stagioni{
-	float:left;
-	width:42%;}
-
-.nome_stagione{
-	padding-top:2%;
-	font-size:1.8em;
-	padding-left:8%;}
-	
-.mondo{
-width:20px;
-height:20px;
-}
-
-
-#mesi{
-	list-style:none;
-	padding:0;
-	width:85%;}
-
-#mesi li{
-	padding-left:3%;
-	padding-right:3%;
-	padding-bottom:3%;}
-	
-.mesi_did{
-	margin-left:43%;}
-
-.nome_mese{
-	font-size:1.5em;
-	padding-left:3%;
-	font-variant: small-caps;
-	margin-top:15%;}
-
-.mesi{
-	float:left;
-	width:40%;
-	margin-top:3%;}
-
-
-
-
-
-#filastrocca{
-background-image: 
-		url("img/mesi/pergamena.png") ;
-		background-repeat: no-repeat;
-		background-position:60% 0%;
-		Background-attachment: scroll;
-		background-size:60% 140%;
-		line-height:0.9;
-		
-		font-family:sans-serif;
-		font-size:0.9em;
-		margin:auto;
-		padding-left:40%;
-		padding-bottom:15%;
-		padding-top:10%;
-		padding-right:25%;
-		}
-		
-		
-#filastrocca_giorni{
-		background-image: url("img/mesi/pergamena.png") ;
-		background-repeat: no-repeat;
-		background-position:50% 0%;
-		Background-attachment: scroll;
-		background-size:60% 140%;
-
-		font-size:0.9em;
-		line-height:0.9em;
-
-		padding-left:34%;
-		padding-top:10%;
-		padding-bottom:12%;
-		padding-right:27%;
-}
-
-#alfabeto{
-	list-style:none;
-        padding-left:1%;
-	width:95%;}
-	
-#alfabeto li{
-	padding-bottom:18%;
-}
-
-#alfabeto p{
-	padding-left:30%;
-	font-size:1.2em;
-	padding-top:5%;
-}
-
-.alfabeto{
-	float:left;
-	width:18%;}
-
-.img_alfa{
-	float:right;
-	width:27%;}
-	
-#giorni{
-	list-style:none;
-	padding:0;
-	margin:0;
-	width:80%;}
-
-#giorni li{
-	padding-left:5%;
-	padding-right:3%;
-	padding-bottom:0;
-	padding-top:15px;}
-
-.nome_giorno{
-	font-size:2em;
-	padding-left:50%;
-	font-variant:small-caps;
-	margin:0;
-	}
-	
-.giorno{
-	margin:0;
-	width:50%;
-	padding-left:40%;
-	padding-top:0;
-	padding-bottom:0;
-	}
-	
-.torna{
 	font-size: .6em;
 	float: right;
-	padding-left:70%;}
+}
+
+a.nascosto {
+	position: absolute;
+	margin-left: -999em;
+}
+
+#impara {
+	font-size: 1.5em;
+	list-style-type: none;
+	padding-left: 2%;
+}
+#impara li {
+	width: 90%;
+	padding-bottom: 10%;
+}
+
+.impara {
+	float: left;
+	width: 20%;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#numeri {
+	list-style: none;
+	padding: 0;
+}
+
+#numeri li {
+	padding-bottom: 15%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#numeri p {
+	padding-top: 5%;
+	padding-left: 35%;
+	font-size: 2.3em;
+	font-variant: small-caps;
+}
+
+.numeri {
+	float: left;
+	width: 14%;
+}
+
+.mani {
+	float: right;
+	width: 26%;
+}
+
+.babe {
+	width: 30%;
+}
+
+#colori {
+	list-style: none;
+	padding: 0;
+}
+
+#colori li {
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 10%;
+}
+
+.title {
+	font-size: 2em;
+	padding-left: 2%;
+	font-variant: small-caps;
+	margin-bottom: 0;
+}
+
+.colori {
+	float: left;
+	width: 18%;
+}
+
+.img_color {
+	float: right;
+	width: 25%;
+}
+
+.did {
+	padding-top: 1%;
+	padding-left: 25%;
+	font-size: 1.3em;
+}
+
+#stagioni {
+	list-style: none;
+	padding: 0;
+}
+
+#stagioni li {
+	padding-left: 0.5%;
+	padding-right: 3%;
+	padding-bottom: 5%;
+}
+
+.stagioni {
+	float: left;
+	width: 42%;
+}
+
+.nome_stagione {
+	padding-top: 2%;
+	font-size: 1.8em;
+	padding-left: 8%;
+}
+
+.mondo {
+	width: 20px;
+	height: 20px;
+}
+
+#mesi {
+	list-style: none;
+	padding: 0;
+	width: 85%;
+}
+
+#mesi li {
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 3%;
+}
+
+.mesi_did {
+	margin-left: 43%;
+}
+
+.nome_mese {
+	font-size: 1.5em;
+	padding-left: 3%;
+	font-variant: small-caps;
+	margin-top: 15%;
+}
+
+.mesi {
+	float: left;
+	width: 40%;
+	margin-top: 3%;
+}
+
+#filastrocca {
+	background-image: url("img/mesi/pergamena.png");
+	background-repeat: no-repeat;
+	background-position: 60% 0%;
+	Background-attachment: scroll;
+	background-size: 60% 140%;
+	line-height: 0.9;
+	font-family: sans-serif;
+	font-size: 0.9em;
+	margin: auto;
+	padding-left: 40%;
+	padding-bottom: 15%;
+	padding-top: 10%;
+	padding-right: 25%;
+}
+
+#filastrocca_giorni {
+	background-image: url("img/mesi/pergamena.png");
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	Background-attachment: scroll;
+	background-size: 60% 140%;
+	font-size: 0.9em;
+	line-height: 0.9em;
+	padding-left: 34%;
+	padding-top: 10%;
+	padding-bottom: 12%;
+	padding-right: 27%;
+}
+
+#alfabeto {
+	list-style: none;
+	padding-left: 1%;
+	width: 95%;
+}
+
+#alfabeto li {
+	padding-bottom: 18%;
+}
+
+#alfabeto p {
+	padding-left: 30%;
+	font-size: 1.2em;
+	padding-top: 5%;
+}
+
+.alfabeto {
+	float: left;
+	width: 18%;
+}
+
+.img_alfa {
+	float: right;
+	width: 27%;
+}
+
+#giorni {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 80%;
+}
+
+#giorni li {
+	padding-left: 5%;
+	padding-right: 3%;
+	padding-bottom: 0;
+	padding-top: 15px;
+}
+
+.nome_giorno {
+	font-size: 2em;
+	padding-left: 50%;
+	font-variant: small-caps;
+	margin: 0;
+}
+
+.giorno {
+	margin: 0;
+	width: 50%;
+	padding-left: 40%;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.torna {
+	font-size: .6em;
+	float: right;
+	padding-left: 70%;
+}
