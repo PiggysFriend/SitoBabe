@@ -48,7 +48,7 @@ if ($domanda3 eq "")
 	$error=true;
 }
 
-if ($name eq "") 
+if ($utente eq "") 
 {
 	$check{"name"} = "1";
 	$error=true;
