@@ -173,14 +173,17 @@ span.inglese {
 table.interpreti {
   font-size: .9em;
 } th {
-  background-color: #cc9966;
+  background-color: rgba(255, 221, 136, 0.4);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
 } td {
   padding-left: 1em;
   padding-right: 1em;
 } tr {
   background-color: rgba(204, 204, 102, 0.4);
 } tr.alt {
-  background-color: rgba(204, 153, 51, 0.4);
+  background-color: rgba(255, 221, 136, 0.4);
 }
 
 a.skip {
