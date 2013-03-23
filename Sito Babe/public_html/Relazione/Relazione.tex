@@ -164,6 +164,8 @@ Ad esempio, nella pagina \sitepage{ImparaConBabe.html}, che contiene le schede d
   \item[-] le stagioni.
 \end{itemize}
 
+Per quanto riguarda la disposizione degli elementi nelle singole pagine, la scelta di organizzazione dei contenuti è ricaduta sul modello di \inglese{layout} <<a tre pannelli>>. Tale modello prevede la ripartizione delle informazioni tra l'intestazione, il menu di navigazione e il contenuto centrale, che rispondono rispettivamente ai quesiti `Dove sono?', `Dove posso andare?' e `Di cosa si tratta?'.
+
 \subsection{Strutture organizzative}
 Il modello di navigazione utilizzato ad alto livello è lo schema gerarchico. Tale struttura è stata scelta al fine di permettere all'utente di crearsi con facilità una mappa mentale del sito ed evitare in tal modo il disorientamento. In particolare, si è evitato di rendere la gerarchia troppo estesa in ampiezza, limitando il numero di voci totali a sette.
 
@@ -172,13 +174,27 @@ Nei livelli sottostanti della gerarchia si è invece adottata la struttura organ
 Pur essendo il sito orientato alla didattica, non si è ritenuta necessaria l'adozione di una struttura organizzativa sequenziale perché gli insegnamenti impartiti sono talmente basilari e scorrelati gli uni dagli altri da non necessitare l'imposizione di un percorso obbligato.
 
 \subsection{Layout delle pagine}
-%TODO chiaritemi questo dubbio: il nostro si adatta bene alle preferenze dell'utente? è quindi anche elastico o è solo fluido?
-Per quanto riguarda il \inglese{design} delle pagine, la scelta per il dimensionamento degli elementi è stata la creazione di un \inglese{layout} fluido, in grado di adattarsi alle dimensioni (in particolare sull'asse orizzontale) dello schermo. Ovunque fosse possibile le misure sono state espresse in unità relative, come le percentuali.
+Per quanto riguarda il \inglese{design} delle pagine, la scelta per il dimensionamento degli elementi è stata la creazione di un \inglese{layout} fluido, in grado di adattarsi alle dimensioni (in particolare sull'asse orizzontale) dello schermo. Ovunque fosse possibile le misure sono state espresse in unità relative, come le percentuali tanto per la dimensione dei contenitori di testo quanto per le immagini.
+
+% TODO spiegare come è stato ottenuto l'effetto dello sfondo a parallasse
 
 Inoltre, come specificato nella sezione \ref{sec:testoaccessibile} per le parti testuali si è deciso di adottare una misura relativa espressa in \texttt{em} in modo da rispettare per quanto possibile le preferenze impostate dall'utente e ottenere quindi un certo grado di elasticità nel \inglese{layout} delle pagine.
 
-%TODO fuffare sul fatto che il nuovo CSS entra in funzione con una dimensione della finestra in em
-% in modo che subentri anche in base alle preferenze sulla dimensione del test dell'utente
+In relazione al supporto ai caratteri, si è scelto di utilizzare nel foglio di stile la direttiva
+\begin{verbatim}
+  font-family: Verdana, Helvetica, sans-serif;
+\end{verbatim}
+in modo da assicurare una visualizzazione simile su ogni dispositivo indipendentemente dal sistema operativo e dai font tipografici supportati.
+
+Per assicurare un buon grado di uniformità nella visualizzazione dei colori si sono utilizzati esclusivamente colori \inglese{web-safe} vale a dire i colori che nella loro rappresentazione esadecimale contengono solo le cifre \verb+0+, \verb+3+, \verb+6+, \verb+9+, \verb+c+ e \verb+f+.
+
+Per garantire una trasformazione elegante del \inglese{layout} in tutte le circostanze e, in particolare:
+\begin{enumerate}[noitemsep,nolistsep,label=\emph{\alph*})]
+  \item\label{item1} in caso di ridimensionamento della finestra del browser;
+  \item\label{item2} in caso di visualizzazione su dispositivi con schermo di dimensioni ridotte;
+  \item\label{item3} nel caso in cui l'utente abbia impostato una dimensione dei caratteri molto grande;
+\end{enumerate}
+è stata impostata l'attivazione del CSS \texttt{SmallLayout.css} con una misura relativa in \texttt{em}. Utilizzando infatti nell'elemento \texttt{<link>} una misura dello schermo espressa in pixel si garantisce la trasformazione per tutti i browser per i soli casi \ref{item1} e \ref{item2} mentre l'attivazione del CSS alternativo nel caso \ref{item3} avviene solo in alcuni browser (es. Firefox).
 
 \section{Mappa del sito}
 \begin{figure}[tb]
@@ -215,6 +231,10 @@ Per rendere più rapida la navigazione si è scelto di offrire la possibilità d
 
 Si è inoltre prestata particolare attenzione a evitare la presenza di link circolari, a rendere il testo delle ancore facilmente individuabile e, soprattutto, sufficientemente autoesplicativo riguardo alla posizione di destinazione (evitando accuratamente di utilizzare parole ``vuote'' o deittici come testo dei link).
 
+Per facilitare la navigazione fra le pagine attraverso i collegamenti ipertestuali è stato impostato l'attributo \texttt{tabindex} per i link del menu principale e delle \inglese{breadcrumbs}, nonché per il collegamento `Salta al contenuto' che non è direttamente visibile sulle pagine.
+
+Si è scelto invece di non inserire alcuna \inglese{access key} perché sarebbe stato difficile trovare delle combinazioni da tastiera non già assegnate dalle applicazioni o dagli ambienti desktop e, inoltre, perché si è valutato il sito sufficientemente navigabile anche senza questa opzione.
+
 \subsection{Le immagini}
 Nel sito le immagini sono molto numerose, essendo infatti un sito per bambini molte cose sono spiegate con l'aiuto di immagini. La dimensione delle immagini è stata mantenuta sotto controllo e, ove necessario, sono state ridimensionate per consentire una migliore visualizzazione senza appesantire eccessivamente il caricamento della pagina.
 
@@ -249,8 +269,6 @@ Lo strumento \progname{Color Oracle} è stato utilizzato al fine di simulare la 
 \end{description}
 
 
-
-
 \subsection{I form}
 %TODO da completare
 
@@ -270,17 +288,17 @@ In tal modo gli \inglese{screen reader} saranno in grado di adottare la pronunci
 
 Inoltre, ancora una volta allo scopo di facilitare la fruizione del contenuto a chi accede al sito tramite tecnologie di sintesi vocale, le eventuali sigle o abbreviazioni, ad esempio ``RSS'' sono stati inseriti all'interno di un elemento \texttt{<abbr>} in cui tramite l'attributo \texttt{title} si fornisce la dicitura per esteso.
 
-\section{Note su particolari pagine}
-\subsection{pagina Mesi.html}
+\section{Note}
+\subsection{Note su particolari pagine}
 Il contenuto della pagina viene presentato servendosi di una filastrocca. La struttura della filastrocca richiede che ogni verso occupi una riga differente. Per fornire questa struttura si è inserito ogni verso in un tag \texttt{<p>}.
-Si è scelto di non usare il tag \texttt{<pre>} in quanto pur garantendo la conservazione di spazi e ritorni a capo, tale tag rende più complessa la manipolazione per il ridimensionamento della pagina.
-Infatti usando il tag \texttt{<pre>} viene disabilitato il ritorno a capo automatico e perciò se la pagina diventa troppo piccola il testo esce della pergamena posta come sfondo. Purtroppo modificare questa proprietà tramite il CSS è possibile ma questo rende il CSS non valido, perciò si è preferito usare il tag \texttt{<p>} che garantisce invece il \inglese{wrapping}.
 
-\subsection{Strumenti ultilizzati}
+Si è scelto di non usare il tag \texttt{<pre>} in quanto pur garantendo la conservazione di spazi e ritorni a capo, tale tag rende più complessa la manipolazione per il ridimensionamento della pagina.
+
+Infatti usando il tag \texttt{<pre>} viene disabilitato il ritorno a capo automatico e perciò se la pagina diventa troppo piccola il testo esce della pergamena posta come sfondo.
+
+\section{Strumenti ultilizzati}
 
 Il programma \progname{Totalvalidator}, in versione gratuita, è stato utilizzato per verificare il rispetto delle linee guida WCAG 2.0, ottenendo la valutazione AA2.
-
-%TODO manca la barra dell'accessibilità di IE
 
 \section{Pagine dinamiche}
 
@@ -295,6 +313,11 @@ Il programma \progname{Totalvalidator}, in versione gratuita, è stato utilizzat
 \subsection{Norme di sviluppo XML}
 
 \subsection{Norme di sviluppo CSS}
+
+\subsubsection{Versione CSS}
+Nello sviluppo del CSS si sono utilizzate alcune proprietà che esulano dalla versione 2.1 dello standard, in particolare \verb+border-radius+ e \verb+background-size+.
+
+La visualizzazione del sito è stata comunque testata con browser che non supportano le regole CSS3 (non ancora standard) e il risultato ottenuto, seppur non esteticamente gradevole come nei browser più recenti, conserva il contenuto.
 
 \clearpage
 
