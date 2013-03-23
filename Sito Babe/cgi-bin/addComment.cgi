@@ -80,21 +80,24 @@ else
 	
 	#aggiorno domanda 1
 	my $risposta1 = $doc->findnodes("//domanda[\@numero='1']/scelta[\@etichetta='".$domanda1."']/votanti/text()");
-	$risposta1->setData($risposta1+1);
+	$value=$risposta1 + 1;
+	$risposta1->setData($value);
 	open (DATA, ">$file");
 	print DATA $doc->toString;
 	close(DATA);
 	
 	#aggiorno domanda 2
 	my $risposta2 = $doc->findnodes("//domanda[\@numero='2']/scelta[\@etichetta='".$domanda2."']/votanti/text()");
-	$risposta2->setData($risposta2+1);
+	$value=$risposta2 + 1;
+	$risposta2->setData($value);
 	open (DATA, ">$file");
 	print DATA $doc->toString;
 	close(DATA);
 	
 	#aggiorno domanda 3
 	my $risposta3 = $doc->findnodes("//domanda[\@numero='3']/scelta[\@etichetta='".$domanda3."']/votanti/text()");
-	$risposta3->setData($risposta3+1);
+	$value=$risposta3 + 1;
+	$risposta3->setData($value);
 	open (DATA, ">$file");
 	print DATA $doc->toString;
 	close(DATA);
