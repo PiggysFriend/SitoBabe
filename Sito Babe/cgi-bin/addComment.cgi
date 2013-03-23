@@ -54,7 +54,7 @@ if ($name eq "")
 	$error=true;
 }
 
-if ($mail !~ /^([\w\-\+\.]+)\@([\w\-\+\.]+)\.([\w\-\+\.]+)$/) 
+if ($mail eq "") 
 {
 	$check{"mail"} = "1";
 	$error=true;
