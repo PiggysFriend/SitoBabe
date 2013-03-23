@@ -79,21 +79,21 @@ else
 	my $radice = $doc->getDocumentElement;
 	
 	#aggiorno domanda 1
-	my $risposta1 = $doc->findNodes("//domanda[\@numero='1']/scelta[\@etichetta='".$domanda1."']/votanti/text()");
+	my $risposta1 = $doc->findnodes("//domanda[\@numero='1']/scelta[\@etichetta='".$domanda1."']/votanti/text()");
 	$risposta1->setData($risposta1+1);
 	open (DATA, ">$file");
 	print DATA $doc->toString;
 	close(DATA);
 	
 	#aggiorno domanda 2
-	my $risposta2 = $doc->findNodes("//domanda[\@numero='2']/scelta[\@etichetta='".$domanda2."']/votanti/text()");
+	my $risposta2 = $doc->findnodes("//domanda[\@numero='2']/scelta[\@etichetta='".$domanda2."']/votanti/text()");
 	$risposta2->setData($risposta2+1);
 	open (DATA, ">$file");
 	print DATA $doc->toString;
 	close(DATA);
 	
 	#aggiorno domanda 3
-	my $risposta3 = $doc->findNodes("//domanda[\@numero='3']/scelta[\@etichetta='".$domanda3."']/votanti/text()");
+	my $risposta3 = $doc->findnodes("//domanda[\@numero='3']/scelta[\@etichetta='".$domanda3."']/votanti/text()");
 	$risposta3->setData($risposta3+1);
 	open (DATA, ">$file");
 	print DATA $doc->toString;
