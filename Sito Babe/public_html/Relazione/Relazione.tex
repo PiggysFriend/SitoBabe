@@ -231,6 +231,10 @@ Per rendere più rapida la navigazione si è scelto di offrire la possibilità d
 
 Si è inoltre prestata particolare attenzione a evitare la presenza di link circolari, a rendere il testo delle ancore facilmente individuabile e, soprattutto, sufficientemente autoesplicativo riguardo alla posizione di destinazione (evitando accuratamente di utilizzare parole ``vuote'' o deittici come testo dei link).
 
+Per facilitare la navigazione fra le pagine attraverso i collegamenti ipertestuali è stato impostato l'attributo \texttt{tabindex} per i link del menu principale e delle \inglese{breadcrumbs}, nonché per il collegamento `Salta al contenuto' che non è direttamente visibile sulle pagine.
+
+Si è scelto invece di non inserire alcuna \inglese{access key} perché sarebbe stato difficile trovare delle combinazioni da tastiera non già assegnate dalle applicazioni o dagli ambienti desktop e, inoltre, perché si è valutato il sito sufficientemente navigabile anche senza questa opzione.
+
 \subsection{Le immagini}
 Nel sito le immagini sono molto numerose, essendo infatti un sito per bambini molte cose sono spiegate con l'aiuto di immagini. La dimensione delle immagini è stata mantenuta sotto controllo e, ove necessario, sono state ridimensionate per consentire una migliore visualizzazione senza appesantire eccessivamente il caricamento della pagina.
 
@@ -283,9 +287,6 @@ In tutte le pagine, le parole che comparivano in lingue diverse da quella princi
 In tal modo gli \inglese{screen reader} saranno in grado di adottare la pronuncia corretta, in special modo per i numerosi nomi dei personaggi che hanno mantenuto il nome originale anche nella versione doppiata dei film.
 
 Inoltre, ancora una volta allo scopo di facilitare la fruizione del contenuto a chi accede al sito tramite tecnologie di sintesi vocale, le eventuali sigle o abbreviazioni, ad esempio ``RSS'' sono stati inseriti all'interno di un elemento \texttt{<abbr>} in cui tramite l'attributo \texttt{title} si fornisce la dicitura per esteso.
-
-\subsection{Attributi \texttt{tabindex} e \texttt{accesskey}}
-% TODO da completare e spiegare perché non abbiamo messo accesskey
 
 \section{Note}
 \subsection{Note su particolari pagine}
