@@ -16,6 +16,7 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}    
 \usepackage{color}
+\usepackage{enumitem}
 
 \fancyhead{}
 \renewcommand{\headrulewidth}{1pt}
@@ -148,8 +149,36 @@ Si tratta di un sito didattico che ha lo scopo di sensibilizzare i bambini sul t
 \subsection{Scelte per il posizionamento sui motori di ricerca}
 % spiegare i meta tag 'description' e 'keywords' (come sono stati scelti e perché)
 
-\section{Progettazione architetturale}
+\section{Design architetturale}
 % quale schema organizzativo e' stato scelto, come sono state organizzate le informazioni
+\subsection{Schemi organizzativi}
+Il contenuto delle pagine è organizzato secondo uno schema ambiguo, in particolare lo schema organizzativo per argomento (\inglese{topical}).
+
+Ad esempio, nella pagina \sitepage{ImparaConBabe.html}, che contiene le schede didattiche, gli argomenti in cui è organizzato il contenuto sono:
+\begin{itemize}[noitemsep,nolistsep]
+  \item[-] l'alfabeto;
+  \item[-] i numeri;
+  \item[-] i colori;
+  \item[-] i giorni della settimana;
+  \item[-] i mesi;
+  \item[-] le stagioni.
+\end{itemize}
+
+\subsection{Strutture organizzative}
+Il modello di navigazione utilizzato ad alto livello è lo schema gerarchico. Tale struttura è stata scelta al fine di permettere all'utente di crearsi con facilità una mappa mentale del sito ed evitare in tal modo il disorientamento. In particolare, si è evitato di rendere la gerarchia troppo estesa in ampiezza, limitando il numero di voci totali a sette.
+
+Nei livelli sottostanti della gerarchia si è invece adottata la struttura organizzativa di tipo ipertestuale ma con possibilità di spostamento solo all'interno delle singole pagine. In tal modo si è permessa una maggiore flessibilità di navigazione evitando però l'insorgenza di difficoltà nella creazione della mappa mentale da parte dell'utente.
+
+Pur essendo il sito orientato alla didattica, non si è ritenuta necessaria l'adozione di una struttura organizzativa sequenziale perché gli insegnamenti impartiti sono talmente basilari e scorrelati gli uni dagli altri da non necessitare l'imposizione di un percorso obbligato.
+
+\subsection{Layout delle pagine}
+%TODO chiaritemi questo dubbio: il nostro si adatta bene alle preferenze dell'utente? è quindi anche elastico o è solo fluido?
+Per quanto riguarda il \inglese{design} delle pagine, la scelta per il dimensionamento degli elementi è stata la creazione di un \inglese{layout} fluido, in grado di adattarsi alle dimensioni (in particolare sull'asse orizzontale) dello schermo. Ovunque fosse possibile le misure sono state espresse in unità relative, come le percentuali.
+
+Inoltre, come specificato nella sezione \ref{sec:testoaccessibile} per le parti testuali si è deciso di adottare una misura relativa espressa in \texttt{em} in modo da rispettare per quanto possibile le preferenze impostate dall'utente e ottenere quindi un certo grado di elasticità nel \inglese{layout} delle pagine.
+
+%TODO fuffare sul fatto che il nuovo CSS entra in funzione con una dimensione della finestra in em
+% in modo che subentri anche in base alle preferenze sulla dimensione del test dell'utente
 
 \section{Mappa del sito}
 \begin{figure}[tb]
@@ -240,15 +269,6 @@ In tutte le pagine, le parole che comparivano in lingue diverse da quella princi
 In tal modo gli \inglese{screen reader} saranno in grado di adottare la pronuncia corretta, in special modo per i numerosi nomi dei personaggi che hanno mantenuto il nome originale anche nella versione doppiata dei film.
 
 Inoltre, ancora una volta allo scopo di facilitare la fruizione del contenuto a chi accede al sito tramite tecnologie di sintesi vocale, le eventuali sigle o abbreviazioni, ad esempio ``RSS'' sono stati inseriti all'interno di un elemento \texttt{<abbr>} in cui tramite l'attributo \texttt{title} si fornisce la dicitura per esteso.
-
-\subsection{Il layout delle pagine}
-%TODO chiaritemi questo dubbio: il nostro si adatta bene alle preferenze dell'utente? è quindi anche elastico o è solo fluido?
-Per quanto riguarda il \inglese{design} delle pagine, la scelta per il dimensionamento degli elementi è stata la creazione di un \inglese{layout} fluido, in grado di adattarsi alle dimensioni (in particolare sull'asse orizzontale) dello schermo. Ovunque fosse possibile le misure sono state espresse in unità relative, come le percentuali.
-
-Inoltre, come specificato nella sezione \ref{sec:testoaccessibile} per le parti testuali si è deciso di adottare una misura relativa espressa in \texttt{em} in modo da rispettare per quanto possibile le preferenze impostate dall'utente e ottenere quindi un certo grado di elasticità nel \inglese{layout} delle pagine.
-
-%TODO fuffare sul fatto che il nuovo CSS entra in funzione con una dimensione della finestra in em
-% in modo che subentri anche in base alle preferenze sulla dimensione del test dell'utente
 
 \section{Note su particolari pagine}
 \subsection{pagina Mesi.html}
