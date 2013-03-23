@@ -39,11 +39,6 @@
 				</ul>
 			</div>
 			
-			<div id="rss">
-				<a href="#content" class="nascosto">Salta lista RSS</a>
-				<h2>Feed RSS</h2>
-			</div>
-			
 			<div id="content" class="group">
 			<form action="../cgi-bin/addComment.cgi" method="POST">
 				<fieldset>
