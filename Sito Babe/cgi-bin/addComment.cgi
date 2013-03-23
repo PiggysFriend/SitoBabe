@@ -72,5 +72,22 @@ if ($error eq "true") {
 }
 else 
 {
+	#Procedure di inizializzazione per l'elaborazione dei dati
+	my $file = '../data/Sondaggi.xml';
+	my $parser = XML::LibXML->new();
+	my $doc = $parser->parse_file($file);
+	my $radice = $doc->getDocumentElement;
+	
+	#aggiorno domanda 1
+	my $risposta1 = $doc->findNodes("//domanda[@numero='1']/scelta[@etichetta='".$domanda1."']/votanti/text()");
+	$risposta1->setData($risposta1+1);
+	open (DATA, ">$file");
+	print DATA $doc->toString;
+	close(DATA);
+	
+	#my @elementi = $radice->getElementsByTagName('database');
+	#$frammento = $parser->parse_balanced_chunk($user);
+	#$elementi[i]->appendChild($frammento);
+
 	print $page->redirect(-uri=>'../public_html/Colori.html');
 }
