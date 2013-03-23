@@ -1,4 +1,4 @@
-﻿#!/usr/bin/perl
+﻿#!/usr/bin/perl -w
 
 #Carico le librerie
 use XML::LibXSLT;
