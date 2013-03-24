@@ -373,6 +373,16 @@ Infine, utilizzando l'estensione \progname{Accessibility Evaluation Tool} per Fi
 
 \subsection{Norme di sviluppo CSS}
 
+Il sito basa la gestione del proprio layout grafico su due fogli di stile CSS: NormalLayout.css e SmallLayout.css. Il primo viene usato per gestire una normale visione su schermo avente una larghezza superiore a 52em. Il secondo foglio invece si occupa di adattare la pagina nel momento in cui questa raggiunge una larghezza inferiore a 52em, e viene caricato sui dispositivi mobile. Nel progettare e sviluppare tali CSS si sono tenute in considerazione le seguenti norme:
+
+\begin{itemize}
+  \item Privilegiare il contenuto del sito, sacrificando (nel caso) alcuni effetti CSS ``accattivanti'' ma che penalizzano la lettura del contenuto.
+  \item Mai usare CSS embedded o inline, ma creare file CSS da richiamare mediante link nel documento html.
+  \item Al termine di ogni modifica significativa, ripetere il test di validazione del W3C.
+  \item Mai abusare degli elementi <div>. È giusto crearli per evidenziare la presenza di una ``regione semantica'' rilevante, o nel caso che il layout grafico richieda particolari effetti flottanti, ma si esorta i componenti a non usarlo la dove possibile.
+  \item Nel scegliere i nomi da dare alle classi, tenere in considerazione che tali dovrebbero esprimere il significato dell'oggetto su cui si applicherà, e non le caratteristiche di visualizzazione poiché tali sono mutevoli e potrebbero cambiare in futuro (e.g. se si intende rappresentare una <label> con una certa colorazione, non si dovrà chiamare .labelRossa, ma bensì .etichetta, presupposto il fatto che ci interessa rappresentarla come un etichetta che contraddistingue un determinato <input>).
+\end{itemize}
+
 \subsubsection{Versione CSS}
 Nello sviluppo del CSS si sono utilizzate alcune proprietà che esulano dalla versione 2.1 dello standard, in particolare \verb+border-radius+ e \verb+background-size+.
 
