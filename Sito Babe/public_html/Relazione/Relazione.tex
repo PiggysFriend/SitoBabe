@@ -209,6 +209,10 @@ Per garantire una trasformazione elegante del \inglese{layout} in tutte le circo
 \end{enumerate}
 è stata impostata l'attivazione del CSS \texttt{SmallLayout.css} con una misura relativa in \texttt{em}. Utilizzando infatti nell'elemento \texttt{<link>} una misura dello schermo espressa in pixel si garantisce la trasformazione per tutti i browser per i soli casi \ref{item1} e \ref{item2} mentre l'attivazione del CSS alternativo nel caso \ref{item3} avviene solo in alcuni browser (es. Firefox).
 
+Infine è stato predisposto un CSS alternativo per i \inglese{media} paginati e, in particolare, per la stampa. Nella rappresentazione stampata delle pagine, sono state eliminati tutti gli elementi decorativi e ridotte all'essenziale anche le immagini non specificatamente decorative (ad esempio rimuovendole nel caso in cui il contenuto fosse stato veicolato in altri modi).
+
+Inoltre, dal momento che su carta le funzionalità ipertestuali o di navigazione si trovano per loro natura ad essere snaturate, è stato rimosso il menu di navigazione e i collegamenti sono stati uniformati al resto del contenuto testuale.
+
 \section{Mappa del sito}
 \begin{figure}[tb]
 \centering
@@ -357,7 +361,9 @@ Alcuni test specifici per l'accessibilità (ad esempio il contrasto dei colori) 
 
 I risultati ottenuti sono compresi, rispettivamente, tra 9.4 : 1 e 21:1, tra 207 e 255 nel secondo caso e tra 527 e 765 nel caso del terzo parametro. Tali valori sono stati considerati accettabili in quanto superiori alle soglie minime di 7:1 per il rapporto luminosità/contrasto, 125 per la differenza di luminosità e 500 per la differenza di colore, rientrando dunque con ampio margine nella categoria di accessibilità AA\@.
 
-Infine, utilizzando l'estensione \progname{Accessibility Evaluation Tool} per Firefox è stato possibile testare la visualizzazione delle varie pagine rimuovendo il CSS definito dall'utente, con contrasto elevato (B/W e W/B), rimuovendo le immagini di sfondo, le immagini di contenuto o tutte le immagini al fine di constatare la fruibilità dei contenuti anche in contesti diversi da quello di usuale visualizzazione. Tramite il browser testuale \progname{w3m} è stata inoltre testata la navigabilità del sito in modalità solo testo. 
+L'estensione \progname{Accessibility Evaluation Tool} per Firefox ha reso inoltre possibile testare la visualizzazione delle varie pagine rimuovendo il CSS definito dall'utente, con contrasto elevato (B/W e W/B), rimuovendo le immagini di sfondo, le immagini di contenuto o tutte le immagini al fine di constatare la fruibilità dei contenuti anche in contesti diversi da quello di usuale visualizzazione.
+
+L'estensione \progname{Web Developer} per Firefox è stata utilizzata per testare i CSS alternativi a quello principale, e in particolare quello per la stampa. Infine, tramite il browser testuale \progname{w3m} è stata inoltre testata la navigabilità del sito in modalità solo testo. 
 
 \section{Pagine dinamiche}
 
