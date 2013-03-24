@@ -382,6 +382,15 @@ Il sito fa uso di due fondamentali script Perl.
 \end{itemize}
 
 \subsubsection{ShowSounding.cgi}
+E' la pagina richiamata dal menù principale ed ha il compito di generare lato server la pagina dei sondaggi. Tale scelta è dovuta per non perdere gli utenti che utilizzano Google Chrome come browser per la navigazione nel web e non perdere la possibilità di essere indicizzati dai motori di ricerca in quanto non sono in grado di interpretare un file xml. Lo script Perl esegue i seguenti step:
+\begin{itemize}
+	\item viene recuperato dal disco il file 'Sondaggi.xml' contenente i dati del sondaggio da proporre agli utenti;
+	\item viene recuperato  dal disco il file 'FormCreator.xsl' contenente le regole per trasformare il file xml in un documento html visualizzabile da un browser;
+	\item vengono entrambi elaborati in modo da avere in memoria la struttura ad albero di entrambi i file;
+	\item viene creato un oggetto in grado di applicare le regole xslt;
+	\item viene eseguita la trasformazione;
+	\item infine viene restituito al browser il risultato della trasformazione, ossia la pagina con il form per compilare il sondaggio.
+\end{itemize}
 
 \subsubsection{addComment.cgi}
 Viene usato dalla pagina sondaggi per inviare i dati inseriti dall'utente. Lo script richiamato in seguito all'evento click sull'oggetto d'input submit, riceve i dati per mezzo di metodo POST e si occupa di eseguire i seguenti step:
