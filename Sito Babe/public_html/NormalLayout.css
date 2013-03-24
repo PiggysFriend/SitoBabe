@@ -143,9 +143,11 @@ span.inglese {
 #personaggi img {
 	padding: 1em;
 	float: right;
-	/*
-	 width:25%;
-	 */
+	width: 20%;
+}
+
+#personaggi img.alt {
+	float: left;
 }
 
 .copertina {
@@ -159,7 +161,7 @@ table.interpreti {
 	font-size: .9em;
 }
 th {
-	background-color: rgba(255, 221, 136, 0.4);
+	background-color: rgba(246, 195, 102, 0.4);
 	border-width: 2px;
 	border-style: solid;
 	border-color: #000000;
@@ -169,10 +171,10 @@ td {
 	padding-right: 1em;
 }
 tr {
-	background-color: rgba(204, 204, 102, 0.4);
+	background-color: rgba(252, 204, 111, 0.4);
 }
 tr.alt {
-	background-color: rgba(255, 221, 136, 0.4);
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 a.skip {

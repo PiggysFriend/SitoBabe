@@ -23,20 +23,20 @@
 		<div id="bodyWrap" class="group">
 			<div id="header">
 				<h1>Il mondo di <span xml:lang="en">Babe</span></h1>
-				<p>Ti trovi in <a href="../public_html/Home.html">Home</a> &gt; Sondaggi</p>
+				<p>Ti trovi in <a tabindex="1" href="../public_html/Home.html">Home</a> &gt; Sondaggi</p>
 			</div>
 			
 			<div id="nav">
-				<a href="#rss" class="nascosto">Salta menù</a>
+				<a tabindex="2" href="#rss" class="nascosto">Salta menù</a>
 				<h2>Menù</h2>
 				<ul>
-					<li><a href="../Trama.html"> Trama dei film</a></li>
-					<li><a href="../Personaggi.html">Personaggi</a></li>
-					<li><a href="../Interpreti.html">Interpreti</a></li>
-					<li><a href="../ImparaConBabe.html">Impara con <span xml:lang="en">Babe</span></a></li>
-					<li><a href="">Sondaggi</a></li>
-					<li><a href="Premi.html">Premi</a></li>
-					<li><a href=""><span xml:lang="en">Link</span> utili</a></li>
+					<li><a tabindex="3" href="../Trama.html"> Trama dei film</a></li>
+					<li><a tabindex="4" href="../Personaggi.html">Personaggi</a></li>
+					<li><a tabindex="5" href="../Interpreti.html">Interpreti</a></li>
+					<li><a tabindex="6" href="../ImparaConBabe.html">Impara con <span xml:lang="en">Babe</span></a></li>
+					<li>Sondaggi</li>
+					<li><a tabindex="7" href="Premi.html">Premi</a></li>
+					<li><a tabindex="8" href=""><span xml:lang="en">Link</span> utili</a></li>
 				</ul>
 			</div>
 			
