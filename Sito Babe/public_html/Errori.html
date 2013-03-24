@@ -5,7 +5,7 @@
 	<head>
 		<title>Home - Il mondo di Babe</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<meta name="description" content="Pagina di notifica dell'avvenuto invio del sondaggio." />
+		<meta name="description" content="Pagina di notifica degli errori avvenuti nell'invio di un sondaggio." />
 		<meta name="author" content="Andrea Meneghinello, Andrea Rizzi, Diego Beraldin, Elena Zecchinato" />
 		<meta name="language" content="italian it" />
 		<link href="NormalLayout.css" rel="stylesheet" type="text/css" media="screen"/>
@@ -18,7 +18,7 @@
 		<div id="bodyWrap" class="group">
 			<div id="header">
 				<h1>Il mondo di <span xml:lang="en">Babe</span></h1>
-				<p>Ti trovi in: <a href="Home.html" tabindex="1">Home</a> &gt; Conferma invio sondaggio</p>
+				<p>Ti trovi in: <a href="Home.html" tabindex="1">Home</a> &gt; Notifica errori</p>
 			</div>
 			
 			<div id="nav">
@@ -36,8 +36,13 @@
 			</div>
 			
 			<div id="content" class="group">
-				<p>I dati del sondaggio sono stati inviati con successo. Grazie per aver espresso la tua opinione.</p>
-				<p>Torna alla <a href="Home.html"><span xml:lang="en">Home</span></a> del sito.</p>
+				<h2>Attenzione errori!</h2>
+				<p>Si è verificato un errore nell'invio dei dati relativi al sondaggio. Tra le possibili cause di errore vi sono:</p>
+				<ul>
+					<li>dati obbligatori non inseriti: assicurati di aver compilato tutti i campi presenti nel modulo di invio sondaggio;</li>
+					<li>errore nel formato del campo mail: assicurati che il campo mail contenga un indirizzo mail valido. Un esempio di indirizzo mail valido è: mio_indirizzo@gmail.com.</li>
+				</ul>
+				<p>Torna alla pagina dei <a href="../cgi-bin/ShowSounding.cgi">Sondaggi</a>.</p>
 			</div>
 			
 			<div id="foot">
