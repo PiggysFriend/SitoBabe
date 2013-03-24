@@ -145,11 +145,22 @@ Si tratta di un sito didattico che ha lo scopo di sensibilizzare i bambini sul t
 % sito pensato per lavagne interattive multimediali (LIM) per essere utilizzata negli asili
 
 \subsection{Scelte per il posizionamento sui motori di ricerca}
-% separazione fra contenuto, comportamento e presentazione
-% spiegare i meta tag 'description' e 'keywords' (come sono stati scelti e perché) e 'rating'
-% peso delle immagini
-% rispetto degli standard e utilizzo di markup quanto più possibile semantico
-% rispetto delle WCAG per accessibilità
+Nella progettazione del sito, alcune scelte sono state dettate dall'esigenza di attuare strategie di ottimizzazione per i motori di ricerca.
+
+In primo luogo è stata adottata una rigida separazione fra contenuto, comportamento e presentazione, separando su file diversi le istruzioni di formattazione (regole CSS) e il codice JavaScript.\footnote{%
+  PERL non è incluso in questo elenco dal momento che la sua interpretazione lato server non implica che il contenuto degli script debba essere scaricato di volta in volta sui client.
+} Tale decisione ha il duplice effetto di ridurre la dimensione complessiva delle pagine, dal momento che il codice è incluso in più documenti e viene scaricato una sola volta nonché di inviare ai motori di ricerca testo significativo rispetto al contenuto reale delle pagine.
+
+In secondo luogo, si è scelto di aderire allo stanard XHTML versione 1.0 ``Strict'', utilizzando ovunque fosse possibile un \inglese{markup} semantico e strutturale, evitando l'impiego di tag presentazionali deprecati.
+
+
+In terzo luogo, come sarà illustrato con maggiori dettagli nella sezione \ref{sec:accessibility}, si è scelto di rispettare le direttive WCAG per l'accessibilità delle pagine, in modo da rendere i contenuti fruibili anche in modalità alternative rispetto alla disposizione bidimensionale di contenuti e immagini su uno schermo, da cui sono esclusi tanto gli utenti diversamente abili quanto i \inglese{web spider} e i motori di ricerca.
+
+Infine, si è posta particolare attenzione all'utilizzo dei tag \texttt{<meta>}, in particolare \texttt{description}, \texttt{keywords} e \texttt{rating}. È stata infatti inserita una descrizione significativa specifica per ogni singola pagina, pensata per essere accattivante se visualizzata in una SERP (\inglese{search engine response page}).
+
+Le parole chiave sono state selezionate in modo specifico per ogni pagina, scegliendo tra i termini che compaiono nelle posizioni più ``prominenti'' (intestazioni, elenchi, collegamenti, enfasi) ed effettivamente presenti nel contenuto della pagina. Inoltre, il numero di parole chiave è stato mantenuto contenuto a un numero inferiore a dieci.
+
+La valutazione del contenuto di tutte le pagine è stata impostata a \texttt{safe for kids}, una scelta le cui ragioni sono da ravvisarsi nel fatto che il sito ha una finalità didattica per bambini, e quindi gli autori hanno tutto l'interesse a presentare contenuti sicuri e adatti al pubblico dei più piccoli.
 
 \section{Design architetturale}
 % quale schema organizzativo e' stato scelto, come sono state organizzate le informazioni
@@ -207,7 +218,7 @@ Per garantire una trasformazione elegante del \inglese{layout} in tutte le circo
 
 \clearpage
 
-\section{Accessibilità}
+\section{Accessibilità}\label{sec:accessibility}
 
 \subsection{Il testo}\label{sec:testoaccessibile}
 Per quanto riguarda il testo si è cercato di fare particolare attenzione alla dimensione e ai font utilizzati. Infatti, essendo un sito per bambini è bene avere un testo facilmente leggibile sia in relazione alla dimensione che ai font utilizzati.
