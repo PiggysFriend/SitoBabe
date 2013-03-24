@@ -415,3 +415,9 @@ a.nascosto {
 .link_utili li{
 	padding-bottom:2%;
 }
+
+.w3image {
+	border: 0;
+	width: 88px;
+	height: 31px
+}
