@@ -364,6 +364,26 @@ Infine, utilizzando l'estensione \progname{Accessibility Evaluation Tool} per Fi
 \subsection{Utilizzo XML}
 
 \subsection{Utilizzo Perl}
+Il sito fa uso di due fondamentali script Perl.
+\begin{itemize}
+  \item ShowSounding.cgi;
+  \item addComment.cgi;
+\end{itemize}
+
+\subsubsection{ShowSounding.cgi}
+
+\subsubsection{addComment.cgi}
+Viene usato dalla pagina sondaggi per inviare i dati inseriti dall'utente. Lo script richiamato in seguito all'evento click sull'oggetto d'input submit, riceve i dati per mezzo di metodo POST e si occupa di eseguire i seguenti step:
+\begin{itemize}
+  \item vengono da prima definite le librerie di cui lo script necessita;
+  \item quindi si creano le variabili atte a contenere i dati inviati dall'utente;
+  \item tramite una richiesta alla pagina CGI precedentemente creata, ricava i valori dalla form e li assegna alle corrispettive variabili;
+  \item si procede testando le variabili ed identificando la presenza di errori;
+  \item se l'inserimento è andato a buon fine allora si procede aggiornando in Sondaggi.xml il tag <votanti> relativo alle corrispettive <scelte> sulle <domande> a cui ha risposto l'utente;
+  \item per ogni domanda si apre il file Sondaggi.xml e si aggiorna la voce votanti;
+  \item quindi si passa alla creazione di un tag <commento> sulla base dei dati: utente, mail, data (il cui valore è creato precedentemente mediante l'uso della funzione localtime()) e il testo stesso del commento;
+  \item quindi si termina con l'inserimento del commento e la chiusura del file. Infine lo script reindirizza alla pagina di Conferma.html.
+\end{itemize}
 
 \clearpage
 
