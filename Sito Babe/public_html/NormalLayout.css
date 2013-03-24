@@ -96,21 +96,6 @@ body {
 	padding-left: 2.5em;
 }
 
-/*
- #rss
- {
- float:right;
- width:20%;
- height:70px;
- margin-top:10px;
- margin-right:1%;
- padding:1%;
- padding-right:0px;
- background-color:rgba(255,255,255,0.3);
- border-top-right-radius:0.8em;
- }
- */
-
 #foot {
 	clear: both;
 	background: url("img/topini2.png") 100% 100% no-repeat, url("img/TextureLegno.jpg") repeat fixed;

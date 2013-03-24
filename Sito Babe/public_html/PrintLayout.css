@@ -5,6 +5,10 @@ html {
 	font-size: 14pt;
 }
 
+#header p {
+	display: none;
+}
+
 #nav {
 	display: none;
 }
@@ -15,4 +19,112 @@ html {
 
 #content {
 	width: 70%;
+}
+
+.nascosto, .skip, .torna {
+	display: none;
+}
+
+#personaggi {
+	list-style-type: none;
+}
+
+#personaggi img {
+	float: right;
+	width: 10%;
+}
+
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+.interpreti {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+}
+
+#impara, #numeri, #colori, #mesi, #alfabeto, #stagioni, #giorni {
+	list-style-type: none;
+	width: 60%;
+}
+
+#impara li, #numeri li, #colori li, #mesi li, #alfabeto li, #stagioni li, #giorni li {
+	font-size: 1.2em;
+	padding-top: .5em;
+}
+
+.impara {
+	width: 3%;
+	float: left;
+}
+
+.mondo {
+	display: none;
+}
+
+.link_utili {
+	list-style-type: none;
+}
+
+#alfabeto li {
+	padding: 2em 0;
+}
+
+#numeri li p, #alfabeto li p {
+	padding-left: 2em;
+}
+
+.alfabeto {
+	float: left;
+	width: 10%;
+}
+
+.img_alfa {
+	float: right;
+	width: 15%;
+}
+
+.numeri {
+	width: 5%;
+	float: left;
+}
+
+.mani, .colori {
+	display: none;
+}
+
+.img_color {
+	float: left;
+	width: 7%;
+}
+
+#colori .title {
+	font-variant: small-caps;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.did {
+	padding-left: 2em;
+}
+
+#giorni li {
+	display: none;
+}
+
+.mesi {
+	float: right;
+	width: 20%;
+}
+
+.stagioni {
+	float: left;
+	width: 20%;
 }
