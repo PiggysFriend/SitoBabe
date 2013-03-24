@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+html {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14pt;
+}
+
+#nav {
+	display: none;
+}
+
+#foot {
+	display: none;
+}
+
+#content {
+	width: 70%;
+}
