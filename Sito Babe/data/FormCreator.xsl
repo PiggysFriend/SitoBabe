@@ -17,14 +17,14 @@
 		<meta name="language" content="italian it" />
 		<link href="../NormalLayout.css" rel="stylesheet" type="text/css" media="screen"/>
 		<link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-		<script type="text/javascript" src="date.js" ></script>
+		<!--<script type="text/javascript" src="../date.js"></script>-->
 		<link href="../SmallLayout.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:52em), only screen and (max-device-width:30em)"/>
 	</head>
 	<body>
 		<div id="bodyWrap" class="group">
 			<div id="header">
 				<h1>Il mondo di <span xml:lang="en">Babe</span></h1>
-				<p>Ti trovi in <a tabindex="1" href="../public_html/Home.html">Home</a> &gt; Sondaggi</p>
+				<p>Ti trovi in <a tabindex="1" href="../Home.html">Home</a> &gt; Sondaggi</p>
 			</div>
 			
 			<div id="nav">
