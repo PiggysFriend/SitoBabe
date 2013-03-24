@@ -23,7 +23,6 @@
 
 \fancyhead[RE,RO]{
 \begin{picture}(-135,0)
-	%TODO \put(-482,-14){\includegraphics[width=0.26\textwidth]{logoHead.png}} non sono molto bravo con gli strumenti grafici... qualcuno può creare un mini logo da collocare in questa posizione... l'idea è fare la scritta "Progetto di TecWeb... magari a destra di un simbolo che possa rappresentare internet... come... booo.. un mondo con un a rete attorno.... oppure un agglomerato dei loghi di browser come quella che ho scaricato!
 	\put(-475,0){\sffamily\large\leftmark}
 \end{picture}
 }
@@ -430,6 +429,17 @@ Viene usato dalla pagina sondaggi per inviare i dati inseriti dall'utente. Lo sc
 \section{Norme di sviluppo}
 
 \subsection{Norme di sviluppo XML}
+
+Dopo essere emersa la necessità di gestire una mini base di dati, la creazione della medesima è avvenuta seguendo le seguenti fasi/procedure:
+\begin{itemize}
+	\item identificazione dei requisiti essenziali: capire cosa si intende rappresentare mediante il file xml e quali sono le ``realtà'' che andranno a farne uso;
+	\item creazione di un apposito xml schema atto a rappresentare la realtà evidenziata;
+	\item controllo di formattazione del xml schema;
+	\item validazione del medesimo;
+	\item creazione di un file Sondaggi.xml conforme allo schema determinato nei punti precedenti.
+\end{itemize}
+
+Come già accennato, il gruppo ha deciso di costruire uno schema con il modello tende alla veneziana, supponendo un futuro riutilizzo dei suoi componenti.
 
 \subsection{Norme di sviluppo CSS}
 
