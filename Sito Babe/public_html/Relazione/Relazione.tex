@@ -277,14 +277,6 @@ In generale, la tavolozza dei colori adottata per la realizzazione delle pagine 
 
 La scelta dei colori è stata guidata dal duplice scopo di ottenere una serie di pagine esteticamente gradevoli anche in vista del pubblico di bambini ma anche, al tempo stesso, di garantire un adeguato contrasto dei colori per gli utenti affetti da patologie in grado di alterare la percezione cromatica.
 
-Lo strumento \progname{Color Oracle} è stato utilizzato al fine di simulare la visione di un utente affetto da dicromatismo, vale a dire un soggetto in cui solo due tra le tre normali discriminazioni visive (luce/buio, giallo/blu e rosso/verde) sono presenti, in particolare:
-%TODO terminare questa sezione
-\begin{description}
-  \item{\textbf{Deuteranopia}}, per cui il color rosso porpora è indistinguibile dal verde;
-  \item{\textbf{Protanopia}}, ossia l'incapacità di percepire il colore rosso;
-  \item{\textbf{Tritanopia}} ovvero la cecità per i colori blu e violetto.
-\end{description}
-
 
 \subsection{I form}
 I form che compaiono nella sezione \sitepage{Sondaggi.html} del sito sono stati progettati e realizzati al fine di massimizzare l'accessibilità. In primo luogo, tutti gli elementi \texttt{<input>} sono stati inseriti all'interno di un elemento \texttt{<fieldset>} corredato da un'opportuna \texttt{<legend>}, in modo da rendere evidente la suddivisione logica nelle varie sezioni del contenuto.
@@ -327,6 +319,25 @@ Per quanto riguarda il titolo, si è scelto di non utilizzare tecniche di \ingle
 \section{Strumenti ultilizzati}
 
 Il programma \progname{Totalvalidator}, in versione gratuita, è stato utilizzato per verificare il rispetto delle linee guida WCAG 2.0, ottenendo la valutazione AA2.
+
+Lo strumento \progname{Color Oracle} è stato utilizzato al fine di simulare la visione di un utente affetto da dicromatismo, vale a dire un soggetto in cui solo due tra le tre normali discriminazioni visive (luce/buio, giallo/blu e rosso/verde) sono presenti, in particolare:
+
+\begin{tabular}{>{\sffamily\bfseries}lp{.7\textwidth}}
+  Deuteranopia: & per cui il color rosso porpora è indistinguibile dal verde\\
+  Protanopia: & ossia l'incapacità di percepire il colore rosso\\
+  Tritanopia: & ovvero la cecità per i colori blu e violetto\\
+\end{tabular}
+
+Alcuni test specifici per l'accessibilità (ad esempio il contrasto dei colori) sono stati portati a termine con lo strumento \progname{JuicyStudio}. Grazie a questo strumento è stato possibile verificare per ogni pagina, e per ogni elemento contenuto in ogni pagina, un'analisi di contrasto relativamente a:
+\begin{itemize}[noitemsep,nolistsep]
+  \item[--] rapporto luminosità/contrasto;
+  \item[--] differenza di luminosità;
+  \item[--] differenza di colore.
+\end{itemize}
+
+I risultati ottenuti sono compresi, rispettivamente, tra 9.4 : 1 e 21:1, tra 207 e 255 nel secondo caso e tra 527 e 765 nel caso del terzo parametro. Tali valori sono stati considerati accettabili in quanto superiori alle soglie minime di 7:1 per il rapporto luminosità/contrasto, 125 per la differenza di luminosità e 500 per la differenza di colore, rientrando dunque con ampio margine nella categoria di accessibilità AA\@.
+
+Infine, utilizzando l'estensione \progname{Accessibility Evaluation Tool} per Firefox è stato possibile testare la visualizzazione delle varie pagine rimuovendo il CSS definito dall'utente, con contrasto elevato (B/W e W/B), rimuovendo le immagini di sfondo, le immagini di contenuto o tutte le immagini al fine di constatare la fruibilità dei contenuti anche in contesti diversi da quello di usuale visualizzazione. Tramite il browser testuale \progname{w3m} è stata inoltre testata la navigabilità del sito in modalità solo testo. 
 
 \section{Pagine dinamiche}
 
