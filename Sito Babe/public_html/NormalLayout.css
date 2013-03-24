@@ -125,6 +125,11 @@ body {
 	display: inline;
 }
 
+#data {
+	font-size: .7em;
+	padding-bottom: 1em;
+}
+
 .inputForm
 {
 	padding-top:0.5em;
