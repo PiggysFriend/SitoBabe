@@ -15,6 +15,10 @@ html {
 	display: none;
 }
 
+.errore{
+	display: none;
+}
+
 #content {
 	width: 70%;
 }

@@ -23,7 +23,6 @@
 
 \fancyhead[RE,RO]{
 \begin{picture}(-135,0)
-	%TODO \put(-482,-14){\includegraphics[width=0.26\textwidth]{logoHead.png}} non sono molto bravo con gli strumenti grafici... qualcuno può creare un mini logo da collocare in questa posizione... l'idea è fare la scritta "Progetto di TecWeb... magari a destra di un simbolo che possa rappresentare internet... come... booo.. un mondo con un a rete attorno.... oppure un agglomerato dei loghi di browser come quella che ho scaricato!
 	\put(-475,0){\sffamily\large\leftmark}
 \end{picture}
 }
@@ -140,12 +139,14 @@ Si tratta di un sito didattico che ha lo scopo di sensibilizzare i bambini sul t
 \clearpage
 
 \section{Analisi dei requisiti}
-Il sito è stato pensato per avere come target di utenti di riferimento i bambini. Essendoci contenuti adatti a bambini anche molto piccoli, si è fatta inoltre l'assunzione che la consultazione possa avvenire tramite altre persone quali gli insegnanti o i genitori dei bimbi tanto in sede domestica che scolastica. 
-
-Il sito offre una vasta gamma di schede didattiche che hanno lo scopo di aiutare insegnanti e/o genitori a spiegare i primi rudimenti ai bambini.
+Il sito è stato pensato per avere come target di utenti i bambini. Essendoci contenuti adatti a bambini anche molto piccoli, è chiaro che la consultazione si presume avvenga tramite altre persone quali gli insegnanti o i genitori dei bimbi. 
+Il sito offre delle schede didattiche che hanno lo scopo di aiutare insegnanti e/o genitori a spiegare i primi rudimenti ai bambini.
 In particolare, il sito potrebbe essere utilizzato dalle strutture che dispongono di LIM (lavagne interattive multimediali).
+Essendo un sito rivolto ai bambini si è cercato di renderlo simpatico e colorato soprattutto tramite l'inserimento di molte immagini. Inoltre si sono usati caratteri abbastanza grandi, per permettere ai bambini di vedere con facilità.
 
-Trattandosi di un sito rivolto ai più piccoli, si è cercato di renderlo simpatico e colorato soprattutto tramite l'inserimento di molte immagini, in modo da renderlo accattivante agli occhi di un pubblico infantile. Inoltre sono stati utilizzati caratteri dalle dimensioni sufficientemente grandi, per permettere ai bambini di vedere con facilità anche in fase di apprendimento della lettura.
+% chi sono i destinatari del sito, quali sono le loro necessita' e come le soddisfiamo
+% font, colori, immagini
+% sito pensato per lavagne interattive multimediali (LIM) per essere utilizzata negli asili
 
 \subsection{Scelte per il posizionamento sui motori di ricerca}
 Nella progettazione del sito, alcune scelte sono state dettate dall'esigenza di attuare strategie di ottimizzazione per i motori di ricerca.
@@ -291,6 +292,8 @@ I form che compaiono nella sezione \sitepage{Sondaggi.html} del sito sono stati 
 
 In secondo luogo, tutti gli elementi \texttt{<input>} sono corredati dalla rispettiva \texttt{<label>} che permette di associare un'etichetta informativa relativamente alla tipologia di valori attesi dal campo di inserimento, semplificando l'interazione con l'utente anche nel caso in cui questi ricorra all'uso di tecnologie di accesso universale.
 
+Per quanto riguarda la validazione di ciò che viene scritto all'interno delle form, essa è eseguita mediante script JavaScript. In particolare si è controllato che l'inserimento di una mail sia conforme a quella che è l'espressione regolare corretta per una mail.
+
 %TODO tabindex
 %TODO aiuti per dati inseriti erroneamente
 %TODO title
@@ -427,6 +430,17 @@ Viene usato dalla pagina sondaggi per inviare i dati inseriti dall'utente. Lo sc
 
 \subsection{Norme di sviluppo XML}
 
+Dopo essere emersa la necessità di gestire una mini base di dati, la creazione della medesima è avvenuta seguendo le seguenti fasi/procedure:
+\begin{itemize}
+	\item identificazione dei requisiti essenziali: capire cosa si intende rappresentare mediante il file xml e quali sono le ``realtà'' che andranno a farne uso;
+	\item creazione di un apposito xml schema atto a rappresentare la realtà evidenziata;
+	\item controllo di formattazione del xml schema;
+	\item validazione del medesimo;
+	\item creazione di un file Sondaggi.xml conforme allo schema determinato nei punti precedenti.
+\end{itemize}
+
+Come già accennato, il gruppo ha deciso di costruire uno schema con il modello tende alla veneziana, supponendo un futuro riutilizzo dei suoi componenti.
+
 \subsection{Norme di sviluppo CSS}
 
 Il sito basa la gestione del proprio layout grafico su due fogli di stile CSS: NormalLayout.css e SmallLayout.css. Il primo viene usato per gestire una normale visione su schermo avente una larghezza superiore a 52em. Il secondo foglio invece si occupa di adattare la pagina nel momento in cui questa raggiunge una larghezza inferiore a 52em, e viene caricato sui dispositivi mobile. Nel progettare e sviluppare tali CSS si sono tenute in considerazione le seguenti norme:
@@ -443,10 +457,6 @@ Il sito basa la gestione del proprio layout grafico su due fogli di stile CSS: N
 Nello sviluppo del CSS si sono utilizzate alcune proprietà che esulano dalla versione 2.1 dello standard, in particolare \verb+border-radius+ e \verb+background-size+.
 
 La visualizzazione del sito è stata comunque testata con browser che non supportano le regole CSS3 (non ancora standard) e il risultato ottenuto, seppur non esteticamente gradevole come nei browser più recenti, conserva il contenuto.
-
-\clearpage
-
-\section{Riferimenti bibliografici e materiale di consultazione online}
 
 \end{document}
 
