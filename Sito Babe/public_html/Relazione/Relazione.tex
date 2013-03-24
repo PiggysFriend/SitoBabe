@@ -235,7 +235,7 @@ Per rendere più rapida la navigazione si è scelto di offrire la possibilità d
 
 Si è inoltre prestata particolare attenzione a evitare la presenza di link circolari, a rendere il testo delle ancore facilmente individuabile e, soprattutto, sufficientemente autoesplicativo riguardo alla posizione di destinazione (evitando accuratamente di utilizzare parole ``vuote'' o deittici come testo dei link).
 Inoltre, si è fatta attenzione a non rendere i link presenti nella \inglese{breadcrumbs}\footnote{%
-   \inglese{Breadcrumbs} significa letteralmente ``briciole di pane''. Si tratta di una tecnica utilizzata per aiutare l'utente a non perdersi all'interno del sito, fornendogli le traccie del percorso esplorativo da lui effettuato, proprio come Pollicino aveva lasciato le briciole di pane nel bosco per poter ritrovare la strada di casa.}non adiacenti, separandoli tramite il carattere ``>''
+   \inglese{Breadcrumbs} significa letteralmente ``briciole di pane''. Si tratta di una tecnica utilizzata per aiutare l'utente a non perdersi all'interno del sito, fornendogli le traccie del percorso esplorativo da lui effettuato, proprio come Pollicino aveva lasciato le briciole di pane nel bosco per poter ritrovare la strada di casa.}adiacenti, separandoli tramite il carattere ``>''
 
 Per facilitare la navigazione fra le pagine attraverso i collegamenti ipertestuali è stato impostato l'attributo \texttt{tabindex} per i link del menu principale e delle \inglese{breadcrumbs}, nonché per il collegamento `Salta al contenuto' che non è direttamente visibile sulle pagine.
 
@@ -301,12 +301,17 @@ In tal modo gli \inglese{screen reader} saranno in grado di adottare la pronunci
 Inoltre, ancora una volta allo scopo di facilitare la fruizione del contenuto a chi accede al sito tramite tecnologie di sintesi vocale, le eventuali sigle o abbreviazioni, ad esempio ``RSS'' sono stati inseriti all'interno di un elemento \texttt{<abbr>} in cui tramite l'attributo \texttt{title} si fornisce la dicitura per esteso.
 
 \section{Note}
-\subsection{Note su particolari pagine}
+\subsection{Note sulle pagine Mesi e Giorni}
 Il contenuto della pagina viene presentato servendosi di una filastrocca. La struttura della filastrocca richiede che ogni verso occupi una riga differente. Per fornire questa struttura si è inserito ogni verso in un tag \texttt{<p>}.
 
 Si è scelto di non usare il tag \texttt{<pre>} in quanto pur garantendo la conservazione di spazi e ritorni a capo, tale tag rende più complessa la manipolazione per il ridimensionamento della pagina.
 
 Infatti usando il tag \texttt{<pre>} viene disabilitato il ritorno a capo automatico e perciò se la pagina diventa troppo piccola il testo esce della pergamena posta come sfondo.
+
+\subsection{Note sul titolo}
+
+Per quanto riguarda il titolo, si è scelto di non utilizzare tecniche di \inglese{image replacement}, penalizzando così la grafica, per mantenere l'accessibilità. Le tecniche di \inglese{image replacement} anche se sono in grado di permettere al sito di avere una buona grafica pur mantenendo un certo grado di accessibilità, comunque la penalizzano in qualche modo. Infatti, utilizzando tali tecniche si dovrebbe rinunciare o ad un buon ridimensionamento oppure alla sicurezza assoluta che sia conservato il contenuto in quanto se le immagini dovessero essere disabilitate allora non si potrebbe più leggere il titolo e di conseguenza non si potrebbe più rispondere alla domanda ``dove sono?''. Quindi, si è scelto di avere un titolo non pienamente appagabile dal punto di vista estetico ma che fornisce una sicurezza nel suo mantenimento.
+
 
 \section{Strumenti ultilizzati}
 
@@ -336,3 +341,5 @@ La visualizzazione del sito è stata comunque testata con browser che non suppor
 \section{Riferimenti bibliografici e materiale di consultazione online}
 
 \end{document}
+
+
