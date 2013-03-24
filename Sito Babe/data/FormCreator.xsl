@@ -81,7 +81,7 @@
 						<span class = "errore">Il campo non può essere vuoto</span>
 					</div>
 					<div class="inputForm">
-						<input type="submit" name="invioDati"></input>
+						<input type="submit" name="invioDati" onclick = "return checkEmail('e-mail', 'errore');"></input>
 						<input type="reset"></input>
 					</div>
 				</fieldset>
