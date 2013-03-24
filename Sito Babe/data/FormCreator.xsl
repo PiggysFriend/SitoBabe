@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" 
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	xmlns:a="http://www.ilmondodibabe.it">
+	>
 	<xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes" />
 
 
@@ -15,9 +15,9 @@
 		<meta name="keywords" content="Babe, film, sondaggi, il mondo di Babe" />
 		<meta name="author" content="Andrea Meneghinello, Andrea Rizzi, Diego Beraldin, Elena Zecchinato" />
 		<meta name="language" content="italian it" />
-		<link href="../public_html/NormalLayout.css" rel="stylesheet" type="text/css" media="screen"/>
-		<link href="../public_html/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-		<link href="../public_html/SmallLayout.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:52em), only screen and (max-device-width:30em)"/>
+		<link href="../NormalLayout.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<link href="../SmallLayout.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:52em), only screen and (max-device-width:30em)"/>
 	</head>
 	<body>
 		<div id="bodyWrap" class="group">
@@ -44,11 +44,11 @@
 			<form action="../cgi-bin/addComment.cgi" method="POST">
 				<fieldset>
 					<legend>Sondaggio</legend>
-					<xsl:for-each select="//a:sondaggio[@numero='1']/a:domanda">
+					<xsl:for-each select="//sondaggio[@numero='1']/domanda">
 						<xsl:sort select="@numero"/>
 						<fieldset>
 							<legend><xsl:value-of select="@etichetta"/></legend>
-								<xsl:for-each select="a:scelta">
+								<xsl:for-each select="scelta">
 									<xsl:sort select="@numero"/>
 									<div class="inputForm">
 										<label class = "etichetta">
