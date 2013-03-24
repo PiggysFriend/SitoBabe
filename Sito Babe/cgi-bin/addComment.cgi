@@ -86,7 +86,7 @@ else
 		
 	my $risposta1 = int($doc->findnodes("//domanda[\@numero='1']/scelta[\@etichetta='".$domanda1."']/votanti/text()"));
 	$value=$risposta1 + 1;
-	my $nodoRisosta1 = $doc->findnodes("//domanda[\@numero='1']/scelta[\@etichetta='".$domanda1."']/votanti/text()")->get_node(1);
+	my $nodoRisposta1 = $doc->findnodes("//domanda[\@numero='1']/scelta[\@etichetta='".$domanda1."']/votanti/text()")->get_node(1);
 	$nodoRisposta1->setData($value);
 	open (DATA, ">$file");
 	print DATA $doc->toString;
