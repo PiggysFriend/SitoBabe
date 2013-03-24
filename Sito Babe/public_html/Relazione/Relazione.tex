@@ -140,9 +140,18 @@ Si tratta di un sito didattico che ha lo scopo di sensibilizzare i bambini sul t
 \clearpage
 
 \section{Analisi dei requisiti}
+<<<<<<< HEAD
 % chi sono i destinatari del sito, quali sono le loro necessita' e come le soddisfiamo
 % font, colori, immagini
 % sito pensato per lavagne interattive multimediali (LIM) per essere utilizzata negli asili
+=======
+Il sito è stato pensato per avere come target di utenti di riferimento i bambini. Essendoci contenuti adatti a bambini anche molto piccoli, si è fatta inoltre l'assunzione che la consultazione possa avvenire tramite altre persone quali gli insegnanti o i genitori dei bimbi tanto in sede domestica che scolastica. 
+
+Il sito offre una vasta gamma di schede didattiche che hanno lo scopo di aiutare insegnanti e/o genitori a spiegare i primi rudimenti ai bambini.
+In particolare, il sito potrebbe essere utilizzato dalle strutture che dispongono di LIM (lavagne interattive multimediali).
+
+Trattandosi di un sito rivolto ai più piccoli, si è cercato di renderlo simpatico e colorato soprattutto tramite l'inserimento di molte immagini, in modo da renderlo accattivante agli occhi di un pubblico infantile. Inoltre sono stati utilizzati caratteri dalle dimensioni sufficientemente grandi, per permettere ai bambini di vedere con facilità anche in fase di apprendimento della lettura.
+>>>>>>> ce98d5084102e2824c4c13d8dc75f7d587da290f
 
 \subsection{Scelte per il posizionamento sui motori di ricerca}
 Nella progettazione del sito, alcune scelte sono state dettate dall'esigenza di attuare strategie di ottimizzazione per i motori di ricerca.
@@ -368,6 +377,24 @@ L'estensione \progname{Web Developer} per Firefox è stata utilizzata per testar
 \section{Pagine dinamiche}
 
 \subsection{Utilizzo XML}
+
+Il sito si basa su una mini base di dati realizzata mediante XML. Nello specifico è stato definito un XML schema per la gestione dei sondaggi sui film di Babe. Tale schema è stato costruito con il modello tende alla veneziana, al fine di rendere massimo il riutilizzo degli elementi, mantenendo comunque un unico elemento globale. I dati che vengono definiti sono:
+
+\begin{itemize}
+	\item le domande a risposta multipla che costituiscono il sondaggio;
+	\item le possibili risposte alle domande;
+	\item il numero di votanti che per ogni domanda ha scelto una determinata risposta;
+	\item i commenti rilasciati da chi ha eseguito il sondaggio;
+	\item di ogni commento interessa conoscere il nome e la mail dell'utente che l'ha eseguito, la data in cui è stato redatto e ovviamente il testo del commento.
+\end{itemize}
+
+I dati conformi a tale schema saranno raccolti nel file XML Sondaggi.xml. Questo file viene usato nelle seguenti occasioni:
+
+\begin{itemize}
+	\item dallo pagina FormCreator.html, nel momento in cui deve essere generata (lato server) la form per l'inserimento dei commenti e per rispondere alle domande del sondaggio;
+	\item dalla pagina FormCreator.html, nel momento in cui devono essere riportati, sotto alla sezione dedicata al form, i commenti inseriti dagli altri visitatori del sito;
+	\item dallo script addComment.cgi, nel momento in cui l'utente avrà cliccato il pulsante di submit per inviare al server i dati inseriti nella form. Lo script si occupera della loro validazione e della loro registrazione in Sondaggi.xml.
+\end{itemize}
 
 \subsection{Utilizzo Perl}
 Il sito fa uso di due fondamentali script Perl.
