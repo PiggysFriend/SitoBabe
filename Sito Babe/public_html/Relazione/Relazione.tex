@@ -310,6 +310,27 @@ In tutte le pagine, le parole che comparivano in lingue diverse da quella princi
 In tal modo gli \inglese{screen reader} saranno in grado di adottare la pronuncia corretta, in special modo per i numerosi nomi dei personaggi che hanno mantenuto il nome originale anche nella versione doppiata dei film.
 
 Inoltre, ancora una volta allo scopo di facilitare la fruizione del contenuto a chi accede al sito tramite tecnologie di sintesi vocale, le eventuali sigle o abbreviazioni, ad esempio ``RSS'' sono stati inseriti all'interno di un elemento \texttt{<abbr>} in cui tramite l'attributo \texttt{title} si fornisce la dicitura per esteso.
+\subsubsection{Risconti sui test effettuati con gli screen reader}
+Al fine di garantire l'accessibilità al sito, in particolare per le persone con disabilità visive, si sono effettuati dei test con due  \inglese{screen reader} differenti. 
+Si è volta particolare attenzione al controllo della fruibilità di:
+\begin{itemize}[noitemsep,nolistsep]
+  \item[-] menu;
+  \item[-] tabelle;
+  \item[-] immagini;
+  \item[-] pronunce linguistiche corrette;
+\end{itemize}
+
+Per quanto riguarda il menu, si è controllato che lo \inglese{screen reader} accedesse al menu secondo l'ordine stabilito e che legga in particolare la voce salta menu, non visibile direttamente nella pagina ma fondamentale per le persone con problemi visivi, che altrimenti sarebbero costrette ad una forzata rilettura delle voci del menu per ogni accesso alle pagine. Il riscontro in questo caso è stato positivo.
+
+Per quanto riguarda le tabelle si è controllato che lo \inglese{screen reader} leggesse correttamente le intestazioni di riga e di colonna prima di leggere il contenuto delle celle. Purtroppo tale riscontro non ha avuto esito positivo. Tuttavia, avendo seguito tutte le regole per ottenere tabelle accessibili, si ritiene che l'esito negativo del test derivi dal fatto che gli screen-reader utilizzati sono strumenti gratuiti e di conseguenza probabilmente non godono di tutte le funzionalità.
+
+Per quanto riguarda invece le immagini, i test hanno avuto un riscontro positivo. Si è controllato che lo \inglese{screen reader} leggesse il valore degli attributi \texttt{alt} dove presente. Inoltre si è cercato di capire tramite l'uso di \inglese{screen reader} se il contenuto del sito senza la visione di immagine fosse mantenuto.
+
+Per quanto riguarda la correttezza nella pronuncia di parole appartenenti ad altre lingue, purtroppo il test ha dato esito negativo. Entrambe gli \inglese{screen reader} utilizzati non distinguono il cambiamento di lingua impostato tramite l'attributo  \texttt{xml:lang}.  Anche in questo caso si pensa che la colpa sia del fatto che gli strumenti utilizzati sono gratuiti.
+
+
+
+
 
 \section{Note}
 \subsection{Note sulle pagine Mesi e Giorni}
