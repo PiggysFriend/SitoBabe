@@ -112,9 +112,9 @@ else
 	$commentoDaAggiungere = "<commento utente=\"$utente\" mail=\"$mail\" data=\"$data\">$commento</commento>";
 	$frammento = $parser->parse_balanced_chunk($commentoDaAggiungere);
 	#mi faccio restituire il nodo "commenti"
-	my $elementoDaAggiungere = $radice->getElementsByTagName("commenti");
+	my @elementoDaAggiungere = $radice->getElementsByTagName("commenti");
 	#inserisco il nuovo commento
-	$elementoDaAggiungere->appendChild($frammento);
+	$elementoDaAggiungere[i]->appendChild($frammento);
 	open (DATA, ">$file");
 	print DATA $doc->toString;
 	close(DATA);
