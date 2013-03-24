@@ -143,9 +143,11 @@ span.inglese {
 #personaggi img {
 	padding: 1em;
 	float: right;
-	/*
-	 width:25%;
-	 */
+	width: 20%;
+}
+
+#personaggi img.alt {
+	float: left;
 }
 
 .copertina {
