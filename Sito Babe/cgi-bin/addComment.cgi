@@ -72,6 +72,12 @@ if ($error eq "true") {
 }
 else 
 {
+	#print "Content-Type: text/html\n";
+	#print "Content-Enconding: utf8\n\n";
+	#print $risposta1;
+	#print " ---------- ";
+	#print $value;
+
 	#Procedure di inizializzazione per l'elaborazione dei dati
 	my $file = "../data/Sondaggi.xml";
 	my $parser = XML::LibXML->new();
@@ -80,13 +86,8 @@ else
 		
 	my $risposta1 = int($doc->findnodes("//domanda[\@numero='1']/scelta[\@etichetta='".$domanda1."']/votanti/text()"));
 	$value=$risposta1 + 1;
-	#print "Content-Type: text/html\n";
-	#print "Content-Enconding: utf8\n\n";
-	#print $risposta1;
-	#print " ---------- ";
-	#print $value;
-	
-	$risposta1->setData($value);
+	my $nodoRisosta1 = $doc->findnodes("//domanda[\@numero='1']/scelta[\@etichetta='".$domanda1."']/votanti/text()")->get_node(1);
+	$nodoRisposta1->setData($value);
 	open (DATA, ">$file");
 	print DATA $doc->toString;
 	close(DATA);
@@ -94,7 +95,8 @@ else
 	#aggiorno domanda 2
 	my $risposta2 = int($doc->findnodes("//domanda[\@numero='2']/scelta[\@etichetta='".$domanda2."']/votanti/text()"));
 	$value=$risposta2 + 1;
-	$risposta2->setData($value);
+	my $nodoRisposta2 = $doc->findnodes("//domanda[\@numero='2']/scelta[\@etichetta='".$domanda2."']/votanti/text()")->get_node(1);
+	$nodoRisposta2->setData($value);
 	open (DATA, ">$file");
 	print DATA $doc->toString;
 	close(DATA);
@@ -102,7 +104,8 @@ else
 	#aggiorno domanda 3
 	my $risposta3 = int($doc->findnodes("//domanda[\@numero='3']/scelta[\@etichetta='".$domanda3."']/votanti/text()"));
 	$value=$risposta3 + 1;
-	$risposta3->setData($value);
+	my $nodoRisposta3 = $doc->findnodes("//domanda[\@numero='3']/scelta[\@etichetta='".$domanda3."']/votanti/text()")->get_node(1);
+	$nodoRisposta3->setData($value);
 	open (DATA, ">$file");
 	print DATA $doc->toString;
 	close(DATA);
