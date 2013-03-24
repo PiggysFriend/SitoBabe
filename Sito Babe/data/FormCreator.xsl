@@ -17,6 +17,7 @@
 		<meta name="language" content="italian it" />
 		<link href="../NormalLayout.css" rel="stylesheet" type="text/css" media="screen"/>
 		<link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<script type="text/javascript" src="date.js" ></script>
 		<link href="../SmallLayout.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:52em), only screen and (max-device-width:30em)"/>
 	</head>
 	<body>
@@ -86,6 +87,7 @@
 			</div>
 			
 			<div id="foot">
+				<div id="data"> </div>
 				<p>
     					<a href="http://validator.w3.org/check?uri=referer"><img
 					src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
