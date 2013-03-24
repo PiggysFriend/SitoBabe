@@ -50,7 +50,7 @@
 							<legend><xsl:value-of select="@etichetta"/></legend>
 								<xsl:for-each select="a:scelta">
 									<xsl:sort select="@numero"/>
-									<div>
+									<div class="inputForm">
 										<label class = "etichetta">
 											<xsl:attribute name = "for"><xsl:value-of select='@etichetta' /></xsl:attribute>
 											<xsl:value-of select='@etichetta' />
@@ -64,19 +64,19 @@
 								</xsl:for-each>
 						</fieldset>
 					</xsl:for-each>
-					<div>
+					<div class="inputForm">
 						<label class="etichetta" for="name">Nome utente</label>
 						<input type="text" id = "name" name="name"></input>
 					</div>
-					<div>
+					<div class="inputForm">
 						<label class="etichetta" for="e-mail">e-mail</label>
 						<input type="text" id = "e-mail" name="e-mail"></input>
 					</div>
-					<div>
+					<div class="inputForm">
 						<label class="etichetta" for="commento">commento</label>
 						<textarea rows="5" cols="40" id="commento" name="commento">inserisci qui il tuo commento...</textarea>
 					</div>
-					<div>
+					<div class="inputForm">
 						<input type="submit" name="invioDati"></input>
 						<input type="reset"></input>
 					</div>
