@@ -66,21 +66,19 @@
 					</xsl:for-each>
 					<div class="inputForm">
 						<label class="etichetta" for="name">Nome utente</label>
-						<input type="text" id = "name" name="name" onchande = "return checkText('name', 'errore');"></input>
-						<span class = "errore">Il nome non può contenere numeri</span>
+						<input type="text" id = "name" name="name" ></input>
 					</div>
 					<div class="inputForm">
 						<label class="etichetta" for="e-mail">e-mail</label>
 						<input type="text" id = "e-mail" name="e-mail"></input>
-						<span class = "errore">Il dato inserito non corrisponde ad un indirizzo mail</span>
+						
 					</div>
 					<div class="inputForm">
 						<label class="etichetta" for="commento">commento</label>
-						<textarea rows="5" cols="40" id="commento" name="commento" onchange = "return checkText('name', 'errore');">inserisci qui il tuo commento...</textarea>
-						<span class = "errore">Il campo non può essere vuoto</span>
+						<textarea rows="5" cols="40" id="commento" name="commento">inserisci qui il tuo commento...</textarea>
 					</div>
 					<div class="inputForm">
-						<input type="submit" name="invioDati" onclick = "return checkEmail('e-mail', 'errore');"></input>
+						<input type="submit" name="invioDati"></input>
 						<input type="reset"></input>
 					</div>
 				</fieldset>
