@@ -36,8 +36,8 @@
 					<li><a tabindex="5" href="../Interpreti.html">Interpreti</a></li>
 					<li><a tabindex="6" href="../ImparaConBabe.html">Impara con <span xml:lang="en">Babe</span></a></li>
 					<li>Sondaggi</li>
-					<li><a tabindex="7" href="Premi.html">Premi</a></li>
-					<li><a tabindex="8" href=""><span xml:lang="en">Link</span> utili</a></li>
+					<li><a tabindex="7" href="../Premi.html">Premi</a></li>
+					<li><a tabindex="8" href="../LinkUtili.html"><span xml:lang="en">Link</span> utili</a></li>
 				</ul>
 			</div>
 			
