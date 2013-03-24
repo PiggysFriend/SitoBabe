@@ -84,6 +84,16 @@
 				</fieldset>
 			</form>
 			
+			<div>
+				<h2>Commenti lasciati da altri visitatori</h2>
+				<xsl:for-each select="//commento">
+					<div>
+						<p>Utente: <xsl:value-of select='@utente'/> Data: <xsl:value-of select='@data'/></p>
+						<p><xsl:value-of select='text()'/></p>
+					</div>
+				</xsl:for-each>
+			</div>
+			
 			</div>
 			
 			<div id="foot">
