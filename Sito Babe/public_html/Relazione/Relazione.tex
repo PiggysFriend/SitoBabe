@@ -266,6 +266,7 @@ In generale, la tavolozza dei colori adottata per la realizzazione delle pagine 
 
 La scelta dei colori è stata guidata dal duplice scopo di ottenere una serie di pagine esteticamente gradevoli anche in vista del pubblico di bambini ma anche, al tempo stesso, di garantire un adeguato contrasto dei colori per gli utenti affetti da patologie in grado di alterare la percezione cromatica.
 
+In ogni caso, nella scelta dei colori, qualora vi fosse un conflitto fra l'estetica delle pagine e l'accessibilità, si è sempre preferito salvaguardare la seconda, anche in relazione all'esito dei test sui colori che sono stati realizzati con gli strumenti descritti nella sezione \ref{sec:strumenti}.
 
 \subsection{I form}
 I form che compaiono nella sezione \sitepage{Sondaggi.html} del sito sono stati progettati e realizzati al fine di massimizzare l'accessibilità. In primo luogo, tutti gli elementi \texttt{<input>} sono stati inseriti all'interno di un elemento \texttt{<fieldset>} corredato da un'opportuna \texttt{<legend>}, in modo da rendere evidente la suddivisione logica nelle varie sezioni del contenuto.
@@ -309,10 +310,6 @@ Per quanto riguarda invece le immagini, i test hanno avuto un riscontro positivo
 
 Per quanto riguarda la correttezza nella pronuncia di parole appartenenti ad altre lingue, purtroppo il test ha dato esito negativo. Entrambe gli \inglese{screen reader} utilizzati non distinguono il cambiamento di lingua impostato tramite l'attributo  \texttt{xml:lang}.  Anche in questo caso si pensa che la colpa sia del fatto che gli strumenti utilizzati sono gratuiti.
 
-
-
-
-
 \section{Note}
 \subsection{Note sulle pagine Mesi e Giorni}
 Il contenuto della pagina viene presentato servendosi di una filastrocca. La struttura della filastrocca richiede che ogni verso occupi una riga differente. Per fornire questa struttura si è inserito ogni verso in un tag \texttt{<p>}.
@@ -325,7 +322,7 @@ Infatti usando il tag \texttt{<pre>} viene disabilitato il ritorno a capo automa
 
 Per quanto riguarda il titolo, si è scelto di non utilizzare tecniche di \inglese{image replacement}, penalizzando così la grafica, per mantenere l'accessibilità. Le tecniche di \inglese{image replacement} anche se sono in grado di permettere al sito di avere una buona grafica pur mantenendo un certo grado di accessibilità, comunque la penalizzano in qualche modo. Infatti, utilizzando tali tecniche si dovrebbe rinunciare o ad un buon ridimensionamento oppure alla sicurezza assoluta che sia conservato il contenuto in quanto se le immagini dovessero essere disabilitate allora non si potrebbe più leggere il titolo e di conseguenza non si potrebbe più rispondere alla domanda ``dove sono?''. Quindi, si è scelto di avere un titolo non pienamente appagabile dal punto di vista estetico ma che fornisce una sicurezza nel suo mantenimento.
 
-\section{Strumenti ultilizzati}
+\section{Strumenti ultilizzati}\label{sec:strumenti}
 
 Il programma \progname{Totalvalidator}, in versione gratuita, è stato utilizzato per verificare il rispetto delle linee guida WCAG 2.0, ottenendo la valutazione AA2.
 
