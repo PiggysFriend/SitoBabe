@@ -139,14 +139,12 @@ Si tratta di un sito didattico che ha lo scopo di sensibilizzare i bambini sul t
 \clearpage
 
 \section{Analisi dei requisiti}
-Il sito è stato pensato per avere come target di utenti i bambini. Essendoci contenuti adatti a bambini anche molto piccoli, è chiaro che la consultazione si presume avvenga tramite altre persone quali gli insegnanti o i genitori dei bimbi. 
-Il sito offre delle schede didattiche che hanno lo scopo di aiutare insegnanti e/o genitori a spiegare i primi rudimenti ai bambini.
-In particolare, il sito potrebbe essere utilizzato dalle strutture che dispongono di LIM (lavagne interattive multimediali).
-Essendo un sito rivolto ai bambini si è cercato di renderlo simpatico e colorato soprattutto tramite l'inserimento di molte immagini. Inoltre si sono usati caratteri abbastanza grandi, per permettere ai bambini di vedere con facilità.
+Il sito è stato pensato per avere come target di utenti di riferimento i bambini. Essendoci contenuti adatti a bambini anche molto piccoli, si è fatta inoltre l'assunzione che la consultazione possa avvenire tramite altre persone quali gli insegnanti o i genitori dei bimbi tanto in sede domestica che scolastica. 
 
-% chi sono i destinatari del sito, quali sono le loro necessita' e come le soddisfiamo
-% font, colori, immagini
-% sito pensato per lavagne interattive multimediali (LIM) per essere utilizzata negli asili
+Il sito offre una vasta gamma di schede didattiche che hanno lo scopo di aiutare insegnanti e/o genitori a spiegare i primi rudimenti ai bambini.
+In particolare, il sito potrebbe essere utilizzato da strutture che dispongono di LIM (lavagne interattive multimediali).
+
+Trattandosi di un sito rivolto ai più piccoli, si è cercato di renderlo simpatico, colorato e accattivante agli occhi di un pubblico infantile soprattutto tramite l'inserimento di molte immagini. Inoltre sono stati utilizzati caratteri dalle dimensioni sufficientemente grandi, per permettere ai bambini di vedere con facilità anche in fase di apprendimento della lettura.
 
 \subsection{Scelte per il posizionamento sui motori di ricerca}
 Nella progettazione del sito, alcune scelte sono state dettate dall'esigenza di attuare strategie di ottimizzazione per i motori di ricerca.
@@ -162,7 +160,7 @@ In terzo luogo, come sarà illustrato con maggiori dettagli nella sezione \ref{s
 
 Infine, si è posta particolare attenzione all'utilizzo dei tag \texttt{<meta>}, in particolare \texttt{description}, \texttt{keywords} e \texttt{rating}. È stata infatti inserita una descrizione significativa specifica per ogni singola pagina, pensata per essere accattivante se visualizzata in una SERP (\inglese{search engine response page}).
 
-Le parole chiave sono state selezionate in modo specifico per ogni pagina, scegliendo tra i termini che compaiono nelle posizioni più ``prominenti'' (intestazioni, elenchi, collegamenti, enfasi) ed effettivamente presenti nel contenuto della pagina. Inoltre, il numero di parole chiave è stato mantenuto contenuto a un numero inferiore a dieci.
+Le parole chiave sono state selezionate anch'esse in modo specifico per ogni pagina, scegliendo tra i termini che compaiono nelle posizioni più ``prominenti'' (intestazioni, elenchi, collegamenti, enfasi) ed effettivamente presenti nel contenuto della pagina. Inoltre, il numero di parole chiave è stato mantenuto contenuto a un numero inferiore a dieci.
 
 La valutazione del contenuto di tutte le pagine è stata impostata a \texttt{safe for kids}, una scelta le cui ragioni sono da ravvisarsi nel fatto che il sito ha una finalità didattica per bambini, e quindi gli autori hanno tutto l'interesse a presentare contenuti sicuri e adatti al pubblico dei più piccoli.
 
@@ -191,7 +189,7 @@ Nei livelli sottostanti della gerarchia si è invece adottata la struttura organ
 Pur essendo il sito orientato alla didattica, non si è ritenuta necessaria l'adozione di una struttura organizzativa sequenziale perché gli insegnamenti impartiti sono talmente basilari e scorrelati gli uni dagli altri da non necessitare l'imposizione di un percorso obbligato.
 
 \subsection{Layout delle pagine}
-Per quanto riguarda il \inglese{design} delle pagine, la scelta per il dimensionamento degli elementi è stata la creazione di un \inglese{layout} fluido, in grado di adattarsi alle dimensioni (in particolare sull'asse orizzontale) dello schermo. Ovunque fosse possibile le misure sono state espresse in unità relative, come le percentuali tanto per la dimensione dei contenitori di testo quanto per le immagini.
+Per quanto riguarda il \inglese{design} delle pagine, la scelta per il dimensionamento degli elementi è stata la creazione di un \inglese{layout} fluido, in grado di adattarsi alle dimensioni (in particolare sull'asse orizzontale) dello schermo. Ovunque fosse possibile le misure sono state espresse in unità relative, come le percentuali, tanto per la dimensione dei contenitori di testo quanto per le immagini.
 
 % TODO spiegare come è stato ottenuto l'effetto dello sfondo a parallasse
 
@@ -203,7 +201,7 @@ In relazione al supporto ai caratteri, si è scelto di utilizzare nel foglio di 
 \end{verbatim}
 in modo da assicurare una visualizzazione simile su ogni dispositivo indipendentemente dal sistema operativo e dai font tipografici supportati.
 
-Per assicurare un buon grado di uniformità nella visualizzazione dei colori si sono utilizzati esclusivamente colori \inglese{web-safe} vale a dire i colori che nella loro rappresentazione esadecimale contengono solo le cifre \verb+0+, \verb+3+, \verb+6+, \verb+9+, \verb+c+ e \verb+f+.
+Per assicurare un buon grado di uniformità nella visualizzazione dei colori si sono utilizzati esclusivamente colori \inglese{web-safe} vale a dire i colori che nella loro rappresentazione esadecimale contengono solo le cifre \verb+0+, \verb+3+, \verb+6+, \verb+9+, \verb+c+ e \verb+f+ (ripetute).
 
 Per garantire una trasformazione elegante del \inglese{layout} in tutte le circostanze e, in particolare:
 \begin{enumerate}[noitemsep,nolistsep,label=\emph{\alph*})]
@@ -217,23 +215,21 @@ Infine è stato predisposto un CSS alternativo per i \inglese{media} paginati e,
 
 Inoltre, dal momento che su carta le funzionalità ipertestuali o di navigazione si trovano per loro natura ad essere snaturate, è stato rimosso il menu di navigazione e i collegamenti sono stati uniformati al resto del contenuto testuale.
 
+\clearpage
 \section{Mappa del sito}
-\begin{figure}[tb]
-\centering
-\includegraphics[width=.8\textwidth]{mappasito.png}
-\caption{Organizzazione delle pagine del sito}
-\end{figure}
+\includegraphics[width=.9\textwidth]{mappasito.png}
+
 
 \clearpage
 
 \section{Accessibilità}\label{sec:accessibility}
 
 \subsection{Il testo}\label{sec:testoaccessibile}
-Per quanto riguarda il testo si è cercato di fare particolare attenzione alla dimensione e ai font utilizzati. Infatti, essendo un sito per bambini è bene avere un testo facilmente leggibile sia in relazione alla dimensione che ai font utilizzati.
+Per quanto riguarda il testo, si è cercato di fare particolare attenzione alla dimensione e ai font utilizzati. Infatti, essendo un sito per bambini è bene avere un testo facilmente leggibile sia in relazione alla dimensione che ai font utilizzati.
 
 Non si sono infatti impiegati font particolari e le dimensioni del testo sono assegnate con il parametro \texttt{em} che permette l'adattamento del testo in base alle caratteristiche desiderate dall'utente.  
 
-Si è inoltre cercato di utilizzare un linguaggio il più chiaro possibile visto che il pubblico a cui ci si rivolge sono i bambini è ancor più importante essere chiari e semplici.
+Si è inoltre cercato di utilizzare un linguaggio il più chiaro possibile, visto che il pubblico a cui ci si rivolge sono i bambini è ancor più importante essere chiari e semplici.
 
 Infine, laddove possibile, si è fatto uso di strutture enumerative (liste ordinate o non ordinate) per presentare le informazioni in forma schematica e più facilmente accessibile in quanto già strutturata e non ``appiattita'' in forma testuale.
 
@@ -244,19 +240,21 @@ In questo modo l'utente non è in alcun modo indotto in errore. Considerando che
 In particolare nella pagina \sitepage{ImparaConBabe.html} sono usate delle immagini per anticipare all'utente il contenuto della pagina di destinazione del link.
 Le immagini costituiscono un link insieme al testo  e perciò la zona su cui è necessario cliccare per accedere alle pagine è sufficientemente ampia da poter essere accessibile anche dalle persone che hanno difficoltà nel muovere il mouse.
 
-All'interno del sito sono presenti dei link esterni, in questo caso si è segnalato esplicitamente tramite l'immagine di un mondo che il link porta all'esterno del sito (ad esempio \sitepage{Stagioni.html}). Tale convenzione interna è stata mantenuta per tutte le pagine in cui comparivano dei collegamenti esterni, con il preciso intento di non deludere le aspettative dell'utente.
+All'interno del sito sono presenti dei link esterni, in questo caso si è segnalato esplicitamente tramite l'immagine di un mondo che il link porta all'esterno del sito (ad esempio \sitepage{Stagioni.html} o in \sitepage{LinkUtili.html}). Tale convenzione interna è stata mantenuta per tutte le pagine in cui comparivano dei collegamenti esterni, con il preciso intento di non deludere le aspettative dell'utente.
 
-Le pagine di dimensione verticale maggiore, ad esempio \sitepage{Alfabeto.html}, \sitepage{Mesi.html} o \sitepage{Trama.html} contengono inoltre dei collegamenti interni per tornare in cima alla pagina durante la navigazione. La pagina dei \sitepage{Personaggi.html}, oltre a questo tipo di collegamenti, permette di spostarsi da un personaggio all'altro durante la lettura. La pagina \sitepage{Mesi.html} contiene una filastrocca sui mesi che contiene un collegamento per ogni mese. La stessa cosa avviene per la pagina \sitepage{Giorni.html}, che contiene però una filastrocca sui giorni, con relativi collegamenti. Si è utilizzata tale tecnica solo con il fine di presentare la pagina in modo simpatico e permettere di muoversi liberamente all'interno delle pagine.
+Le pagine di dimensione verticale maggiore, ad esempio \sitepage{Alfabeto.html}, \sitepage{Mesi.html} o \sitepage{Trama.html} contengono inoltre dei collegamenti interni per tornare in cima alla pagina durante la navigazione. La pagina dei \sitepage{Personaggi.html}, oltre a questo tipo di collegamenti, permette di spostarsi da un personaggio all'altro durante la lettura.
 
+La pagina \sitepage{Mesi.html} contiene una filastrocca sui mesi che presenta un collegamento per ogni mese. La stessa cosa avviene per la pagina \sitepage{Giorni.html}, che contiene però una filastrocca sui giorni, con relativi collegamenti. Si è utilizzata tale tecnica solo con il fine di presentare la pagina in modo simpatico e permettere di muoversi liberamente all'interno delle pagine.
 
+Per rendere più rapida la navigazione si è scelto di offrire la possibilità di saltare gli elementi che esulano dal contenuto in senso stretto, ovvero il menu di navigazione, che si ripete uguale in ogni pagina e che dunque non necessita di essere letto ogni volta.
 
-Per rendere più rapida la navigazione si è scelto di offrire la possibilità di saltare gli elementi che esulano dal contenuto in senso stretto, quali il menu di navigazione o la lista dei \inglese{feed RSS} che si ripetono uguali in ogni pagina e che dunque non necessitano di essere letti ogni volta. A tal fine, sono stati inseriti dei collegamenti nascosti (impostando una posizione assoluta che ecceda il margine sinistro), che però risultano accessibili se si legge il solo contenuto testuale della pagina.
+A tal fine, sono stati inseriti dei collegamenti nascosti (impostando una posizione assoluta che ecceda il margine sinistro), che però risultano accessibili se si legge il solo contenuto testuale della pagina.
 
-Si è inoltre prestata particolare attenzione a evitare la presenza di link circolari, a rendere il testo delle ancore facilmente individuabile e, soprattutto, sufficientemente autoesplicativo riguardo alla posizione di destinazione (evitando accuratamente di utilizzare parole ``vuote'' o deittici come testo dei link).
-Inoltre, si è fatta attenzione a non rendere i link presenti nella \inglese{breadcrumbs}\footnote{%
-   \inglese{Breadcrumbs} significa letteralmente ``briciole di pane''. Si tratta di una tecnica utilizzata per aiutare l'utente a non perdersi all'interno del sito, fornendogli le traccie del percorso esplorativo da lui effettuato, proprio come Pollicino aveva lasciato le briciole di pane nel bosco per poter ritrovare la strada di casa.}adiacenti, separandoli tramite il carattere ``>''
+Si è inoltre prestata particolare attenzione a evitare la presenza di link circolari e a rendere il testo dei collegamenti facilmente individuabile e, soprattutto, sufficientemente autoesplicativo (evitando accuratamente di utilizzare parole ``vuote'' o deittici come ``clicca qui'').
+Inoltre, si è fatta attenzione a non rendere i link presenti nelle \inglese{breadcrumbs}\footnote{%
+   \inglese{Breadcrumbs} significa letteralmente ``briciole di pane''. Si tratta di una tecnica utilizzata per aiutare l'utente a non perdersi all'interno del sito, fornendogli le tracce del percorso esplorativo da lui effettuato, proprio come Pollicino aveva lasciato le briciole di pane nel bosco per poter ritrovare la strada di casa.} adiacenti, separandoli tramite il carattere ``>''
 
-Per facilitare la navigazione fra le pagine attraverso i collegamenti ipertestuali è stato impostato l'attributo \texttt{tabindex} per i link del menu principale e delle \inglese{breadcrumbs}, nonché per il collegamento `Salta al contenuto' che non è direttamente visibile sulle pagine.
+Per facilitare la navigazione fra le pagine attraverso i collegamenti ipertestuali è stato impostato l'attributo \texttt{tabindex} per i link del menu principale e delle \inglese{breadcrumbs}, nonché per il collegamento ``Salta al contenuto'' che non è direttamente visibile sulle pagine.
 
 Si è scelto invece di non inserire alcuna \inglese{access key} perché sarebbe stato difficile trovare delle combinazioni da tastiera non già assegnate dalle applicazioni o dagli ambienti desktop e, inoltre, perché si è valutato il sito sufficientemente navigabile anche senza questa opzione.
 
@@ -292,16 +290,14 @@ I form che compaiono nella sezione \sitepage{Sondaggi.html} del sito sono stati 
 
 In secondo luogo, tutti gli elementi \texttt{<input>} sono corredati dalla rispettiva \texttt{<label>} che permette di associare un'etichetta informativa relativamente alla tipologia di valori attesi dal campo di inserimento, semplificando l'interazione con l'utente anche nel caso in cui questi ricorra all'uso di tecnologie di accesso universale.
 
-%TODO tabindex
-%TODO aiuti per dati inseriti erroneamente
-%TODO title
+Infine, è stata predisposta una pagina che visualizza gli errori nel caso in cui la form non sia stata compilata correttamente.
 
 \subsection{Le tabelle}
-Le tabelle che compaiono nella sezione \sitepage{Interpreti.html} sono state progettate per essere fruibili anche in forma non visuale, mediante l'utilizzo dell'attributo \texttt{scope} rispettivamente con il valore \texttt{col} per le intestazioni delle colonne e con il valore \texttt{row} per la testata di ogni riga, ovvero il personaggio di cui si elencano gli attori della versione originale e i doppiatori della versione italiana.
+Le tabelle che compaiono nella sezione \sitepage{Interpreti.html} sono state progettate per essere fruibili anche in forma non visuale, mediante l'utilizzo dell'attributo \texttt{scope} rispettivamente con il valore \texttt{col} per le intestazioni delle colonne e con il valore \texttt{row} per l'intestazione di ogni riga, ovvero il personaggio di cui si elencano gli attori della versione originale e i doppiatori della versione italiana.
 
 Tramite un simile accorgimento, chi accede al contenuto del sito mediante un sintetizzatore vocale potrà sentire prima del contenuto di ogni cella l'indicazione del personaggio a cui si riferisce l'informazione (che corrisponde all'indice di riga) e il ruolo che viene presentato (che corrisponde alla colonna) anche in assenza delle informazioni che normalmente vengono veicolate dalla disposizione spaziale del testo.
 
-L'organizzazione delle informazioni nella tabella è resa ancor più chiara dall'attributo \texttt{summary}, in cui oltre a giustificare la suddivisione in righe e colonne è illustrato brevemente il contenuto della tabella, in modo tale che chi accede al contenuto tramite uno \inglese{screen reader} possa saltare il contenuto qualora non interessato.
+L'organizzazione delle informazioni nella tabella è resa ancor più chiara dall'attributo \texttt{summary}, in cui oltre a giustificare la suddivisione in righe e colonne è illustrato brevemente il contenuto della tabella, in modo tale che chi accede al contenuto tramite uno \inglese{screen reader} possa saltare il testo qualora non interessato.
 
 Al fine di utilizzare un \inglese{markup} quanto più semantico possibile, inoltre, in ognuna delle due tabelle si è fatto ricorso a un elemento \texttt{<thead>} per creare le intestazioni delle tre colonne, in cui sono stati inseriti come figli di secondo livello degli elementi \texttt{<th>}. L'utilizzo di un \inglese{footer} non è invece stato ritenuto necessario, dal momento che il numero di righe è piuttosto ridotto (otto nella tabella degli interpreti e dieci in quella delle voci degli animali). Infine, come ultimo accorgimento per agevolare la lettura, si è scelto di alternare i colori delle righe adiacenti.
 
@@ -310,24 +306,23 @@ In tutte le pagine, le parole che comparivano in lingue diverse da quella princi
 
 In tal modo gli \inglese{screen reader} saranno in grado di adottare la pronuncia corretta, in special modo per i numerosi nomi dei personaggi che hanno mantenuto il nome originale anche nella versione doppiata dei film.
 
-Inoltre, ancora una volta allo scopo di facilitare la fruizione del contenuto a chi accede al sito tramite tecnologie di sintesi vocale, le eventuali sigle o abbreviazioni, ad esempio ``RSS'' sono stati inseriti all'interno di un elemento \texttt{<abbr>} in cui tramite l'attributo \texttt{title} si fornisce la dicitura per esteso.
-\subsubsection{Risconti sui test effettuati con gli screen reader}
+\subsubsection{Riscontri sui test effettuati con gli screen reader}
 Al fine di garantire l'accessibilità al sito, in particolare per le persone con disabilità visive, si sono effettuati dei test con due  \inglese{screen reader} differenti. 
 Si è volta particolare attenzione al controllo della fruibilità di:
 \begin{itemize}[noitemsep,nolistsep]
   \item[-] menu;
   \item[-] tabelle;
   \item[-] immagini;
-  \item[-] pronunce linguistiche corrette;
+  \item[-] pronunce linguistiche corrette.
 \end{itemize}
 
-Per quanto riguarda il menu, si è controllato che lo \inglese{screen reader} accedesse al menu secondo l'ordine stabilito e che legga in particolare la voce salta menu, non visibile direttamente nella pagina ma fondamentale per le persone con problemi visivi, che altrimenti sarebbero costrette ad una forzata rilettura delle voci del menu per ogni accesso alle pagine. Il riscontro in questo caso è stato positivo.
+Per quanto riguarda il menu, si è controllato che lo \inglese{screen reader} accedesse al menu secondo l'ordine stabilito e che legga in particolare la voce ``salta menu'', non visibile direttamente nella pagina ma fondamentale per le persone con problemi visivi, che altrimenti sarebbero costrette ad una forzata rilettura delle voci del menu per ogni accesso alle pagine. Il riscontro in questo caso è stato positivo.
 
-Per quanto riguarda le tabelle si è controllato che lo \inglese{screen reader} leggesse correttamente le intestazioni di riga e di colonna prima di leggere il contenuto delle celle. Purtroppo tale riscontro non ha avuto esito positivo. Tuttavia, avendo seguito tutte le regole per ottenere tabelle accessibili, si ritiene che l'esito negativo del test derivi dal fatto che gli screen-reader utilizzati sono strumenti gratuiti e di conseguenza probabilmente non godono di tutte le funzionalità.
+Per quanto riguarda le tabelle si è controllato che lo \inglese{screen reader} leggesse correttamente le intestazioni di riga e di colonna prima di leggere il contenuto delle celle. Purtroppo tale riscontro non ha avuto esito positivo. Tuttavia, avendo seguito tutte le regole per ottenere tabelle accessibili, si ritiene che l'esito negativo del test derivi dal fatto che gli \inglese{screen reader} utilizzati sono strumenti gratuiti e di conseguenza probabilmente non godono di tutte le funzionalità.
 
-Per quanto riguarda invece le immagini, i test hanno avuto un riscontro positivo. Si è controllato che lo \inglese{screen reader} leggesse il valore degli attributi \texttt{alt} dove presente. Inoltre si è cercato di capire tramite l'uso di \inglese{screen reader} se il contenuto del sito senza la visione di immagine fosse mantenuto.
+Per quanto riguarda invece le immagini, i test hanno avuto un riscontro positivo. Si è controllato che lo \inglese{screen reader} leggesse il valore degli attributi \texttt{alt} ove presenti. Inoltre si è cercato di capire tramite l'uso di \inglese{screen reader} se il contenuto del sito senza la visione di immagine fosse mantenuto.
 
-Per quanto riguarda la correttezza nella pronuncia di parole appartenenti ad altre lingue, purtroppo il test ha dato esito negativo. Entrambe gli \inglese{screen reader} utilizzati non distinguono il cambiamento di lingua impostato tramite l'attributo  \texttt{xml:lang}.  Anche in questo caso si pensa che la colpa sia del fatto che gli strumenti utilizzati sono gratuiti.
+Per quanto riguarda la correttezza nella pronuncia di parole appartenenti ad altre lingue, purtroppo il test ha dato esito negativo. Entrambi gli \inglese{screen reader} utilizzati non distinguono il cambiamento di lingua impostato tramite l'attributo  \texttt{xml:lang}.  Anche in questo caso si pensa che la colpa sia del fatto che gli strumenti utilizzati sono gratuiti.
 
 \section{Note}
 \subsection{Note sulle pagine Mesi e Giorni}
@@ -339,7 +334,9 @@ Infatti usando il tag \texttt{<pre>} viene disabilitato il ritorno a capo automa
 
 \subsection{Note sul titolo}
 
-Per quanto riguarda il titolo, si è scelto di non utilizzare tecniche di \inglese{image replacement}, penalizzando così la grafica, per mantenere l'accessibilità. Le tecniche di \inglese{image replacement} anche se sono in grado di permettere al sito di avere una buona grafica pur mantenendo un certo grado di accessibilità, comunque la penalizzano in qualche modo. Infatti, utilizzando tali tecniche si dovrebbe rinunciare o ad un buon ridimensionamento oppure alla sicurezza assoluta che sia conservato il contenuto in quanto se le immagini dovessero essere disabilitate allora non si potrebbe più leggere il titolo e di conseguenza non si potrebbe più rispondere alla domanda ``dove sono?''. Quindi, si è scelto di avere un titolo non pienamente appagabile dal punto di vista estetico ma che fornisce una sicurezza nel suo mantenimento.
+Per quanto riguarda il titolo, si è scelto di non utilizzare tecniche di \inglese{image replacement}, penalizzando così la grafica, per mantenere l'accessibilità. Le tecniche di \inglese{image replacement} anche se sono in grado di permettere al sito di avere una buona grafica pur mantenendo un certo grado di accessibilità, comunque la penalizzano in qualche modo.
+
+Infatti, utilizzando tali tecniche si dovrebbe rinunciare o ad un buon ridimensionamento oppure alla sicurezza assoluta che sia conservato il contenuto in quanto se le immagini dovessero essere disabilitate allora non si potrebbe più leggere il titolo e di conseguenza non si potrebbe più rispondere alla domanda ``dove sono?''. Quindi, si è scelto di avere un titolo non pienamente appagante dal punto di vista estetico ma che fornisce una sicurezza nel suo mantenimento.
 
 \section{Strumenti ultilizzati}\label{sec:strumenti}
 
@@ -367,7 +364,9 @@ I risultati ottenuti sono compresi, rispettivamente, tra 9.4 : 1 e 21:1, tra 207
 
 L'estensione \progname{Accessibility Evaluation Tool} per Firefox ha reso inoltre possibile testare la visualizzazione delle varie pagine rimuovendo il CSS definito dall'utente, con contrasto elevato (B/W e W/B), rimuovendo le immagini di sfondo, le immagini di contenuto o tutte le immagini al fine di constatare la fruibilità dei contenuti anche in contesti diversi da quello di usuale visualizzazione.
 
-L'estensione \progname{Web Developer} per Firefox è stata utilizzata per testare i CSS alternativi a quello principale, e in particolare quello per la stampa. Infine, tramite il browser testuale \progname{w3m} è stata inoltre testata la navigabilità del sito in modalità solo testo. 
+L'estensione \progname{Web Developer} per Firefox è stata utilizzata per testare i CSS alternativi a quello principale, e in particolare quello per la stampa. Inoltre, tramite il browser testuale \progname{w3m} è stata testata la navigabilità del sito in modalità solo testo.
+
+Infine, è stato utilizzato lo strumento \progname{IE Tester} per testare la visualizzazione del sito con Internet Explorer a partire dalla versione 5. 
 
 \section{Pagine dinamiche}
 
@@ -383,12 +382,12 @@ Il sito si basa su una mini base di dati realizzata mediante XML. Nello specific
 	\item di ogni commento interessa conoscere il nome e la mail dell'utente che l'ha eseguito, la data in cui è stato redatto e ovviamente il testo del commento.
 \end{itemize}
 
-I dati conformi a tale schema saranno raccolti nel file XML Sondaggi.xml. Questo file viene usato nelle seguenti occasioni:
+I dati conformi a tale schema saranno raccolti nel file XML \texttt{Sondaggi.xml}. Questo file viene usato nelle seguenti occasioni:
 
 \begin{itemize}
-	\item dallo pagina FormCreator.html, nel momento in cui deve essere generata (lato server) la form per l'inserimento dei commenti e per rispondere alle domande del sondaggio;
-	\item dalla pagina FormCreator.html, nel momento in cui devono essere riportati, sotto alla sezione dedicata al form, i commenti inseriti dagli altri visitatori del sito;
-	\item dallo script addComment.cgi, nel momento in cui l'utente avrà cliccato il pulsante di submit per inviare al server i dati inseriti nella form. Lo script si occupera della loro validazione e della loro registrazione in Sondaggi.xml.
+	\item dallo pagina \sitepage{FormCreator.html}, nel momento in cui deve essere generata (lato server) la form per l'inserimento dei commenti e per rispondere alle domande del sondaggio;
+	\item dalla pagina \sitepage{FormCreator.html}, nel momento in cui devono essere riportati, sotto alla sezione dedicata al form, i commenti inseriti dagli altri visitatori del sito;
+	\item dallo script \texttt{addComment.cgi}, nel momento in cui l'utente avrà cliccato il pulsante di submit per inviare al server i dati inseriti nella form. Lo script si occuperà della loro validazione e della loro registrazione in \sitepage{Sondaggi.xml}.
 \end{itemize}
 
 \subsection{Utilizzo Perl}
@@ -399,12 +398,12 @@ Il sito fa uso di due fondamentali script Perl.
 \end{itemize}
 
 \subsubsection{ShowSounding.cgi}
-E' la pagina richiamata dal menù principale ed ha il compito di generare lato server la pagina dei sondaggi. Tale scelta è dovuta per non perdere gli utenti che utilizzano Google Chrome come browser per la navigazione nel web e non perdere la possibilità di essere indicizzati dai motori di ricerca in quanto non sono in grado di interpretare un file xml. Lo script Perl esegue i seguenti step:
+È la pagina richiamata dal menu principale ed ha il compito di generare lato server la pagina dei sondaggi. Tale scelta è dovuta al fatto che non si desidara perdere gli utenti che utilizzano Google Chrome come browser per la navigazione nel web e non perdere la possibilità di essere indicizzati dai motori di ricerca in quanto non sono in grado di interpretare un file XML. Lo script Perl esegue i seguenti step:
 \begin{itemize}
-	\item viene recuperato dal disco il file 'Sondaggi.xml' contenente i dati del sondaggio da proporre agli utenti;
-	\item viene recuperato  dal disco il file 'FormCreator.xsl' contenente le regole per trasformare il file xml in un documento html visualizzabile da un browser;
+	\item viene recuperato dal disco il file \sitepage{Sondaggi.xml} contenente i dati del sondaggio da proporre agli utenti;
+	\item viene recuperato  dal disco il file \texttt{FormCreator.xsl} contenente le regole per trasformare il file XML in un documento HTML visualizzabile da un browser;
 	\item vengono entrambi elaborati in modo da avere in memoria la struttura ad albero di entrambi i file;
-	\item viene creato un oggetto in grado di applicare le regole xslt;
+	\item viene creato un oggetto in grado di applicare le regole XSLT;
 	\item viene eseguita la trasformazione;
 	\item infine viene restituito al browser il risultato della trasformazione, ossia la pagina con il form per compilare il sondaggio.
 \end{itemize}
@@ -412,14 +411,14 @@ E' la pagina richiamata dal menù principale ed ha il compito di generare lato s
 \subsubsection{addComment.cgi}
 Viene usato dalla pagina sondaggi per inviare i dati inseriti dall'utente. Lo script richiamato in seguito all'evento click sull'oggetto d'input submit, riceve i dati per mezzo di metodo POST e si occupa di eseguire i seguenti step:
 \begin{itemize}
-  \item vengono da prima definite le librerie di cui lo script necessita;
+  \item vengono dapprima definite le librerie di cui lo script necessita;
   \item quindi si creano le variabili atte a contenere i dati inviati dall'utente;
   \item tramite una richiesta alla pagina CGI precedentemente creata, ricava i valori dalla form e li assegna alle corrispettive variabili;
   \item si procede testando le variabili ed identificando la presenza di errori;
-  \item se l'inserimento è andato a buon fine allora si procede aggiornando in Sondaggi.xml il tag <votanti> relativo alle corrispettive <scelte> sulle <domande> a cui ha risposto l'utente;
-  \item per ogni domanda si apre il file Sondaggi.xml e si aggiorna la voce votanti;
-  \item quindi si passa alla creazione di un tag <commento> sulla base dei dati: utente, mail, data (il cui valore è creato precedentemente mediante l'uso della funzione localtime()) e il testo stesso del commento;
-  \item quindi si termina con l'inserimento del commento e la chiusura del file. Infine lo script reindirizza alla pagina di Conferma.html.
+  \item se l'inserimento è andato a buon fine allora si procede aggiornando in \sitepage{Sondaggi.xml} il tag <votanti> relativo alle corrispettive <scelte> sulle <domande> a cui ha risposto l'utente;
+  \item per ogni domanda si apre il file \sitepage{Sondaggi.xml} e si aggiorna la voce votanti;
+  \item quindi si passa alla creazione di un tag <commento> sulla base dei dati: utente, mail, data (il cui valore è creato precedentemente mediante l'uso della funzione \texttt{localtime()}) e il testo stesso del commento;
+  \item quindi si termina con l'inserimento del commento e la chiusura del file. Infine lo script reindirizza alla pagina di \sitepage{Conferma.html}.
 \end{itemize}
 
 \clearpage
@@ -431,24 +430,24 @@ Viene usato dalla pagina sondaggi per inviare i dati inseriti dall'utente. Lo sc
 Dopo essere emersa la necessità di gestire una mini base di dati, la creazione della medesima è avvenuta seguendo le seguenti fasi/procedure:
 \begin{itemize}
 	\item identificazione dei requisiti essenziali: capire cosa si intende rappresentare mediante il file xml e quali sono le ``realtà'' che andranno a farne uso;
-	\item creazione di un apposito xml schema atto a rappresentare la realtà evidenziata;
-	\item controllo di formattazione del xml schema;
+	\item creazione di un apposito XML Schema atto a rappresentare la realtà evidenziata;
+	\item controllo di formattazione del XML Schema;
 	\item validazione del medesimo;
-	\item creazione di un file Sondaggi.xml conforme allo schema determinato nei punti precedenti.
+	\item creazione di un file \sitepage{Sondaggi.xml} conforme allo schema determinato nei punti precedenti.
 \end{itemize}
 
 Come già accennato, il gruppo ha deciso di costruire uno schema con il modello tende alla veneziana, supponendo un futuro riutilizzo dei suoi componenti.
 
 \subsection{Norme di sviluppo CSS}
 
-Il sito basa la gestione del proprio layout grafico su due fogli di stile CSS: NormalLayout.css e SmallLayout.css. Il primo viene usato per gestire una normale visione su schermo avente una larghezza superiore a 52em. Il secondo foglio invece si occupa di adattare la pagina nel momento in cui questa raggiunge una larghezza inferiore a 52em, e viene caricato sui dispositivi mobile. Nel progettare e sviluppare tali CSS si sono tenute in considerazione le seguenti norme:
+Il sito basa la gestione del proprio layout grafico su tre fogli di stile CSS: \texttt{NormalLayout.css}, \texttt{PrintLayout.css} e \texttt{SmallLayout.css}. Il primo viene usato per gestire una normale visione su schermo avente una larghezza superiore a \texttt{52em}. Il secondo ha lo scopo di definire la formattazione per la stampa. Il terzo foglio infine si occupa di adattare la pagina nel momento in cui questa raggiunge una larghezza inferiore a \texttt{52em}, e viene caricato sui dispositivi mobile. Nel progettare e sviluppare tali CSS si sono tenute in considerazione le seguenti norme:
 
 \begin{itemize}
   \item Privilegiare il contenuto del sito, sacrificando (nel caso) alcuni effetti CSS ``accattivanti'' ma che penalizzano la lettura del contenuto.
-  \item Mai usare CSS embedded o inline, ma creare file CSS da richiamare mediante link nel documento html.
+  \item Mai usare CSS embedded o inline, ma creare file CSS da richiamare mediante link nel documento HTML.
   \item Al termine di ogni modifica significativa, ripetere il test di validazione del W3C.
-  \item Mai abusare degli elementi <div>. È giusto crearli per evidenziare la presenza di una ``regione semantica'' rilevante, o nel caso che il layout grafico richieda particolari effetti flottanti, ma si esorta i componenti a non usarlo la dove possibile.
-  \item Nel scegliere i nomi da dare alle classi, tenere in considerazione che tali dovrebbero esprimere il significato dell'oggetto su cui si applicherà, e non le caratteristiche di visualizzazione poiché tali sono mutevoli e potrebbero cambiare in futuro (e.g. se si intende rappresentare una <label> con una certa colorazione, non si dovrà chiamare .labelRossa, ma bensì .etichetta, presupposto il fatto che ci interessa rappresentarla come un etichetta che contraddistingue un determinato <input>).
+  \item Mai abusare degli elementi \texttt{<div>}. È giusto crearli per evidenziare la presenza di una ``regione semantica'' rilevante, o nel caso che il \inglese{layout} grafico richieda particolari effetti flottanti, ma si esorta i componenti a non usarlo la dove possibile.
+  \item Nel scegliere i nomi da dare alle classi, tenere in considerazione che tali dovrebbero esprimere il significato dell'oggetto su cui si applicherà, e non le caratteristiche di visualizzazione poiché tali sono mutevoli e potrebbero cambiare in futuro (e.g. se si intende rappresentare una \texttt{<label>} con una certa colorazione, non si dovrà chiamare \texttt{.labelRossa}, ma bensì \texttt{.etichetta}, presupposto il fatto che ci interessa rappresentarla come un etichetta che contraddistingue un determinato \texttt{<input>}).
 \end{itemize}
 
 \subsubsection{Versione CSS}

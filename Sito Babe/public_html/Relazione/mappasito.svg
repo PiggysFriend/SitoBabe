@@ -34,7 +34,7 @@
      showgrid="false"
      inkscape:zoom="1.2685914"
      inkscape:cx="396.88211"
-     inkscape:cy="900.72785"
+     inkscape:cy="870.50729"
      inkscape:window-x="0"
      inkscape:window-y="20"
      inkscape:window-maximized="1"
@@ -69,7 +69,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -79,28 +79,20 @@
        width="187.85715"
        height="45.714287"
        ry="16.428572"
-       x="116.98106"
-       y="48.918552"
+       x="108.31002"
+       y="105.67442"
        id="rect2985"
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <text
-       x="189.83821"
-       y="76.061401"
+       x="181.16718"
+       y="132.81726"
        id="text2987"
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
        sodipodi:linespacing="125%"><tspan
-         x="189.83821"
-         y="76.061401"
+         x="181.16718"
+         y="132.81726"
          id="tspan2989">Home</tspan></text>
-    <rect
-       width="187.85715"
-       height="45.714287"
-       ry="16.428572"
-       x="244.04457"
-       y="113.23616"
-       id="rect2985-0"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <rect
        width="187.85715"
        height="45.714287"
@@ -129,8 +121,8 @@
        width="187.85715"
        height="45.714287"
        ry="16.428572"
-       x="242.73677"
-       y="776.51251"
+       x="249.83125"
+       y="778.08905"
        id="rect2985-4-6"
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <rect
@@ -168,16 +160,6 @@
          y="381.65732"
          id="tspan2989-4">Impara con Babe</tspan></text>
     <text
-       x="284.50189"
-       y="141.05272"
-       id="text2987-0"
-       xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
-       sodipodi:linespacing="125%"><tspan
-         x="284.50189"
-         y="141.05272"
-         id="tspan2989-5">Lo sapevi che...</tspan></text>
-    <text
        x="291.95468"
        y="202.31027"
        id="text3106"
@@ -208,25 +190,25 @@
          y="321.95926"
          id="tspan3116">Interpreti</tspan></text>
     <text
-       x="289.16327"
-       y="802.25488"
+       x="307.29361"
+       y="806.19629"
        id="text3122"
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
        sodipodi:linespacing="125%"><tspan
-         x="289.16327"
-         y="802.25488"
-         id="tspan3124">Suggerimenti</tspan></text>
+         x="307.29361"
+         y="806.19629"
+         id="tspan3124">Sondaggi</tspan></text>
     <text
-       x="288.43839"
-       y="864.14288"
+       x="320.75769"
+       y="865.71942"
        id="text3126"
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
        sodipodi:linespacing="125%"><tspan
-         x="288.43839"
-         y="864.14288"
-         id="tspan3128">Riconoscimenti</tspan></text>
+         x="320.75769"
+         y="865.71942"
+         id="tspan3128">Premi</tspan></text>
     <text
        x="309.58173"
        y="918.85278"
@@ -254,14 +236,14 @@
        id="rect2985-4-1-8-8"
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <text
-       x="458.19601"
-       y="495.83597"
+       x="465.2905"
+       y="496.62424"
        id="text3134-9"
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
        sodipodi:linespacing="125%"><tspan
-         x="458.19601"
-         y="495.83597"
+         x="465.2905"
+         y="496.62424"
          id="tspan3136-8">I numeri</tspan></text>
     <rect
        width="187.85715"
@@ -290,15 +272,18 @@
        id="rect2985-4-1-8-6-1"
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <text
-       x="413.76987"
+       x="445.3009"
        y="608.38123"
        id="text3134-4-9"
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
        sodipodi:linespacing="125%"><tspan
-         x="413.76987"
+         x="445.3009"
          y="608.38123"
-         id="tspan3136-0-8">I giorni della settimana</tspan></text>
+         id="tspan3136-0-8">La settimana</tspan><tspan
+         x="445.3009"
+         y="608.38123"
+         id="tspan3390" /></text>
     <text
        x="465.01794"
        y="554.19702"
@@ -322,11 +307,6 @@
     <path
        d="m 223.18381,915.20673 21.71828,0"
        id="path3365-6"
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:connector-curvature="0" />
-    <path
-       d="m 222.48666,135.61693 21.71828,0"
-       id="path3365-5"
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:connector-curvature="0" />
     <path
@@ -421,8 +401,8 @@
        id="path3088"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.96933985px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 222.65863,94.212842 0,821.413648"
+       style="fill:none;stroke:#000000;stroke-width:0.93430847px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 222.65863,152.51088 0,763.11561"
        id="path3090"
        inkscape:connector-curvature="0" />
   </g>
